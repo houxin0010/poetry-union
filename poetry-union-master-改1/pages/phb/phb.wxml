@@ -1,0 +1,34 @@
+
+<view>
+<image class='back' src='/2000/phbimg/beij.png'></image>
+<image class='yxt'  src='/2000/phbimg/yxt.png'></image>
+</view>
+
+<view >
+  <text class='gr'>个人最高成记录：</text>
+  <text class='fs'>100</text>
+</view>
+
+<view class='dk'>
+ <view class='top1'>
+ <text class='mc'>Top.1</text>
+ <view class='touxiang'></view>
+ <image class='defen' src='/2000/phbimg/phb.png'></image>
+ </view>
+  
+  <view class='top2'>
+ <text class='mc'>Top.2</text>
+ <view class='touxiang'></view>
+ <image class='defen' src='/2000/phbimg/phb.png'></image>
+ </view>
+
+ <view class='top3'>
+ <text class='mc'>Top.3</text>
+ <view class='touxiang'></view>
+ <image class='defen' src='/2000/phbimg/phb.png'></image>
+ </view>
+</view>
+<view class='com'></view>
+<view class='again'>
+ <image class='aaa' src='/2000/phbimg/zailaiyibian.png'></image>
+</view>
