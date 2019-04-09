@@ -12,7 +12,6 @@ overflow: hidden;
   left: 50rpx;
 }
 .niao{
-  width:238rpx;
   height: 82rpx;
   position: relative;
   opacity: 0;
@@ -35,7 +34,7 @@ overflow: hidden;
   opacity: 0;
   left: -200rpx;
   top: -150rpx;
-  animation:fanz 1s 2s linear forwards alternate,myone 1s 2s linear forwards alternate;
+  animation:fanz 1s 1.1s linear forwards alternate,myone 1s 1.1s linear forwards alternate;
 } 
 
 .m3{
@@ -44,7 +43,7 @@ overflow: hidden;
   position: relative;
  opacity: 0;
   top:-250rpx;
-  animation:fanz 1s 3s linear forwards alternate,myone 1s 3s linear forwards alternate;
+  animation:fanz 1s 1.2s linear forwards alternate,myone 1s 1.2s linear forwards alternate;
 } 
 .m4{
   width: 300rpx;
@@ -52,7 +51,7 @@ overflow: hidden;
   position: relative;
   top: -900rpx;
   opacity: 0;
-  animation:fanz 1s 4s linear forwards alternate,myone 1s 4s linear forwards alternate;
+  animation:fanz 1s 1.3s linear forwards alternate,myone 1s 1.3s linear forwards alternate;
 }
 .shany{
   width:510rpx;

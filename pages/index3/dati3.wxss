@@ -1,8 +1,7 @@
 /* pages/index3/dati3.wxss */
 .xzt{width: 750rpx;
 height: 1344rpx;
-position: relative;
-overflow: hidden;}
+position: relative;}
 
 .back{
   width:750rpx;
@@ -98,47 +97,25 @@ overflow: hidden;}
   left: 62rpx;
 }
 
-.shiname{
-  font-size: 50rpx;
-  font-weight: 500;
-  position: relative;
-  top: -1634rpx;
-  left: 300rpx;
-}
-
-.name{
+.question{
+  width: 600rpx;
+  height: 360rpx;
   font-size: 35rpx;
   position: relative;
-  top: -1564rpx;
-  left: 300rpx;
+  top: -1634rpx;
+  left: 92rpx;
+  white-space: pre-line;
+  animation: tmd 1.5s linear forwards;
 }
-
-.timu{
-  font-size: 40rpx;
-  font-weight: 500;
-  position: relative;
-  top: -1484rpx;
-  left: -100rpx;
-}
-
-.da{position: relative;
-  top:-1480rpx;
-  left: -200rpx;
-  color: red;
-  font-size: 45rpx;}
-
 .zhedang{
-  width: 614rpx;
+   width: 614rpx;
   height: 360rpx;
   position: relative;
-  top: -1774rpx;
+  top: -2065rpx;
   left: 68rpx;  
-  animation: zhedang 2.5s linear forwards;
+  transform-origin: top ;
+  animation: zhedang 1s 1s linear forwards;
 }
-
-
-
-
 
 .srk{position: relative;
     top: -500rpx;
@@ -185,7 +162,7 @@ overflow: hidden;}
 .answerfont2{
   position: relative;
   float: left;
-  top:-900rpx;
+  top:-820rpx;
   left:85rpx;
   
 }
@@ -198,7 +175,7 @@ overflow: hidden;}
 .title1{
   position: relative;
   float: left;
-  top:-715rpx;
+  top:-630rpx;
   left:85rpx;
   
 }
@@ -211,7 +188,7 @@ overflow: hidden;}
 .title2{
   position: relative;
   float: left;
-  top:-880rpx;
+  top:-800rpx;
   left:85rpx;
   
 }

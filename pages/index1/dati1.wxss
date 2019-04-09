@@ -16,13 +16,7 @@ overflow: hidden;}
    top: -1274rpx;
    left: 30rpx;
 }
-.paihang{
-   width: 200rpx;
-   height: 79rpx;
-   position: relative;
-   top: -1274rpx;
-   left: 60rpx;
-}
+
 
 .chengji{
   width: 200rpx;
@@ -98,58 +92,42 @@ overflow: hidden;}
   left: 62rpx;
 }
 
-.shiname{
-  font-size: 50rpx;
-  font-weight: 500;
-  position: relative;
-  top: -1634rpx;
-  left: 300rpx;
-}
-
-.name{
+.question{
+  width: 600rpx;
+  height: 360rpx;
   font-size: 35rpx;
   position: relative;
-  top: -1564rpx;
-  left: 300rpx;
+  top: -1634rpx;
+  left: 92rpx;
+  white-space: pre-line;
+  animation: tmd 1.5s linear forwards;
 }
-
-.timu{
-  font-size: 40rpx;
-  font-weight: 500;
-  position: relative;
-  top: -1484rpx;
-  left: -100rpx;
-}
-
-.da{position: relative;
-  top:-1480rpx;
-  left: -200rpx;
-  color: red;
-  font-size: 45rpx;}
 
 .zhedang{
   width: 614rpx;
   height: 360rpx;
   position: relative;
-  top: -1774rpx;
+  top: -2070rpx;
   left: 68rpx;  
-  animation: zhedang 2.5s linear forwards;
+  transform-origin: top ;
+  animation: zhedang 1s 1s linear forwards;
 }
 
 .A{
   width:664rpx;
   height: 100rpx;
   position: relative;
-  top: -1784rpx;
+  top: -2050rpx;
   left: 43rpx;
   opacity: 0;
   animation: tmd 1s linear forwards;
+  margin-bottom: 50rpx;
 }
 
 .answerA{color: white;
 font-weight: 500;
 position: relative;
-top:-2200rpx;
+top:-2500rpx;
 left: 100rpx;
 opacity: 0;
 animation: tmd 1s 1s linear forwards;
@@ -158,7 +136,7 @@ animation: tmd 1s 1s linear forwards;
 .answerB{color: white;
 font-weight: 500;
 position: relative;
-top:-2140rpx;
+top:-2390rpx;
 left: 100rpx;
 opacity: 0;
 animation: tmd 1s 1.5s linear forwards;
@@ -167,19 +145,12 @@ animation: tmd 1s 1.5s linear forwards;
 .answerC{color: white;
 font-weight: 500;
 position: relative;
-top:-2075rpx;
+top:-2280rpx;
 left: 100rpx;
 opacity: 0;
 animation: tmd 1s 2s linear forwards;
 }
 
-.answerD{color: white;
-font-weight: 500;
-position: relative;
-top:-2015rpx;
-left: 100rpx;
-opacity: 0;
-animation: tmd 1s 2.5s linear forwards;}
 
 @keyframes myone{
   form{width:600rpx;}

@@ -7,12 +7,6 @@
 <view >
   <text class='gr'>个人最高成记录：</text>
   <text class='fs'>100</text>
-<view class='chenghao'>
-  <view class='first'>新入诗圈</view>
-  <view class='second'>学有所成</view>
-  <view class='third'>文渊学士</view>
-  <view class='four'>古林盟主</view>
-  </view>
 </view>
 
 <view class='dk'>
