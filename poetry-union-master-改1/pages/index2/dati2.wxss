@@ -1,0 +1,170 @@
+/* pages/index2/dati2.wxss */
+.xzt{width: 750rpx;
+height: 1344rpx;
+position: relative;
+overflow: hidden;}
+
+.back{
+  width:750rpx;
+  height: 1334rpx;
+}
+
+.caidan{
+   width: 200rpx;
+   height: 79rpx;
+   position: relative;
+   top: -1274rpx;
+   left: 30rpx;
+}
+.paihang{
+   width: 200rpx;
+   height: 79rpx;
+   position: relative;
+   top: -1274rpx;
+   left: 60rpx;
+}
+
+.chengji{
+  width: 200rpx;
+  height: 75rpx;
+  background:black;
+  line-height: 75rpx;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: -1234rpx;
+  left: 500rpx;
+  font-size: 30rpx;
+
+}
+.fenshu{
+  width: 196rpx;
+  height: 71rpx;
+  border: 1rpx solid gray;
+  line-height: 75rpx;
+  text-align: center;
+  color: black;
+  position: relative;
+  top: -1234rpx;
+  left: 500rpx;
+}
+
+.mb{
+  width: 136rpx;
+  height: 136rpx;
+  position: relative;
+  top: -1340rpx; 
+  opacity: 0.5;
+  animation:aaa 2s  linear forwards;
+  z-index: 1;
+}
+.tixu{
+  width: 161rpx;
+  height: 57rpx;
+  position: relative;
+  top:-1364rpx;
+  opacity: 0;
+  animation: tmd 2s 1s linear forwards;
+  z-index: 2;  
+}
+
+.time{
+  width: 600rpx;
+  height: 20rpx;
+  background: black;
+  border-radius: 20rpx;
+  position: relative;
+  top: -1344rpx;
+  left: 75rpx;
+  opacity: 0.1;
+}
+
+.time2{
+  width: 600rpx;
+  height: 20rpx;
+  background:green;
+  border-radius: 20rpx;
+  position: relative;
+  top: -1364rpx;
+  left: 75rpx;
+  animation:myone 30s 2.5s linear forwards;
+}
+
+.tiban{
+  width: 626rpx;
+  height: 372rpx;
+  position: relative;
+  top: -1334rpx;
+  left: 62rpx;
+}
+
+.question{
+  width: 600rpx;
+  height: 360rpx;
+  font-size: 35rpx;
+  position: relative;
+  top: -1634rpx;
+  left: 92rpx;
+  white-space: pre-line;
+  animation: tmd 1.5s linear forwards;
+}
+.zhedang{
+  width: 614rpx;
+  height: 360rpx;
+  position: relative;
+  top: -2070rpx;
+  left: 68rpx;  
+  transform-origin: top ;
+  animation: zhedang 1s 1s linear forwards;
+}
+.font{
+  position: relative;
+  top: -484rpx;
+  left: 100rpx;
+  font-family: '微软雅黑';
+  font-size: 40rpx;
+  float: left;
+}
+
+.shuru input{
+  width: 450rpx;
+  height: 150rpx;
+  background:lightseagreen;
+  position: relative;
+  top: -400rpx;
+  left: 50rpx;
+  border-radius: 40rpx;
+  color: white;
+  text-align: center;
+  float: left;
+}
+
+.xst{
+  width: 205rpx;
+  height: 335rpx;
+  position: relative;
+  top: -450rpx;
+  left: 60rpx;
+}
+
+
+@keyframes myone{
+  form{width:600rpx;}
+  to{width: 0rpx;}
+}
+
+@keyframes tmd{
+  form{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@keyframes aaa{
+  0%{left: 0rpx; opacity: 1;}
+  50%{left: 200rpx; opacity:0.1;}
+  100%{left: 0rpx; opacity: 1;}
+}
+
+@keyframes zhedang{
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
