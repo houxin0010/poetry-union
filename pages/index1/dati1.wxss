@@ -1,0 +1,203 @@
+/* pages/index1/dati1.wxss */
+.xzt{width: 750rpx;
+height: 1344rpx;
+position: relative;
+overflow: hidden;}
+
+.back{
+  width:750rpx;
+  height: 1334rpx;
+}
+
+.caidan{
+   width: 200rpx;
+   height: 79rpx;
+   position: relative;
+   top: -1274rpx;
+   left: 30rpx;
+}
+.paihang{
+   width: 200rpx;
+   height: 79rpx;
+   position: relative;
+   top: -1274rpx;
+   left: 60rpx;
+}
+
+.chengji{
+  width: 200rpx;
+  height: 75rpx;
+  background:black;
+  line-height: 75rpx;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: -1234rpx;
+  left: 500rpx;
+  font-size: 30rpx;
+
+}
+.fenshu{
+  width: 196rpx;
+  height: 71rpx;
+  border: 1rpx solid gray;
+  line-height: 75rpx;
+  text-align: center;
+  color: black;
+  position: relative;
+  top: -1234rpx;
+  left: 500rpx;
+}
+
+.mb{
+  width: 136rpx;
+  height: 136rpx;
+  position: relative;
+  top: -1340rpx; 
+  opacity: 0.5;
+  animation:aaa 2s  linear forwards;
+  z-index: 1;
+}
+.tixu{
+  width: 161rpx;
+  height: 57rpx;
+  position: relative;
+  top:-1364rpx;
+  opacity: 0;
+  animation: tmd 2s 1s linear forwards;
+  z-index: 2;  
+}
+
+.time{
+  width: 600rpx;
+  height: 20rpx;
+  background: black;
+  border-radius: 20rpx;
+  position: relative;
+  top: -1344rpx;
+  left: 75rpx;
+  opacity: 0.1;
+}
+
+.time2{
+  width: 600rpx;
+  height: 20rpx;
+  background:green;
+  border-radius: 20rpx;
+  position: relative;
+  top: -1364rpx;
+  left: 75rpx;
+  animation:myone 30s 2.5s linear forwards;
+}
+
+.tiban{
+  width: 626rpx;
+  height: 372rpx;
+  position: relative;
+  top: -1334rpx;
+  left: 62rpx;
+}
+
+.shiname{
+  font-size: 50rpx;
+  font-weight: 500;
+  position: relative;
+  top: -1634rpx;
+  left: 300rpx;
+}
+
+.name{
+  font-size: 35rpx;
+  position: relative;
+  top: -1564rpx;
+  left: 300rpx;
+}
+
+.timu{
+  font-size: 40rpx;
+  font-weight: 500;
+  position: relative;
+  top: -1484rpx;
+  left: -100rpx;
+}
+
+.da{position: relative;
+  top:-1480rpx;
+  left: -200rpx;
+  color: red;
+  font-size: 45rpx;}
+
+.zhedang{
+  width: 614rpx;
+  height: 360rpx;
+  position: relative;
+  top: -1774rpx;
+  left: 68rpx;  
+  animation: zhedang 2.5s linear forwards;
+}
+
+.A{
+  width:664rpx;
+  height: 100rpx;
+  position: relative;
+  top: -1784rpx;
+  left: 43rpx;
+  opacity: 0;
+  animation: tmd 1s linear forwards;
+}
+
+.answerA{color: white;
+font-weight: 500;
+position: relative;
+top:-2200rpx;
+left: 100rpx;
+opacity: 0;
+animation: tmd 1s 1s linear forwards;
+}
+
+.answerB{color: white;
+font-weight: 500;
+position: relative;
+top:-2140rpx;
+left: 100rpx;
+opacity: 0;
+animation: tmd 1s 1.5s linear forwards;
+}
+
+.answerC{color: white;
+font-weight: 500;
+position: relative;
+top:-2075rpx;
+left: 100rpx;
+opacity: 0;
+animation: tmd 1s 2s linear forwards;
+}
+
+.answerD{color: white;
+font-weight: 500;
+position: relative;
+top:-2015rpx;
+left: 100rpx;
+opacity: 0;
+animation: tmd 1s 2.5s linear forwards;}
+
+@keyframes myone{
+  form{width:600rpx;}
+  to{width: 0rpx;}
+}
+
+@keyframes tmd{
+  form{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@keyframes aaa{
+  0%{left: 0rpx; opacity: 1;}
+  50%{left: 200rpx; opacity:0.1;}
+  100%{left: 0rpx; opacity: 1;}
+}
+
+@keyframes zhedang{
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
