@@ -13,6 +13,7 @@ overflow: hidden;
 }
 .niao{
   height: 82rpx;
+  width: 300rpx;
   position: relative;
   opacity: 0;
   animation: myone 2s 0s linear forwards alternate, mytwo 2s linear forwards alternate,mythree 1s linear forwards;

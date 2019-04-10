@@ -1,27 +1,22 @@
 /* pages/index3/dati3.wxss */
 .xzt{width: 750rpx;
 height: 1344rpx;
-position: relative;}
+position: relative;
+overflow: hidden;}
 
 .back{
   width:750rpx;
   height: 1334rpx;
 }
 
-.caidan{
+.leave{
    width: 200rpx;
    height: 79rpx;
    position: relative;
    top: -1274rpx;
    left: 30rpx;
 }
-.paihang{
-   width: 200rpx;
-   height: 79rpx;
-   position: relative;
-   top: -1274rpx;
-   left: 60rpx;
-}
+
 
 .chengji{
   width: 200rpx;
@@ -90,30 +85,32 @@ position: relative;}
 }
 
 .tiban{
-  width: 626rpx;
-  height: 372rpx;
+  width: 700rpx;
+  height: 400rpx;
   position: relative;
   top: -1334rpx;
-  left: 62rpx;
+  left: 25rpx;
 }
 
+
 .question{
-  width: 600rpx;
+  width: 550rpx;
   height: 360rpx;
   font-size: 35rpx;
   position: relative;
-  top: -1634rpx;
-  left: 92rpx;
+  top: -1700rpx;
+  left: 102rpx;
+  text-indent: 2rem;
   white-space: pre-line;
   animation: tmd 1.5s linear forwards;
 }
 .zhedang{
-   width: 614rpx;
-  height: 360rpx;
+ width: 650rpx;
+  height: 390rpx;
   position: relative;
-  top: -2065rpx;
-  left: 68rpx;  
-  transform-origin: top ;
+  top: -2100rpx;
+  left: 50rpx;  
+   border-radius: 10rpx;
   animation: zhedang 1s 1s linear forwards;
 }
 
@@ -195,6 +192,73 @@ position: relative;}
 .f{
   margin-right:88rpx;
   font-size: 45rpx;
+}
+
+.black{
+  width: 750rpx;
+  height: 1334rpx;
+  background: black;
+  position: relative;
+  top: -2880rpx;
+  opacity: 0.5;
+  display: none;
+  z-index: 1;
+}
+
+.alert{
+  width: 650rpx;
+  height: 390rpx;
+  background: white;
+  position: relative;
+  top: -3700rpx;
+  left: 50rpx;
+  border-radius: 50rpx;
+  border: 5rpx solid darkgoldenrod;
+  display: none;
+  z-index: 2;
+}
+
+.yes{
+  width: 225rpx;
+  height: 53rpx;
+  margin-top: 50rpx;
+  margin-left: 100rpx;
+   display: none;
+}
+
+.no{
+  width: 225rpx;
+  height: 53rpx;
+  margin-top: 50rpx;
+  margin-left: 100rpx;
+  display: none;
+}
+.yespic{
+  width: 128rpx;
+  height: 107rpx;
+  margin-top: 50rpx;
+  margin-left: 100rpx;
+   display: none;
+}
+.nopic{
+  width: 128rpx;
+  height: 107rpx;
+  margin-top: 50rpx;
+  margin-left: 100rpx;
+  display: none;
+}
+.continue{
+  width: 300rpx;
+  height: 100rpx;
+  background: brown;
+  margin-left: 180rpx;
+  margin-top: 80rpx;
+  color: white;
+  font-weight: 600rpx;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 30rpx;
+  display: none;
 }
 @keyframes myone{
   form{width:600rpx;}
