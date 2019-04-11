@@ -10,14 +10,25 @@ Page({
 
   go: function() {
     wx.request({
-      url: 'http://localhost:10086/questionPaper/init',
+      url: getApp().globalData.host + '/questionPaper/init',
       method: 'GET',
       success: function(res) {
         console.log(res.data);
         if (res.data.code == '00') {
-          wx.navigateTo({
-            url: '../index1/dati1?questionPaperId='+res.data.content
-          })
+          let content = res.data.content;
+          if (content.firstQuestionType == 'SINGLE_SEL') {
+            wx.navigateTo({
+              url: '../index1/dati1?questionPaperId=' + content.questionPaperId
+            });
+          } else if (content.firstQuestionType == 'COMPLETION') {
+            wx.navigateTo({
+              url: '../index2/dati2?questionPaperId=' + content.questionPaperId
+            });
+          } else if (content.firstQuestionType == 'BANKED_CLOZE') {
+            wx.navigateTo({
+              url: '../index3/dati3?questionPaperId=' + content.questionPaperId
+            });
+          }
         }
       },
       fail: function(res) {

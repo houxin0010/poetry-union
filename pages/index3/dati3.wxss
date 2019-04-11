@@ -114,35 +114,41 @@ overflow: hidden;}
   animation: zhedang 1s 1s linear forwards;
 }
 
-.srk{position: relative;
+.srk5{position: relative;
     top: -500rpx;
-    left: 33rpx;
-    float:left;
+    left: 110rpx;
 }
 
+
+.srk7{position: relative;
+  top: -500rpx;
+  left: 10rpx;
+  display: none;
+}
 
 .a{
-  width: 100rpx;
-  height: 100rpx;
+  width: 85rpx;
+  height: 85rpx;
   margin: 0px auto;
-  margin-left: 30rpx;
-  
+  margin-left: 20rpx;
 }
+
+.a1{
+  width: 85rpx;
+  height: 85rpx;
+  margin: 0px auto;
+  margin-left: 20rpx;
+}
+
 
 .tigan{position: relative;
-    top: -450rpx;
-    float:left;
-    left: 25rpx;
+  top: -450rpx;
+  float:left;
+  left: 25rpx;
 
 }
 
-.answerfont{
-  position: relative;
-  float: left;
-  top:-930rpx;
-  left:85rpx;
-  
-}
+
 .c{
   margin-right:35px;
   font-size: 60rpx;
@@ -156,41 +162,54 @@ overflow: hidden;}
   margin-bottom: 20rpx;
 }
 
-.answerfont2{
+.answerfont5{
   position: relative;
-  float: left;
-  top:-820rpx;
-  left:85rpx;
+  top:-810rpx;
+  left:145rpx;
   
 }
-.d{
-  margin-right:35px;
-  font-size: 60rpx;
+
+.answerfont7{
+  position: relative;
+  top:-810rpx;
+  left:45rpx; 
+  display: none; 
 }
 
+.d{
+  margin-right:50rpx;
+  font-size:55rpx;
+  float: left;
+}
+
+.g{
+  margin-right:50rpx;
+  font-size:55rpx;
+  float: left;
+}
 
 .title1{
   position: relative;
   float: left;
-  top:-630rpx;
-  left:85rpx;
+  top:-620rpx;
+  left:90rpx;
   
 }
 .e{
- margin-right:88rpx;
-  font-size: 45rpx;
+ margin-right:85rpx;
+font-size: 45rpx;
 }
 
 
 .title2{
   position: relative;
   float: left;
-  top:-800rpx;
-  left:85rpx;
+  top:-790rpx;
+  left:90rpx;
   
 }
 .f{
-  margin-right:88rpx;
+  margin-right:85rpx;
   font-size: 45rpx;
 }
 

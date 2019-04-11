@@ -6,12 +6,23 @@ Page({
    */
   data: {
     questionPaperId: 0,
+    questionNumber: 0,
+    questionNo: 0,
     question: '',
     answer: '',
-    choiceA:'',
-    choiceB:'',
-    choiceC:'',
-    choiceD:''
+    currentScore: 0,
+    choiceA: '',
+    choiceB: '',
+    choiceC: '',
+    nextQuestionType: '',
+    questionNoSrc: '',
+    displayBlock: 'display: none;',
+    displayAlert: 'display: none;',
+    displayYes: 'display: none;',
+    displayNo: 'display: none;',
+    displayYespic: 'display: none;',
+    displaynopic: 'display: none;',
+    displayContinueBtn: 'display: none;'
   },
 
   /**
@@ -24,27 +35,65 @@ Page({
       questionPaperId: options.questionPaperId
     });
     wx.request({
-      url: 'http://localhost:10086/questionPaper/getQuestion',
+      url: getApp().globalData.host + '/questionPaper/getQuestion',
       data: {
-        questionPaperId: that.data.questionPaperId,
-        questionNumber: 1
+        questionPaperId: that.data.questionPaperId
       },
       method: 'GET',
-      header: {
-        'content-type': 'application/json'
-      },
       success: function(res) {
         console.log(res.data);
-        if(res.data.code == '00'){
+        if (res.data.code == '00') {
           let content = res.data.content;
           that.setData({
             question: content.question,
             answer: content.answer,
+            questionNo: content.questionNo,
+            currentScore: content.currentScore,
             choiceA: content.options[0],
             choiceB: content.options[1],
-            choiceC: content.options[2],
-            choiceD: content.options[3]
+            choiceC: content.options[2]
           });
+          if (content.questionNo == 1) {
+            that.setData({
+              questionNoSrc: '/img/titlenum/one.png'
+            });
+          } else if (content.questionNo == 2) {
+            that.setData({
+              questionNoSrc: '/img/titlenum/two.png'
+            });
+          } else if (content.questionNo == 3) {
+            that.setData({
+              questionNoSrc: '/img/titlenum/three.png'
+            });
+          } else if (content.questionNo == 4) {
+            that.setData({
+              questionNoSrc: '/img/titlenum/four.png'
+            });
+          } else if (content.questionNo == 5) {
+            that.setData({
+              questionNoSrc: '/img/titlenum/five.png'
+            });
+          } else if (content.questionNo == 6) {
+            that.setData({
+              questionNoSrc: '/img/titlenum/six.png'
+            });
+          } else if (content.questionNo == 7) {
+            that.setData({
+              questionNoSrc: '/img/titlenum/seven.png'
+            });
+          } else if (content.questionNo == 8) {
+            that.setData({
+              questionNoSrc: '/img/titlenum/eight.png'
+            });
+          } else if (content.questionNo == 9) {
+            that.setData({
+              questionNoSrc: '/img/titlenum/nine.png'
+            });
+          } else if (content.questionNo == 10) {
+            that.setData({
+              questionNoSrc: '/img/titlenum/ten.png'
+            });
+          }
           console.log(that.data);
         }
       },
@@ -52,6 +101,68 @@ Page({
         console.log("--------fail--------");
       }
     });
+  },
+
+  select: function(event) {
+    let that = this;
+    that.setData({
+      displayBlock: '',
+      displayAlert: '',
+      displayContinueBtn: ''
+    });
+    let selectAnswer = event.currentTarget.dataset.selectd;
+    console.log(selectAnswer);
+    let isCorrect;
+    if (selectAnswer == this.data.answer) {
+      that.setData({
+        displayYes: '',
+        displayYespic: ''
+      });
+      isCorrect = true;
+    } else {
+      that.setData({
+        displayNo: '',
+        displaynopic: ''
+      });
+      isCorrect = false;
+    }
+    wx.request({
+      url: getApp().globalData.host + '/questionPaper/completeQuestion',
+      data: {
+        questionPaperId: that.data.questionPaperId,
+        isCorrect: isCorrect
+      },
+      method: 'GET',
+      success: function(res) {
+        console.log(res.data);
+        that.setData({
+          nextQuestionType: res.data.content
+        });
+      },
+      fail: function(res) {
+        console.log("--------fail--------");
+      }
+    });
+  },
+
+  go: function() {
+    if (this.data.nextQuestionType == 'SINGLE_SEL') {
+      wx.navigateTo({
+        url: '../index1/dati1?questionPaperId=' + this.data.questionPaperId
+      });
+    } else if (this.data.nextQuestionType == 'COMPLETION') {
+      wx.navigateTo({
+        url: '../index2/dati2?questionPaperId=' + this.data.questionPaperId
+      });
+    } else if (this.data.nextQuestionType == 'BANKED_CLOZE') {
+      wx.navigateTo({
+        url: '../index3/dati3?questionPaperId=' + this.data.questionPaperId
+      });
+    } else {
+      wx.navigateTo({
+        url: '../phb/phb?questionPaperId=' + this.data.questionPaperId
+      });
+    }
   },
 
   /**

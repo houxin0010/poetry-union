@@ -3,32 +3,35 @@
   <image class='back' src='/img/top/beij.png'></image>
   <image class='leave' src='/img/top/fanhui.png'></image>
   <view class='chengji'>我的成绩</view>
-  <view class='fenshu'>0</view>
+  <view class='fenshu'>{{currentScore}}</view>
   <image class='mb' src='/img/top/maobi.png'></image>
-  <image class='tixu' src='/img/titlenum/one.png'></image>
+  <image class='tixu' src='{{questionNoSrc}}'></image>
   <view class='time'></view>
   <view class='time2'></view>
 
   <image class='tiban' src='/img/top/tiban.png'></image>
-  
-  <view class='question'>蜀道难难于上青天蜀蜀道难难于上青天蜀蜀道难难于上青天蜀蜀道难难于上青天蜀蜀道难难于上青天蜀蜀道难难于上青天蜀</view>
+
+  <view class='question'>{{question}}</view>
 
   <image class='zhedang' src='/img/top/zb.png'></image>
   <image class='A' src='/img/xztimg/xzt.png'></image>
   <image class='A' src='/img/xztimg/xzt.png'></image>
   <image class='A' src='/img/xztimg/xzt.png'></image>
   <view>
-    <image src='/img/xztimg/A.png' class='answerA'>A、{{choiceA}}</image>
-    <image src='/img/xztimg/B.png' class='answerB'>B、{{choiceB}}</image>
-    <image src='/img/xztimg/C.png' class='answerC'>C、{{choiceC}}</image>
+    <image src='/img/xztimg/A.png' class='answerA'></image>
+    <image src='/img/xztimg/B.png' class='answerB'></image>
+    <image src='/img/xztimg/C.png' class='answerC'></image>
+    <view class='answerfonta' bindtap='select' data-selectd='A'>{{choiceA}}</view>
+    <view class='answerfontb' bindtap='select' data-selectd='B'>{{choiceB}}</view>
+    <view class='answerfontc' bindtap='select' data-selectd='C'>{{choiceC}}</view>
   </view>
 
-<view class='black'></view>
- <view class='alert'>
-     <image class='yes' src='/img/alert/yes.png'></image>
-     <image class='no' src='/img/alert/no.png'></image>
-     <image class='yespic' src='/img/alert/xiao.png'></image>
-     <image class='nopic' src='/img/alert/ku.png'></image>
-     <view class='continue'>继续挑战</view>
-   </view>
+  <view class='black' style='{{displayBlock}}'></view>
+  <view class='alert' style='{{displayAlert}}'>
+    <image class='yes' style='{{displayYes}}' src='/img/alert/yes.png'></image>
+    <image class='no' style='{{displayNo}}' src='/img/alert/no.png'></image>
+    <image class='yespic' style='{{displayYespic}}' src='/img/alert/xiao.png'></image>
+    <image class='nopic' style='{{displaynopic}}' src='/img/alert/ku.png'></image>
+    <view class='continueBtn' style='{{displayContinueBtn}}' bindtap='go'>继续挑战</view>
+  </view>
 </view>

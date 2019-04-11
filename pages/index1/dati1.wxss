@@ -1,28 +1,28 @@
 /* pages/index1/dati1.wxss */
-.xzt{width: 750rpx;
-height: 1344rpx;
-position: relative;
-overflow: hidden;
+
+.xzt {
+  width: 750rpx;
+  height: 1344rpx;
+  position: relative;
 }
 
-.back{
-  width:750rpx;
+.back {
+  width: 750rpx;
   height: 1334rpx;
 }
 
-.leave{
-   width: 200rpx;
-   height: 79rpx;
-   position: relative;
-   top: -1274rpx;
-   left: 30rpx;
+.leave {
+  width: 200rpx;
+  height: 79rpx;
+  position: relative;
+  top: -1274rpx;
+  left: 30rpx;
 }
 
-
-.chengji{
+.chengji {
   width: 200rpx;
   height: 75rpx;
-  background:black;
+  background: black;
   line-height: 75rpx;
   text-align: center;
   color: white;
@@ -30,9 +30,9 @@ overflow: hidden;
   top: -1234rpx;
   left: 500rpx;
   font-size: 30rpx;
-
 }
-.fenshu{
+
+.fenshu {
   width: 196rpx;
   height: 71rpx;
   border: 1rpx solid gray;
@@ -44,25 +44,26 @@ overflow: hidden;
   left: 500rpx;
 }
 
-.mb{
+.mb {
   width: 136rpx;
   height: 136rpx;
   position: relative;
-  top: -1340rpx; 
+  top: -1340rpx;
   opacity: 0.5;
-  animation:aaa 2s  linear forwards;
+  animation: aaa 2s linear forwards;
 }
-.tixu{
+
+.tixu {
   width: 161rpx;
   height: 57rpx;
   position: relative;
-  top:-1364rpx;
+  top: -1364rpx;
   opacity: 0;
   animation: tmd 2s 1s linear forwards;
-  z-index: 2;  
+  z-index: 2;
 }
 
-.time{
+.time {
   width: 600rpx;
   height: 20rpx;
   background: black;
@@ -73,18 +74,18 @@ overflow: hidden;
   opacity: 0.1;
 }
 
-.time2{
+.time2 {
   width: 600rpx;
   height: 20rpx;
-  background:green;
+  background: green;
   border-radius: 20rpx;
   position: relative;
   top: -1364rpx;
   left: 75rpx;
-  animation:myone 30s 2.5s linear forwards;
+  animation: myone 30s 2.5s linear forwards;
 }
 
-.tiban{
+.tiban {
   width: 700rpx;
   height: 400rpx;
   position: relative;
@@ -92,7 +93,7 @@ overflow: hidden;
   left: 25rpx;
 }
 
-.question{
+.question {
   width: 550rpx;
   height: 360rpx;
   font-size: 35rpx;
@@ -104,18 +105,19 @@ overflow: hidden;
   animation: tmd 1.5s linear forwards;
 }
 
-.zhedang{
+.zhedang {
   width: 650rpx;
   height: 390rpx;
   position: relative;
   top: -2100rpx;
   left: 50rpx;
-  border-radius:10rpx;
+  border-radius: 10rpx;
+  opacity: 0;
   animation: zhedang 1s 1s linear forwards;
 }
 
-.A{
-  width:664rpx;
+.A {
+  width: 664rpx;
   height: 100rpx;
   position: relative;
   top: -2050rpx;
@@ -125,47 +127,80 @@ overflow: hidden;
   margin-bottom: 50rpx;
 }
 
-.answerA{
-width: 33rpx;
-height: 48rpx;
-position: relative;
-top:-2500rpx;
-left: 120rpx;
-opacity: 0;
-animation: tmd 1s 1s linear forwards;
+.answerA {
+  width: 33rpx;
+  height: 48rpx;
+  position: relative;
+  top: -2490rpx;
+  left: 120rpx;
+  opacity: 0;
+  animation: tmd 1s 1s linear forwards;
 }
 
-.answerB{
-width: 33rpx;
-height: 48rpx;
-position: relative;
-top:-2340rpx;
-left: 90rpx;
-opacity: 0;
-animation: tmd 1s 1.5s linear forwards;
+.answerB {
+  width: 33rpx;
+  height: 48rpx;
+  position: relative;
+  top: -2330rpx;
+  left: 90rpx;
+  opacity: 0;
+  animation: tmd 1s 1.5s linear forwards;
 }
 
-.answerC{
-width: 33rpx;
-height: 48rpx;
-position: relative;
-top:-2180rpx;
-left: 60rpx;
-opacity: 0;
-animation: tmd 1s 2s linear forwards;
+.answerC {
+  width: 33rpx;
+  height: 48rpx;
+  position: relative;
+  top: -2180rpx;
+  left: 60rpx;
+  opacity: 0;
+  animation: tmd 1s 2s linear forwards;
 }
 
-.black{
+.answerfonta {
+  color: white;
+  position: relative;
+  font-size: 45rpx;
+  font-weight: 600;
+  top: -2555rpx;
+  left: 200rpx;
+  opacity: 0;
+  animation: tmd 1s 1s linear forwards;
+}
+
+.answerfontb {
+  color: white;
+  position: relative;
+  font-size: 45rpx;
+  font-weight: 600;
+  top: -2455rpx;
+  left: 200rpx;
+  opacity: 0;
+  animation: tmd 1s 1.5s linear forwards;
+}
+
+.answerfontc {
+  color: white;
+  position: relative;
+  font-size: 45rpx;
+  font-weight: 600;
+  top: -2360rpx;
+  left: 200rpx;
+  opacity: 0;
+  animation: tmd 1s 2s linear forwards;
+}
+
+.black {
   width: 750rpx;
   height: 1334rpx;
   background: black;
   position: relative;
   top: -3480rpx;
   opacity: 0.5;
-  display: none;
+  /* display: none; */
 }
 
-.alert{
+.alert {
   width: 650rpx;
   height: 390rpx;
   background: white;
@@ -174,39 +209,42 @@ animation: tmd 1s 2s linear forwards;
   left: 50rpx;
   border-radius: 50rpx;
   border: 5rpx solid darkgoldenrod;
- display: none;
+  /* display: none; */
 }
 
-.yes{
+.yes {
   width: 225rpx;
   height: 53rpx;
   margin-top: 50rpx;
   margin-left: 100rpx;
-  display: none;
+  /* display: none; */
 }
 
-.no{
+.no {
   width: 225rpx;
   height: 53rpx;
   margin-top: 50rpx;
   margin-left: 100rpx;
-  display: none;
+  /* display: none; */
 }
-.yespic{
+
+.yespic {
   width: 128rpx;
   height: 107rpx;
   margin-top: 50rpx;
   margin-left: 100rpx;
-  display: none; 
+  /* display: none; */
 }
-.nopic{
+
+.nopic {
   width: 128rpx;
   height: 107rpx;
   margin-top: 50rpx;
   margin-left: 100rpx;
-   display: none; 
+  /* display: none; */
 }
-.continue{
+
+.continueBtn {
   width: 300rpx;
   height: 100rpx;
   background: brown;
@@ -217,25 +255,52 @@ animation: tmd 1s 2s linear forwards;
   text-align: center;
   line-height: 100rpx;
   border-radius: 30rpx;
-  display: none; 
-}
-@keyframes myone{
-  form{width:600rpx;}
-  to{width: 0rpx;}
+  /* display: none; */
 }
 
-@keyframes tmd{
-  form{opacity: 0;}
-  to{opacity: 1;}
+@keyframes myone {
+  form {
+    width: 600rpx;
+  }
+
+  to {
+    width: 0rpx;
+  }
 }
 
-@keyframes aaa{
-  0%{left: 0rpx; opacity: 1;}
-  50%{left: 200rpx; opacity:0.1;}
-  100%{left: 0rpx; opacity: 1;}
+@keyframes tmd {
+  form {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes zhedang{
-  from{opacity: 1;}
-  to{opacity: 0;}
+@keyframes aaa {
+  0% {
+    left: 0rpx;
+    opacity: 1;
+  }
+
+  50% {
+    left: 200rpx;
+    opacity: 0.1;
+  }
+
+  100% {
+    left: 0rpx;
+    opacity: 1;
+  }
+}
+
+@keyframes zhedang {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
