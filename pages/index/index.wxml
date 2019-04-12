@@ -1,14 +1,14 @@
 <view class='content'>
-  <image class='ty' src='/img/syimg/taiy.png'></image>
-  <image class='niao' src='/img/syimg/yanzi.png'></image>
-  <image class='m1' src='/img/syimg/mountain1.png'></image>
-  <image class='m2' src='/img/syimg/mountain2.png'></image>
-  <image class='m3' src='/img/syimg/mountain3.png'></image>
-  <image class='shany' src='/img/syimg/xuanya.png'></image>
-  <image class='shiren' src='/img/syimg/shiren.png'></image>
-  <image class='start' src='/img/syimg/kaishiyoux.png'></image>
+  <image class='ty' src='{{imgServer}}/img/syimg/taiy.png'></image>
+  <image class='niao' src='{{imgServer}}/img/syimg/yanzi.png'></image>
+  <image class='m1' src='{{imgServer}}/img/syimg/mountain1.png'></image>
+  <image class='m2' src='{{imgServer}}/img/syimg/mountain2.png'></image>
+  <image class='m3' src='{{imgServer}}/img/syimg/mountain3.png'></image>
+  <image class='shany' src='{{imgServer}}/img/syimg/xuanya.png'></image>
+  <image class='shiren' src='{{imgServer}}/img/syimg/shiren.png'></image>
+  <image class='start' src='{{imgServer}}/img/syimg/kaishiyoux.png'></image>
   <view bindtap='go'>
     <text class='start_button'>开始游戏</text>
   </view>
-  <image class='m4' src='/img/syimg/mountain4.png'></image>
+  <image class='m4' src='{{imgServer}}/img/syimg/mountain4.png'></image>
 </view>

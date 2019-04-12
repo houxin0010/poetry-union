@@ -1,6 +1,6 @@
 // pages/index2/dati2.js
+var app = getApp();
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -20,7 +20,8 @@ Page({
     displayNo: 'display: none;',
     displayYespic: 'display: none;',
     displaynopic: 'display: none;',
-    displayContinueBtn: 'display: none;'
+    displayContinueBtn: 'display: none;',
+    imgServer: app.globalData.imgServer
   },
 
   /**
@@ -33,7 +34,7 @@ Page({
       questionPaperId: options.questionPaperId
     });
     wx.request({
-      url: getApp().globalData.host + '/questionPaper/getQuestion',
+      url: app.globalData.host + '/questionPaper/getQuestion',
       data: {
         questionPaperId: that.data.questionPaperId
       },
@@ -50,43 +51,43 @@ Page({
           });
           if (content.questionNo == 1) {
             that.setData({
-              questionNoSrc: '/img/titlenum/one.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/one.png'
             });
           } else if (content.questionNo == 2) {
             that.setData({
-              questionNoSrc: '/img/titlenum/two.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/two.png'
             });
           } else if (content.questionNo == 3) {
             that.setData({
-              questionNoSrc: '/img/titlenum/three.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/three.png'
             });
           } else if (content.questionNo == 4) {
             that.setData({
-              questionNoSrc: '/img/titlenum/four.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/four.png'
             });
           } else if (content.questionNo == 5) {
             that.setData({
-              questionNoSrc: '/img/titlenum/five.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/five.png'
             });
           } else if (content.questionNo == 6) {
             that.setData({
-              questionNoSrc: '/img/titlenum/six.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/six.png'
             });
           } else if (content.questionNo == 7) {
             that.setData({
-              questionNoSrc: '/img/titlenum/seven.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/seven.png'
             });
           } else if (content.questionNo == 8) {
             that.setData({
-              questionNoSrc: '/img/titlenum/eight.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/eight.png'
             });
           } else if (content.questionNo == 9) {
             that.setData({
-              questionNoSrc: '/img/titlenum/nine.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/nine.png'
             });
           } else if (content.questionNo == 10) {
             that.setData({
-              questionNoSrc: '/img/titlenum/ten.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/ten.png'
             });
           }
           console.log(that.data);
@@ -126,7 +127,7 @@ Page({
       isCorrect = false;
     }
     wx.request({
-      url: getApp().globalData.host + '/questionPaper/completeQuestion',
+      url: app.globalData.host + '/questionPaper/completeQuestion',
       data: {
         questionPaperId: that.data.questionPaperId,
         isCorrect: isCorrect

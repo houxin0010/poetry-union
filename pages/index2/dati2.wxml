@@ -1,22 +1,22 @@
 <!--pages/index2/dati2.wxml-->
 <view class='xzt'>
-  <image class='back' src='/img/top/beij.png'></image>
-  <image class='leave' src='/img/top/fanhui.png'></image>
+  <image class='back' src='{{imgServer}}/img/top/beij.png'></image>
+  <image class='leave' src='{{imgServer}}/img/top/fanhui.png'></image>
   <view class='chengji'>我的成绩</view>
   <view class='fenshu'>{{currentScore}}</view>
-  <image class='mb' src='/img/top/maobi.png'></image>
+  <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
   <image class='tixu' src='{{questionNoSrc}}'></image>
   <view class='time'></view>
   <view class='time2'></view>
-  <image class='tiban' src='/img/top/tiban.png'></image>
+  <image class='tiban' src='{{imgServer}}/img/top/tiban.png'></image>
   <view class='question'>{{question}}</view>
-  <image class='zhedang' src='/img/top/zb.png'></image>
+  <image class='zhedang' src='{{imgServer}}/img/top/zb.png'></image>
   <view class='black' style='{{displayBlock}}'></view>
   <view class='alert' style='{{displayAlert}}'>
-    <image class='yes' style='{{displayYes}}' src='/img/alert/yes.png'></image>
-    <image class='no' style='{{displayNo}}' src='/img/alert/no.png'></image>
-    <image class='yespic' style='{{displayYespic}}' src='/img/alert/xiao.png'></image>
-    <image class='nopic' style='{{displaynopic}}' src='/img/alert/ku.png'></image>
+    <image class='yes' style='{{displayYes}}' src='{{imgServer}}/img/alert/yes.png'></image>
+    <image class='no' style='{{displayNo}}' src='{{imgServer}}/img/alert/no.png'></image>
+    <image class='yespic' style='{{displayYespic}}' src='{{imgServer}}/img/alert/xiao.png'></image>
+    <image class='nopic' style='{{displaynopic}}' src='{{imgServer}}/img/alert/ku.png'></image>
     <view class='continue' style='{{displayContinueBtn}}' bindtap='go'>继续挑战</view>
   </view>
 </view>
@@ -26,5 +26,5 @@
   <input type='text' bindinput="answerInput" placeholder="在此输入答案"/>
 </view>
 <view bindtap='commitAnswer'>
-  <image class='xst' src='/img/tktimg/ren.png'></image>
+  <image class='xst' src='{{imgServer}}/img/tktimg/ren.png'></image>
 </view>

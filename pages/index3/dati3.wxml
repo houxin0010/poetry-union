@@ -1,42 +1,42 @@
 <!--pages/index3/dati3.wxml-->
 <view class='xzt'>
-  <image class='back' src='/img/top/beij.png'></image>
-  <image class='leave' src='/img/top/fanhui.png'></image>
+  <image class='back' src='{{imgServer}}/img/top/beij.png'></image>
+  <image class='leave' src='{{imgServer}}/img/top/fanhui.png'></image>
 
   <view class='chengji'>我的成绩</view>
   <view class='fenshu'>{{currentScore}}</view>
-  <image class='mb' src='/img/top/maobi.png'></image>
+  <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
   <image class='tixu' src='{{questionNoSrc}}'></image>
   <view class='time'></view>
   <view class='time2'></view>
-  <image class='tiban' src='/img/top/tiban.png'></image>
+  <image class='tiban' src='{{imgServer}}/img/top/tiban.png'></image>
   <view class='question'>{{question}}</view>
-  <image class='zhedang' src='/img/top/zb.png'></image>
+  <image class='zhedang' src='{{imgServer}}/img/top/zb.png'></image>
   <view class='black'></view>
   <view class='alert'>
-    <image class='yes' src='/img/alert/yes.png'></image>
-    <image class='no' src='/img/alert/no.png'></image>
-    <image class='yespic' src='/img/alert/xiao.png'></image>
-    <image class='nopic' src='/img/alert/ku.png'></image>
+    <image class='yes' src='{{imgServer}}/img/alert/yes.png'></image>
+    <image class='no' src='{{imgServer}}/img/alert/no.png'></image>
+    <image class='yespic' src='{{imgServer}}/img/alert/xiao.png'></image>
+    <image class='nopic' src='{{imgServer}}/img/alert/ku.png'></image>
     <view class='continue'>继续挑战</view>
   </view>
 </view>
 <view class='srk5'>
-  <image class='a' src='/img/jggimg/tianc.png'></image>
-  <image class='a' src='/img/jggimg/tianc.png'></image>
-  <image class='a' src='/img/jggimg/tianc.png'></image>
-  <image class='a' src='/img/jggimg/tianc.png'></image>
-  <image class='a' src='/img/jggimg/tianc.png'></image>
+  <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
 </view>
 
 <view class='srk7'>
-  <image class='a1' src='/img/jggimg/tianc.png'></image>
-  <image class='a1' src='/img/jggimg/tianc.png'></image>
-  <image class='a1' src='/img/jggimg/tianc.png'></image>
-  <image class='a1' src='/img/jggimg/tianc.png'></image>
-  <image class='a1' src='/img/jggimg/tianc.png'></image>
-  <image class='a1' src='/img/jggimg/tianc.png'></image>
-  <image class='a1' src='/img/jggimg/tianc.png'></image>
+  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
 </view>
 
 

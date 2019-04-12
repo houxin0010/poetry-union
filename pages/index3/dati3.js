@@ -1,6 +1,6 @@
 // pages/index3/dati3.js
+var app = getApp();
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -11,7 +11,8 @@ Page({
     question: '',
     answer: '',
     currentScore: 0,
-    questionNoSrc: ''
+    questionNoSrc: '',
+    imgServer: app.globalData.imgServer
   },
 
   /**
@@ -24,7 +25,7 @@ Page({
       questionPaperId: options.questionPaperId
     });
     wx.request({
-      url: getApp().globalData.host + '/questionPaper/getQuestion',
+      url: app.globalData.host + '/questionPaper/getQuestion',
       data: {
         questionPaperId: that.data.questionPaperId
       },

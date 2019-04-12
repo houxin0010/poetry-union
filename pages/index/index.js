@@ -1,16 +1,16 @@
 // pages/index2/dati2.js
+var app = getApp();
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-
+    imgServer:app.globalData.imgServer
   },
 
   go: function() {
     wx.request({
-      url: getApp().globalData.host + '/questionPaper/init',
+      url: app.globalData.host + '/questionPaper/init',
       method: 'GET',
       success: function(res) {
         console.log(res.data);
