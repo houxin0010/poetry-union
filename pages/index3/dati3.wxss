@@ -30,6 +30,7 @@
   top: -1274rpx;
   left: 30rpx;
 }
+
 .chengji {
   width: 200rpx;
   height: 75rpx;
@@ -166,17 +167,15 @@
   font-size: 60rpx;
 }
 
-
-
 .answerfont5 {
   position: relative;
-  top: -810rpx;
+  top: -790rpx;
   left: 145rpx;
 }
 
 .answerfont7 {
   position: relative;
-  top: -810rpx;
+  top: -790rpx;
   left: 45rpx;
   /* display: none; */
 }
@@ -195,11 +194,10 @@
 
 .title1 {
   width: 750rpx;
-  height:100rpx;
+  height: 100rpx;
   position: relative;
   float: left;
   top: -500rpx;
- left: -20rpx;
 }
 
 .e {
@@ -207,8 +205,8 @@
   float: left;
   display: block;
   position: relative;
-  left: 65rpx;
-  top: 110rpx;
+  left: 15rpx;
+  top: 10rpx;
   z-index: 1;
 }
 
@@ -217,12 +215,32 @@
   height: 80rpx;
   float: left;
   position: relative;
+  top: -55rpx;
+}
+
+.tiback1 {
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  background: red;
+  position: relative;
+  top: 85rpx;
+  margin-right: 20rpx;
+  left: 100rpx;
+}
+
+.tiback2 {
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  background: red;
+  position: relative;
   top: 100rpx;
 }
 
 .title2 {
   width: 750rpx;
-  height:100rpx;
+  height: 100rpx;
   position: relative;
   float: left;
   top: -480rpx;
@@ -246,7 +264,6 @@
   position: relative;
   top: 100rpx;
 }
-
 
 .black {
   width: 750rpx;

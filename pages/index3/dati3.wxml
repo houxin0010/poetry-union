@@ -14,12 +14,18 @@
     <image class='zhedang' src='{{imgServer}}/img/top/zb.png'></image>
     <view class='black'></view>
     <view class='alert'>
-      <image class='yes' src='{{imgServer}}/img/alert/yes.png'></image>
-      <image class='no' src='{{imgServer}}/img/alert/no.png'></image>
-      <image class='yespic' src='{{imgServer}}/img/alert/xiao.png'></image>
-      <image class='nopic' src='{{imgServer}}/img/alert/ku.png'></image>
-      <view class='correct_answer'>正确答案是：</view>
-      <view class='continue'>继续挑战</view>
+      <block wx:if="{{correctPrompt}}">
+        <image class='yes' src='{{imgServer}}/img/alert/yes.png'></image>
+        <image class='yespic' src='{{imgServer}}/img/alert/xiao.png'></image>
+        <view class='continue'>继续挑战</view>
+      </block>
+
+      <block wx:if="{{isRight}}">
+        <image class='no' src='{{imgServer}}/img/alert/no.png'></image>
+        <image class='nopic' src='{{imgServer}}/img/alert/ku.png'></image>
+        <view class='correct_answer'>正确答案是：{{answer}}</view>
+        <view class='continue'>继续挑战</view>
+      </block>
     </view>
   </view>
 
@@ -45,39 +51,14 @@
     </view>
   </block>
 
-  <block wx:if="{{answerLength === 5}}">
-    <view class='answerfont5'>
-      <view class='d'></view>
-      <view class='d'></view>
-      <view class='d'></view>
-      <view class='d'></view>
-      <view class='d'></view>
-    </view>
-  </block>
-
-  <block wx:if="{{answerLength === 7}}">
-    <view class='answerfont7'>
-      <view class='g' wx:for="{{userAnswerArray}}">{{item}}</view>
-    </view>
-  </block>
-
-  <!-- <view class='title1'>
-    <view wx:for="{{options}}">
-      <view wx:if="{{index < options.length / 2}}">
-        <text class='e' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
-        <view wx:if="{{item != ''}}">
-          <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-        </view>
-      </view>
-    </view>
-  </view> -->
-
   <view class='title1'>
     <view wx:for="{{options}}">
       <view wx:if="{{index < options.length / 2}}">
-        <text class='e' bindtap='select' data-selectd='{{index}}'>{{item.message}}</text>
-        <view class='tiback1' wx:if="{{item.show}}">
-          <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+        <view class='tiback1'>
+          <view wx:if="{{item.show}}">
+            <text class='e' bindtap='select' data-selectd='{{index}}'>{{item.message}}</text>
+            <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+          </view>
         </view>
       </view>
     </view>
@@ -91,4 +72,17 @@
       </view>
     </view>
   </view>
+
+
+  <block wx:if="{{answerLength === 5}}">
+    <view class='answerfont5'>
+      <view class='d' wx:for="{{userAnswerArray}}">{{item}}</view>
+    </view>
+  </block>
+
+  <block wx:if="{{answerLength === 7}}">
+    <view class='answerfont7'>
+      <view class='g' wx:for="{{userAnswerArray}}">{{item}}</view>
+    </view>
+  </block>
 </view>
