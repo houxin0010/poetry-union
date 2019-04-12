@@ -21,55 +21,63 @@
     <view class='continue'>继续挑战</view>
   </view>
 </view>
-<view class='srk5'>
-  <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-</view>
 
-<view class='srk7'>
-  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-</view>
+<block wx:if="{{answerLength === 5}}">
+  <view class='srk5'>
+    <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  </view>
+</block>
 
-
+<block wx:if="{{answerLength === 7}}">
+  <view class='srk7'>
+    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  </view>
+</block>
 
 <view class='tigan'>
-  <image class='b' src='/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='/img/jggimg/tiandaa.png'></image>
-</view>
-<view class='answerfont5'>
-  <view class='d'>阿</view>
-  <view class='d'>阿</view>
-  <view class='d'>阿</view>
-  <view class='d'>阿</view>
-  <view class='d'>阿</view>
+  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
 </view>
 
-<view class='answerfont7'>
-  <view class='g'>阿</view>
-  <view class='g'>阿</view>
-  <view class='g'>阿</view>
-  <view class='g'>阿</view>
-  <view class='g'>阿</view>
-  <view class='g'>阿</view>
-  <view class='g'>阿</view>
-</view>
+<block wx:if="{{answerLength === 5}}">
+  <view class='answerfont5'>
+    <view class='d'>阿</view>
+    <view class='d'>阿</view>
+    <view class='d'>阿</view>
+    <view class='d'>阿</view>
+    <view class='d'>阿</view>
+  </view>
+</block>
+
+<block wx:if="{{answerLength === 7}}">
+  <view class='answerfont7'>
+    <view class='g'>阿</view>
+    <view class='g'>阿</view>
+    <view class='g'>阿</view>
+    <view class='g'>阿</view>
+    <view class='g'>阿</view>
+    <view class='g'>阿</view>
+    <view class='g'>阿</view>
+  </view>
+</block>
 
 <view class='title1'>
   <text class='e'>义</text>

@@ -10,15 +10,28 @@ Page({
     questionNo: 0,
     question: '',
     answer: '',
+    answerLength: 0,
     currentScore: 0,
     questionNoSrc: '',
+    options1: '',
+    options2: '',
+    options3: '',
+    options4: '',
+    options5: '',
+    options6: '',
+    options7: '',
+    options8: '',
+    options9: '',
+    options10: '',
+    options11: '',
+    options12: '',
     imgServer: app.globalData.imgServer
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
     console.log(options);
     var that = this;
     that.setData({
@@ -30,7 +43,7 @@ Page({
         questionPaperId: that.data.questionPaperId
       },
       method: 'GET',
-      success: function (res) {
+      success: function(res) {
         console.log(res.data);
         if (res.data.code == '00') {
           let content = res.data.content;
@@ -38,53 +51,54 @@ Page({
             question: content.question,
             answer: content.answer,
             questionNo: content.questionNo,
-            currentScore: content.currentScore
+            currentScore: content.currentScore,
+            answerLength: content.answer.length
           });
           if (content.questionNo == 1) {
             that.setData({
-              questionNoSrc: '/img/titlenum/one.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/one.png'
             });
           } else if (content.questionNo == 2) {
             that.setData({
-              questionNoSrc: '/img/titlenum/two.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/two.png'
             });
           } else if (content.questionNo == 3) {
             that.setData({
-              questionNoSrc: '/img/titlenum/three.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/three.png'
             });
           } else if (content.questionNo == 4) {
             that.setData({
-              questionNoSrc: '/img/titlenum/four.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/four.png'
             });
           } else if (content.questionNo == 5) {
             that.setData({
-              questionNoSrc: '/img/titlenum/five.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/five.png'
             });
           } else if (content.questionNo == 6) {
             that.setData({
-              questionNoSrc: '/img/titlenum/six.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/six.png'
             });
           } else if (content.questionNo == 7) {
             that.setData({
-              questionNoSrc: '/img/titlenum/one.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/one.png'
             });
           } else if (content.questionNo == 8) {
             that.setData({
-              questionNoSrc: '/img/titlenum/saven.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/saven.png'
             });
           } else if (content.questionNo == 9) {
             that.setData({
-              questionNoSrc: '/img/titlenum/nine.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/nine.png'
             });
           } else if (content.questionNo == 10) {
             that.setData({
-              questionNoSrc: '/img/titlenum/ten.png'
+              questionNoSrc: that.data.imgServer + '/img/titlenum/ten.png'
             });
           }
           console.log(that.data);
         }
       },
-      fail: function (res) {
+      fail: function(res) {
         console.log("--------fail--------");
       }
     });
@@ -93,49 +107,49 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })
