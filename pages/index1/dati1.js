@@ -16,13 +16,8 @@ Page({
     choiceC: '',
     nextQuestionType: '',
     questionNoSrc: '',
-    displayBlock: 'display: none;',
-    displayAlert: 'display: none;',
-    displayYes: 'display: none;',
-    displayNo: 'display: none;',
-    displayYespic: 'display: none;',
-    displaynopic: 'display: none;',
-    displayContinueBtn: 'display: none;',
+    correctPrompt: false,
+    errorHint: false,
     imgServer: app.globalData.imgServer
   },
 
@@ -116,14 +111,12 @@ Page({
     let isCorrect;
     if (selectAnswer == this.data.answer) {
       that.setData({
-        displayYes: '',
-        displayYespic: ''
+        correctPrompt: true
       });
       isCorrect = true;
     } else {
       that.setData({
-        displayNo: '',
-        displaynopic: ''
+        errorHint: true
       });
       isCorrect = false;
     }

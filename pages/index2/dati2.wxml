@@ -12,7 +12,25 @@
   <image class='tiban' src='{{imgServer}}/img/top/tiban.png'></image>
   <view class='question'>{{question}}</view>
   <image class='zhedang' src='{{imgServer}}/img/top/zb.png'></image>
-  <view class='black' style='{{displayBlock}}'></view>
+  <block wx:if="{{correctPrompt}}">
+      <view class='black'></view>
+      <view class='alert'>
+        <image class='yes' src='{{imgServer}}/img/alert/yes.png'></image>
+        <image class='yespic' src='{{imgServer}}/img/alert/xiao.png'></image>
+        <view class='continue' bindtap='go'>继续挑战</view>
+      </view>
+    </block>
+
+    <block wx:if="{{errorHint}}">
+      <view class='black'></view>
+      <view class='alert'>
+        <image class='no' src='{{imgServer}}/img/alert/no.png'></image>
+        <image class='nopic' src='{{imgServer}}/img/alert/ku.png'></image>
+        <view class='correct_answer'>正确答案是：{{answer}}</view>
+        <view class='continue' bindtap='go'>继续挑战</view>
+      </view>
+    </block>
+  <!-- <view class='black' style='{{displayBlock}}'></view>
   <view class='alert' style='{{displayAlert}}'>
     <image class='yes' style='{{displayYes}}' src='{{imgServer}}/img/alert/yes.png'></image>
     <image class='no' style='{{displayNo}}' src='{{imgServer}}/img/alert/no.png'></image>
@@ -20,7 +38,7 @@
     <image class='nopic' style='{{displaynopic}}' src='{{imgServer}}/img/alert/ku.png'></image>
      <view class='correct_answer'>正确答案是：</view>
     <view class='continue' style='{{displayContinueBtn}}' bindtap='go'>继续挑战</view>
-  </view>
+  </view> -->
 </view>
 <text class='font'>在这里输入答案：</text>
 <text class='notes'>填好了点击小书童提交哦</text>

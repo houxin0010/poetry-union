@@ -9,24 +9,23 @@ Page({
     questionNumber: 0,
     questionNo: 0,
     question: '',
-    options: [{
-      message: '',
-      show: true
-    }],
+    options: [],
     answer: '',
-    userAnser: '',
+    userAnswer: '',
     userAnswerArray: [],
     correctPrompt: false,
+    errorHint:false,
     answerLength: 0,
     currentScore: 0,
     questionNoSrc: '',
+    nextQuestionType:'',
     imgServer: app.globalData.imgServer
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
     console.log(options);
     var that = this;
     that.setData({
@@ -38,24 +37,14 @@ Page({
         questionPaperId: that.data.questionPaperId
       },
       method: 'GET',
-      success: function (res) {
+      success: function(res) {
         console.log(res.data);
         if (res.data.code == '00') {
           let content = res.data.content;
-          let options = [];
-          // for (var i = 0; i < content.options.length; i++) {
-          //   options.message = content.options[i];
-          // }
-          for (let i of content.options) {
-            options.push({
-              message: i,
-              show: true
-            });
-          }
           that.setData({
             question: content.question,
             answer: content.answer,
-            options: options,
+            options: content.options,
             questionNo: content.questionNo,
             currentScore: content.currentScore,
             answerLength: content.answer.length
@@ -106,78 +95,126 @@ Page({
           console.log(that.data);
         }
       },
-      fail: function (res) {
+      fail: function(res) {
         console.log("--------fail--------");
       }
     });
   },
 
-  select: function (event) {
-    console.log(event);
+  select: function(event) {
     let that = this;
     let index = event.currentTarget.dataset.selectd;
-    if (that.data.userAnswerArray.length >= that.data.answer.length) {
+    let options = that.data.options;
+    let userAnswer = that.data.userAnswer + options[index];
+    let userAnswerArray = that.data.userAnswerArray;
+    userAnswerArray.push(options[index]);
+    options[index] = '';
+    that.setData({
+      options: options,
+      userAnswer: userAnswer,
+      userAnswerArray: userAnswerArray
+    });
+    if (userAnswer.length >= that.data.answer.length) {
+      console.log("----------",this.data);
+      let isCorrect;
+      if (userAnswer == that.data.answer){
+        that.setData({
+          correctPrompt: true
+        });
+        isCorrect = true;
+      }else{
+        that.setData({
+          errorHint: true
+        });
+        isCorrect = false;
+      }
 
-    } else {
-      let options = that.data.options;
-      let userAnswerArray = that.data.userAnswerArray;
-      userAnswerArray.push(options[index].message);
-      // options[index].message = '';
-      options[index].show = false;
-      that.setData({
-        options: options,
-        userAnswerArray: userAnswerArray
+      wx.request({
+        url: app.globalData.host + '/questionPaper/completeQuestion',
+        data: {
+          questionPaperId: that.data.questionPaperId,
+          isCorrect: isCorrect
+        },
+        method: 'GET',
+        success: function (res) {
+          console.log(res.data);
+          that.setData({
+            nextQuestionType: res.data.content
+          });
+        },
+        fail: function (res) {
+          console.log("--------fail--------");
+        }
       });
-      console.log(that.data);
+    }
+  },
+
+  go: function () {
+    if (this.data.nextQuestionType == 'SINGLE_SEL') {
+      wx.navigateTo({
+        url: '../index1/dati1?questionPaperId=' + this.data.questionPaperId
+      });
+    } else if (this.data.nextQuestionType == 'COMPLETION') {
+      wx.navigateTo({
+        url: '../index2/dati2?questionPaperId=' + this.data.questionPaperId
+      });
+    } else if (this.data.nextQuestionType == 'BANKED_CLOZE') {
+      wx.navigateTo({
+        url: '../index3/dati3?questionPaperId=' + this.data.questionPaperId
+      });
+    } else {
+      wx.navigateTo({
+        url: '../phb/phb?questionPaperId=' + this.data.questionPaperId
+      });
     }
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })

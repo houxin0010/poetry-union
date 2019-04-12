@@ -1,11 +1,12 @@
 // pages/phb/phb.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    imgServer: app.globalData.imgServer
   },
 
   /**
