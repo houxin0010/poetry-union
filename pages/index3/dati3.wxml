@@ -46,7 +46,7 @@
     </view>
   </block>
 
-  <view class='tigan'>
+  <!-- <view class='tigan'>
     <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
     <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
     <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
@@ -57,7 +57,7 @@
     <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
     <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
     <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  </view>
+  </view> -->
 
   <block wx:if="answerLength === 5">
     <view class='answerfont5'>
@@ -85,6 +85,7 @@
     <view wx:for="{{options}}">
       <view wx:if="{{index < options.length / 2}}">
         <text class='e'>{{item}}</text>
+        <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
       </view>
     </view>
   </view>
@@ -93,6 +94,7 @@
     <view wx:for="{{options}}">
       <view wx:if="{{index >= options.length / 2}}">
         <text class='e'>{{item}}</text>
+        <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
       </view>
     </view>
   </view>
