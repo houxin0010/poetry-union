@@ -2,7 +2,7 @@
 <view class='aaa'>
   <view class='xzt'>
     <image class='back' src='{{imgServer}}/img/top/beij.png'></image>
-     <view class='leave' >首页</view>
+    <view class='leave'>首页</view>
     <view class='chengji'>我的成绩</view>
     <view class='fenshu'>{{currentScore}}</view>
     <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
@@ -47,7 +47,7 @@
 
   <block wx:if="{{answerLength === 5}}">
     <view class='answerfont5'>
-      <view class='d'></view>  
+      <view class='d'></view>
       <view class='d'></view>
       <view class='d'></view>
       <view class='d'></view>
@@ -57,29 +57,36 @@
 
   <block wx:if="{{answerLength === 7}}">
     <view class='answerfont7'>
-      <view class='g'></view>
-      <view class='g'></view>
-      <view class='g'></view>
-      <view class='g'></view>
-      <view class='g'></view>
-      <view class='g'></view>
-      <view class='g'></view>
+      <view class='g' wx:for="{{userAnswerArray}}">{{item}}</view>
     </view>
   </block>
+
+  <!-- <view class='title1'>
+    <view wx:for="{{options}}">
+      <view wx:if="{{index < options.length / 2}}">
+        <text class='e' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
+        <view wx:if="{{item != ''}}">
+          <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+        </view>
+      </view>
+    </view>
+  </view> -->
 
   <view class='title1'>
     <view wx:for="{{options}}">
       <view wx:if="{{index < options.length / 2}}">
-        <text class='e' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
-        <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+        <text class='e' bindtap='select' data-selectd='{{index}}'>{{item.message}}</text>
+        <view class='tiback1' wx:if="{{item.show}}">
+          <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+        </view>
       </view>
     </view>
   </view>
 
   <view class='title2'>
-    <view wx:for="{{options}}">         
+    <view wx:for="{{options}}">
       <view wx:if="{{index >= options.length / 2}}">
-        <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
+        <text class='x' bindtap='select' data-selectd='{{index}}'>{{item.message}}</text>
         <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
       </view>
     </view>

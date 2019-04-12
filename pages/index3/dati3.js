@@ -9,8 +9,13 @@ Page({
     questionNumber: 0,
     questionNo: 0,
     question: '',
-    options: [],
+    options: [{
+      message: '',
+      show: true
+    }],
     answer: '',
+    userAnser: '',
+    userAnswerArray: [],
     answerLength: 0,
     currentScore: 0,
     questionNoSrc: '',
@@ -36,10 +41,17 @@ Page({
         console.log(res.data);
         if (res.data.code == '00') {
           let content = res.data.content;
+          let options=[];
+          // for (var i = 0; i < content.options.length; i++) {
+          //   options.message = content.options[i];
+          // }
+          for (let i of content.options) {
+            options.push({message:i, show:true});
+          }
           that.setData({
             question: content.question,
             answer: content.answer,
-            options: content.options,
+            options: options,
             questionNo: content.questionNo,
             currentScore: content.currentScore,
             answerLength: content.answer.length
@@ -101,9 +113,13 @@ Page({
     let that = this;
     let index = event.currentTarget.dataset.selectd;
     let options = that.data.options;
-    options[index] = '';
+    let userAnswerArray = that.data.userAnswerArray;
+    userAnswerArray.push(options[index].message);
+    // options[index].message = '';
+    options[index].show = false; 
     that.setData({
-      options: options
+      options: options,
+      userAnswerArray: userAnswerArray
     });
     console.log(that.data);
   },

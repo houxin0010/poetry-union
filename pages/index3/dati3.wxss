@@ -217,7 +217,7 @@
   height: 80rpx;
   float: left;
   position: relative;
-  top: 100rpx;  
+  top: 100rpx;
 }
 
 .title2 {
