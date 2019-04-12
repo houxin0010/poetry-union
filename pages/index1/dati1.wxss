@@ -18,6 +18,12 @@
   position: relative;
   top: -1274rpx;
   left: 30rpx;
+   text-align: center;
+  line-height: 79rpx;
+  color: black;
+  background: white;
+  opacity: 0.75;
+  border-radius: 35rpx;
 }
 
 .chengji {

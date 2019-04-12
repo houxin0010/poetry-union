@@ -20,11 +20,16 @@
 .leave {
   width: 200rpx;
   height: 79rpx;
+  text-align: center;
+  line-height: 79rpx;
+  color: black;
+  background: white;
+  opacity: 0.75;
+  border-radius: 35rpx;
   position: relative;
   top: -1274rpx;
   left: 30rpx;
 }
-
 .chengji {
   width: 200rpx;
   height: 75rpx;
@@ -132,7 +137,7 @@
   position: relative;
   top: -500rpx;
   left: 10rpx;
-  display: none;
+  /* display: none; */
 }
 
 .a {
@@ -161,13 +166,7 @@
   font-size: 60rpx;
 }
 
-.b {
-  width: 80rpx;
-  height: 80rpx;
-  margin: 0px auto;
-  margin-left: 50rpx;
-  margin-bottom: 20rpx;
-}
+
 
 .answerfont5 {
   position: relative;
@@ -179,7 +178,7 @@
   position: relative;
   top: -810rpx;
   left: 45rpx;
-  display: none;
+  /* display: none; */
 }
 
 .d {
@@ -195,29 +194,59 @@
 }
 
 .title1 {
+  width: 750rpx;
+  height:100rpx;
   position: relative;
   float: left;
-  top: -620rpx;
-  left: 90rpx;
+  top: -500rpx;
+ left: -20rpx;
 }
 
 .e {
-  margin-right: 85rpx;
   font-size: 45rpx;
   float: left;
+  display: block;
+  position: relative;
+  left: 65rpx;
+  top: 110rpx;
+  z-index: 1;
+}
+
+.b {
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  position: relative;
+  top: 100rpx;  
 }
 
 .title2 {
+  width: 750rpx;
+  height:100rpx;
   position: relative;
   float: left;
-  top: -790rpx;
-  left: 90rpx;
+  top: -480rpx;
+  left: -20rpx;
 }
 
-.f {
-  margin-right: 85rpx;
+.x {
   font-size: 45rpx;
+  float: left;
+  display: block;
+  position: relative;
+  left: 65rpx;
+  top: 110rpx;
+  z-index: 1;
 }
+
+.z {
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  position: relative;
+  top: 100rpx;
+}
+
 
 .black {
   width: 750rpx;

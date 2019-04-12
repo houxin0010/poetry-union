@@ -14,18 +14,6 @@ Page({
     answerLength: 0,
     currentScore: 0,
     questionNoSrc: '',
-    options1: '',
-    options2: '',
-    options3: '',
-    options4: '',
-    options5: '',
-    options6: '',
-    options7: '',
-    options8: '',
-    options9: '',
-    options10: '',
-    options11: '',
-    options12: '',
     imgServer: app.globalData.imgServer
   },
 
@@ -56,10 +44,6 @@ Page({
             currentScore: content.currentScore,
             answerLength: content.answer.length
           });
-
-
-
-
 
 
           if (content.questionNo == 1) {
@@ -110,6 +94,18 @@ Page({
         console.log("--------fail--------");
       }
     });
+  },
+
+  select:function(event){
+    console.log(event);
+    let that = this;
+    let index = event.currentTarget.dataset.selectd;
+    let options = that.data.options;
+    options[index] = '';
+    that.setData({
+      options: options
+    });
+    console.log(that.data);
   },
 
   /**

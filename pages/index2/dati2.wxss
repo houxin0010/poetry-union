@@ -12,12 +12,18 @@ position: relative;}
   height: 1334rpx;
 }
 
-.leave{
-   width: 200rpx;
-   height: 79rpx;
-   position: relative;
-   top: -1274rpx;
-   left: 30rpx;
+.leave {
+  width: 200rpx;
+  height: 79rpx;
+  text-align: center;
+  line-height: 79rpx;
+  color: black;
+  background: white;
+  opacity: 0.75;
+  border-radius: 35rpx;
+  position: relative;
+  top: -1274rpx;
+  left: 30rpx;
 }
 
 

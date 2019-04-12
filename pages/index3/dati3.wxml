@@ -2,8 +2,7 @@
 <view class='aaa'>
   <view class='xzt'>
     <image class='back' src='{{imgServer}}/img/top/beij.png'></image>
-    <image class='leave' src='{{imgServer}}/img/top/fanhui.png'></image>
-
+     <view class='leave' >首页</view>
     <view class='chengji'>我的成绩</view>
     <view class='fenshu'>{{currentScore}}</view>
     <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
@@ -24,7 +23,7 @@
     </view>
   </view>
 
-  <block wx:if="answerLength === 5">
+  <block wx:if="{{answerLength === 5}}">
     <view class='srk5'>
       <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
       <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
@@ -34,7 +33,7 @@
     </view>
   </block>
 
-  <block wx:if="answerLength === 7">
+  <block wx:if="{{answerLength === 7}}">
     <view class='srk7'>
       <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
       <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
@@ -46,20 +45,7 @@
     </view>
   </block>
 
-  <!-- <view class='tigan'>
-    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  </view> -->
-
-  <block wx:if="answerLength === 5">
+  <block wx:if="{{answerLength === 5}}">
     <view class='answerfont5'>
       <view class='d'></view>  
       <view class='d'></view>
@@ -69,7 +55,7 @@
     </view>
   </block>
 
-  <block wx:if="answerLength === 7">
+  <block wx:if="{{answerLength === 7}}">
     <view class='answerfont7'>
       <view class='g'></view>
       <view class='g'></view>
@@ -84,17 +70,17 @@
   <view class='title1'>
     <view wx:for="{{options}}">
       <view wx:if="{{index < options.length / 2}}">
-        <text class='e'>{{item}}</text>
+        <text class='e' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
         <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
       </view>
     </view>
   </view>
 
   <view class='title2'>
-    <view wx:for="{{options}}">
+    <view wx:for="{{options}}">         
       <view wx:if="{{index >= options.length / 2}}">
-        <text class='e'>{{item}}</text>
-        <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+        <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
+        <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
       </view>
     </view>
   </view>
