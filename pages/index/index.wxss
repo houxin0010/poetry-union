@@ -59,7 +59,7 @@ overflow: hidden;
   height: 369rpx;
   position: relative;
   top: -190rpx;
-  left: 120px;
+  left: 250rpx;
 } 
 
 .shiren{
@@ -82,7 +82,7 @@ overflow: hidden;
 .start_button{
   color:white;
   position: relative;
-  top: -255px;
+  top: -515rpx;
   font-family: '微软雅黑';
   font-size:50rpx;
   left: 80rpx; 

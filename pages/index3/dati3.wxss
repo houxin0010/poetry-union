@@ -1,27 +1,34 @@
 /* pages/index3/dati3.wxss */
-.xzt{width: 750rpx;
-height: 1344rpx;
-position: relative;
-overflow: hidden;}
 
-.back{
-  width:750rpx;
+.aaa {
+  width: 750rpx;
+  height: 1344rpx;
+  overflow: hidden;
+}
+
+.xzt {
+  width: 750rpx;
+  height: 1344rpx;
+  position: relative;
+}
+
+.back {
+  width: 750rpx;
   height: 1334rpx;
 }
 
-.leave{
-   width: 200rpx;
-   height: 79rpx;
-   position: relative;
-   top: -1274rpx;
-   left: 30rpx;
+.leave {
+  width: 200rpx;
+  height: 79rpx;
+  position: relative;
+  top: -1274rpx;
+  left: 30rpx;
 }
 
-
-.chengji{
+.chengji {
   width: 200rpx;
   height: 75rpx;
-  background:black;
+  background: black;
   line-height: 75rpx;
   text-align: center;
   color: white;
@@ -29,9 +36,9 @@ overflow: hidden;}
   top: -1234rpx;
   left: 500rpx;
   font-size: 30rpx;
-
 }
-.fenshu{
+
+.fenshu {
   width: 196rpx;
   height: 71rpx;
   border: 1rpx solid gray;
@@ -43,26 +50,27 @@ overflow: hidden;}
   left: 500rpx;
 }
 
-.mb{
+.mb {
   width: 136rpx;
   height: 136rpx;
   position: relative;
-  top: -1340rpx; 
+  top: -1340rpx;
   opacity: 0.5;
-  animation:aaa 2s  linear forwards;
+  animation: aaa 2s linear forwards;
   z-index: 1;
 }
-.tixu{
+
+.tixu {
   width: 161rpx;
   height: 57rpx;
   position: relative;
-  top:-1364rpx;
+  top: -1364rpx;
   opacity: 0;
   animation: tmd 2s 1s linear forwards;
-  z-index: 2;  
+  z-index: 2;
 }
 
-.time{
+.time {
   width: 600rpx;
   height: 20rpx;
   background: black;
@@ -73,18 +81,18 @@ overflow: hidden;}
   opacity: 0.1;
 }
 
-.time2{
+.time2 {
   width: 600rpx;
   height: 20rpx;
-  background:green;
+  background: green;
   border-radius: 20rpx;
   position: relative;
   top: -1364rpx;
   left: 75rpx;
-  animation:myone 30s 2.5s linear forwards;
+  animation: myone 30s 2.5s linear forwards;
 }
 
-.tiban{
+.tiban {
   width: 700rpx;
   height: 400rpx;
   position: relative;
@@ -92,8 +100,7 @@ overflow: hidden;}
   left: 25rpx;
 }
 
-
-.question{
+.question {
   width: 550rpx;
   height: 360rpx;
   font-size: 35rpx;
@@ -104,57 +111,57 @@ overflow: hidden;}
   white-space: pre-line;
   animation: tmd 1.5s linear forwards;
 }
-.zhedang{
- width: 650rpx;
+
+.zhedang {
+  width: 650rpx;
   height: 390rpx;
   position: relative;
   top: -2100rpx;
-  left: 50rpx;  
-   border-radius: 10rpx;
+  left: 50rpx;
+  border-radius: 10rpx;
   animation: zhedang 1s 1s linear forwards;
 }
 
-.srk5{position: relative;
-    top: -500rpx;
-    left: 110rpx;
+.srk5 {
+  position: relative;
+  top: -500rpx;
+  left: 110rpx;
 }
 
-
-.srk7{position: relative;
+.srk7 {
+  position: relative;
   top: -500rpx;
   left: 10rpx;
-  /* display: none; */
+  display: none;
 }
 
-.a{
+.a {
   width: 85rpx;
   height: 85rpx;
   margin: 0px auto;
   margin-left: 20rpx;
 }
 
-.a1{
+.a1 {
   width: 85rpx;
   height: 85rpx;
   margin: 0px auto;
   margin-left: 20rpx;
 }
 
-
-.tigan{position: relative;
+.tigan {
+  position: relative;
   top: -450rpx;
-  float:left;
+  float: left;
   left: 25rpx;
-
 }
 
-
-.c{
-  margin-right:35px;
+.c {
+  margin-right: 35px;
   font-size: 60rpx;
 }
 
-.b{
+.b {
   width: 80rpx;
   height: 80rpx;
   margin: 0px auto;
@@ -162,58 +169,57 @@ overflow: hidden;}
   margin-bottom: 20rpx;
 }
 
-.answerfont5{
+.answerfont5 {
   position: relative;
-  top:-810rpx;
-  left:145rpx;
-  
+  top: -810rpx;
+  left: 145rpx;
 }
 
-.answerfont7{
+.answerfont7 {
   position: relative;
-  top:-810rpx;
-  left:45rpx; 
-  /* display: none;  */
+  top: -810rpx;
+  left: 45rpx;
+  display: none;
 }
 
-.d{
-  margin-right:50rpx;
-  font-size:55rpx;
+.d {
+  margin-right: 50rpx;
+  font-size: 55rpx;
   float: left;
 }
 
-.g{
-  margin-right:50rpx;
-  font-size:55rpx;
+.g {
+  margin-right: 50rpx;
+  font-size: 55rpx;
   float: left;
 }
 
-.title1{
+.title1 {
   position: relative;
   float: left;
-  top:-620rpx;
-  left:90rpx;
-  
-}
-.e{
- margin-right:85rpx;
-font-size: 45rpx;
+  top: -620rpx;
+  left: 90rpx;
 }
 
+.e {
+  margin-right: 85rpx;
+  font-size: 45rpx;
+  float: left;
+}
 
-.title2{
+.title2 {
   position: relative;
   float: left;
-  top:-790rpx;
-  left:90rpx;
-  
+  top: -790rpx;
+  left: 90rpx;
 }
-.f{
-  margin-right:85rpx;
+
+.f {
+  margin-right: 85rpx;
   font-size: 45rpx;
 }
 
-.black{
+.black {
   width: 750rpx;
   height: 1334rpx;
   background: black;
@@ -224,7 +230,7 @@ font-size: 45rpx;
   z-index: 1;
 }
 
-.alert{
+.alert {
   width: 650rpx;
   height: 390rpx;
   background: white;
@@ -237,36 +243,39 @@ font-size: 45rpx;
   z-index: 2;
 }
 
-.yes{
+.yes {
   width: 225rpx;
   height: 53rpx;
   margin-top: 50rpx;
   margin-left: 100rpx;
-   display: none;
+  display: none;
 }
 
-.no{
+.no {
   width: 225rpx;
   height: 53rpx;
   margin-top: 50rpx;
   margin-left: 100rpx;
   display: none;
 }
-.yespic{
-  width: 128rpx;
-  height: 107rpx;
-  margin-top: 50rpx;
-  margin-left: 100rpx;
-   display: none;
-}
-.nopic{
+
+.yespic {
   width: 128rpx;
   height: 107rpx;
   margin-top: 50rpx;
   margin-left: 100rpx;
   display: none;
 }
-.continue{
+
+.nopic {
+  width: 128rpx;
+  height: 107rpx;
+  margin-top: 50rpx;
+  margin-left: 100rpx;
+  display: none;
+}
+
+.continue {
   width: 300rpx;
   height: 100rpx;
   background: brown;
@@ -279,23 +288,50 @@ font-size: 45rpx;
   border-radius: 30rpx;
   display: none;
 }
-@keyframes myone{
-  form{width:600rpx;}
-  to{width: 0rpx;}
+
+@keyframes myone {
+  form {
+    width: 600rpx;
+  }
+
+  to {
+    width: 0rpx;
+  }
 }
 
-@keyframes tmd{
-  form{opacity: 0;}
-  to{opacity: 1;}
+@keyframes tmd {
+  form {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes aaa{
-  0%{left: 0rpx; opacity: 1;}
-  50%{left: 200rpx; opacity:0.1;}
-  100%{left: 0rpx; opacity: 1;}
+@keyframes aaa {
+  0% {
+    left: 0rpx;
+    opacity: 1;
+  }
+
+  50% {
+    left: 200rpx;
+    opacity: 0.1;
+  }
+
+  100% {
+    left: 0rpx;
+    opacity: 1;
+  }
 }
 
-@keyframes zhedang{
-  from{opacity: 1;}
-  to{opacity: 0;}
+@keyframes zhedang {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }

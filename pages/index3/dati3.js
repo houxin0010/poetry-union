@@ -9,6 +9,7 @@ Page({
     questionNumber: 0,
     questionNo: 0,
     question: '',
+    options: [],
     answer: '',
     answerLength: 0,
     currentScore: 0,
@@ -50,10 +51,17 @@ Page({
           that.setData({
             question: content.question,
             answer: content.answer,
+            options: content.options,
             questionNo: content.questionNo,
             currentScore: content.currentScore,
             answerLength: content.answer.length
           });
+
+
+
+
+
+
           if (content.questionNo == 1) {
             that.setData({
               questionNoSrc: that.data.imgServer + '/img/titlenum/one.png'

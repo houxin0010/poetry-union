@@ -4,6 +4,7 @@
   width: 750rpx;
   height: 1344rpx;
   position: relative;
+  overflow: hidden;
 }
 
 .back {
@@ -117,22 +118,22 @@
 }
 
 .A {
-  width: 664rpx;
-  height: 100rpx;
+  width: 700rpx;
+  height: 200rpx;
   position: relative;
-  top: -2050rpx;
+  top: -2150rpx;
   left: 43rpx;
   opacity: 0;
   animation: tmd 1s linear forwards;
-  margin-bottom: 50rpx;
+  margin-bottom:-30rpx;
 }
 
 .answerA {
   width: 33rpx;
   height: 48rpx;
   position: relative;
-  top: -2490rpx;
-  left: 120rpx;
+  top: -2600rpx;
+  left: 105rpx;
   opacity: 0;
   animation: tmd 1s 1s linear forwards;
 }
@@ -141,8 +142,8 @@
   width: 33rpx;
   height: 48rpx;
   position: relative;
-  top: -2330rpx;
-  left: 90rpx;
+  top: -2425rpx;
+  left: 75rpx;
   opacity: 0;
   animation: tmd 1s 1.5s linear forwards;
 }
@@ -151,41 +152,46 @@
   width: 33rpx;
   height: 48rpx;
   position: relative;
-  top: -2180rpx;
-  left: 60rpx;
+  top: -2245rpx;
+  left: 45rpx;
   opacity: 0;
   animation: tmd 1s 2s linear forwards;
 }
 
 .answerfonta {
+  width: 450rpx;
+  height: 150rpx;
   color: white;
   position: relative;
-  font-size: 45rpx;
-  font-weight: 600;
-  top: -2555rpx;
-  left: 200rpx;
+  font-size: 30rpx;
+  top: -2680rpx;
+  left: 150rpx;
   opacity: 0;
+  white-space: pre-line;
   animation: tmd 1s 1s linear forwards;
 }
 
 .answerfontb {
+   width: 450rpx;
+  height: 150rpx;
   color: white;
   position: relative;
-  font-size: 45rpx;
-  font-weight: 600;
-  top: -2455rpx;
-  left: 200rpx;
+  font-size: 30rpx;
+  top: -2650rpx;
+  left: 150rpx;
   opacity: 0;
+    white-space: pre-line;
   animation: tmd 1s 1.5s linear forwards;
 }
 
 .answerfontc {
+   width: 450rpx;
+  height: 150rpx;
   color: white;
   position: relative;
-  font-size: 45rpx;
-  font-weight: 600;
-  top: -2360rpx;
-  left: 200rpx;
+  font-size: 30rpx;
+  top: -2630rpx;
+  left: 150rpx;
   opacity: 0;
   animation: tmd 1s 2s linear forwards;
 }
@@ -195,7 +201,7 @@
   height: 1334rpx;
   background: black;
   position: relative;
-  top: -3480rpx;
+  top: -3970rpx;
   opacity: 0.5;
   /* display: none; */
 }
@@ -205,7 +211,7 @@
   height: 390rpx;
   background: white;
   position: relative;
-  top: -4300rpx;
+  top: -4800rpx;
   left: 50rpx;
   border-radius: 50rpx;
   border: 5rpx solid darkgoldenrod;
@@ -244,6 +250,14 @@
   /* display: none; */
 }
 
+.correct_answer{
+  position: relative;
+  color: red;
+  left: 100rpx;
+  top: 30rpx;
+  font-weight: 600;
+  /* display: none; */
+}
 .continueBtn {
   width: 300rpx;
   height: 100rpx;

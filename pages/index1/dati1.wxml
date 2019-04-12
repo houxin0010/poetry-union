@@ -32,6 +32,8 @@
     <image class='no' style='{{displayNo}}' src='{{imgServer}}/img/alert/no.png'></image>
     <image class='yespic' style='{{displayYespic}}' src='{{imgServer}}/img/alert/xiao.png'></image>
     <image class='nopic' style='{{displaynopic}}' src='{{imgServer}}/img/alert/ku.png'></image>
+    <view class='correct_answer'>正确答案是：</view>
     <view class='continueBtn' style='{{displayContinueBtn}}' bindtap='go'>继续挑战</view>
+
   </view>
 </view>

@@ -1,96 +1,99 @@
 <!--pages/index3/dati3.wxml-->
-<view class='xzt'>
-  <image class='back' src='{{imgServer}}/img/top/beij.png'></image>
-  <image class='leave' src='{{imgServer}}/img/top/fanhui.png'></image>
+<view class='aaa'>
+  <view class='xzt'>
+    <image class='back' src='{{imgServer}}/img/top/beij.png'></image>
+    <image class='leave' src='{{imgServer}}/img/top/fanhui.png'></image>
 
-  <view class='chengji'>我的成绩</view>
-  <view class='fenshu'>{{currentScore}}</view>
-  <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
-  <image class='tixu' src='{{questionNoSrc}}'></image>
-  <view class='time'></view>
-  <view class='time2'></view>
-  <image class='tiban' src='{{imgServer}}/img/top/tiban.png'></image>
-  <view class='question'>{{question}}</view>
-  <image class='zhedang' src='{{imgServer}}/img/top/zb.png'></image>
-  <view class='black'></view>
-  <view class='alert'>
-    <image class='yes' src='{{imgServer}}/img/alert/yes.png'></image>
-    <image class='no' src='{{imgServer}}/img/alert/no.png'></image>
-    <image class='yespic' src='{{imgServer}}/img/alert/xiao.png'></image>
-    <image class='nopic' src='{{imgServer}}/img/alert/ku.png'></image>
-    <view class='continue'>继续挑战</view>
+    <view class='chengji'>我的成绩</view>
+    <view class='fenshu'>{{currentScore}}</view>
+    <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
+    <image class='tixu' src='{{questionNoSrc}}'></image>
+    <view class='time'></view>
+    <view class='time2'></view>
+    <image class='tiban' src='{{imgServer}}/img/top/tiban.png'></image>
+    <view class='question'>{{question}}</view>
+    <image class='zhedang' src='{{imgServer}}/img/top/zb.png'></image>
+    <view class='black'></view>
+    <view class='alert'>
+      <image class='yes' src='{{imgServer}}/img/alert/yes.png'></image>
+      <image class='no' src='{{imgServer}}/img/alert/no.png'></image>
+      <image class='yespic' src='{{imgServer}}/img/alert/xiao.png'></image>
+      <image class='nopic' src='{{imgServer}}/img/alert/ku.png'></image>
+      <view class='correct_answer'>正确答案是：</view>
+      <view class='continue'>继续挑战</view>
+    </view>
   </view>
-</view>
 
-<block wx:if="{{answerLength === 5}}">
-  <view class='srk5'>
-    <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  <block wx:if="answerLength === 5">
+    <view class='srk5'>
+      <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    </view>
+  </block>
+
+  <block wx:if="answerLength === 7">
+    <view class='srk7'>
+      <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    </view>
+  </block>
+
+  <view class='tigan'>
+    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
   </view>
-</block>
 
-<block wx:if="{{answerLength === 7}}">
-  <view class='srk7'>
-    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  <block wx:if="answerLength === 5">
+    <view class='answerfont5'>
+      <view class='d'></view>  
+      <view class='d'></view>
+      <view class='d'></view>
+      <view class='d'></view>
+      <view class='d'></view>
+    </view>
+  </block>
+
+  <block wx:if="answerLength === 7">
+    <view class='answerfont7'>
+      <view class='g'></view>
+      <view class='g'></view>
+      <view class='g'></view>
+      <view class='g'></view>
+      <view class='g'></view>
+      <view class='g'></view>
+      <view class='g'></view>
+    </view>
+  </block>
+
+  <view class='title1'>
+    <view wx:for="{{options}}">
+      <view wx:if="{{index < options.length / 2}}">
+        <text class='e'>{{item}}</text>
+      </view>
+    </view>
   </view>
-</block>
 
-<view class='tigan'>
-  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-</view>
-
-<block wx:if="{{answerLength === 5}}">
-  <view class='answerfont5'>
-    <view class='d'>阿</view>
-    <view class='d'>阿</view>
-    <view class='d'>阿</view>
-    <view class='d'>阿</view>
-    <view class='d'>阿</view>
+  <view class='title2'>
+    <view wx:for="{{options}}">
+      <view wx:if="{{index >= options.length / 2}}">
+        <text class='e'>{{item}}</text>
+      </view>
+    </view>
   </view>
-</block>
-
-<block wx:if="{{answerLength === 7}}">
-  <view class='answerfont7'>
-    <view class='g'>阿</view>
-    <view class='g'>阿</view>
-    <view class='g'>阿</view>
-    <view class='g'>阿</view>
-    <view class='g'>阿</view>
-    <view class='g'>阿</view>
-    <view class='g'>阿</view>
-  </view>
-</block>
-
-<view class='title1'>
-  <text class='e'>义</text>
-  <text class='e'>义</text>
-  <text class='e'>义</text>
-  <text class='e'>义</text>
-  <text class='e'>义</text>
-</view>
-
-<view class='title2'>
-  <text class='f'>义</text>
-  <text class='f'>义</text>
-  <text class='f'>义</text>
-  <text class='f'>义</text>
-  <text class='f'>义</text>
 </view>

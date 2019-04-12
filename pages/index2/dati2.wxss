@@ -1,8 +1,11 @@
 /* pages/index2/dati2.wxss */
+.aaa{width: 750rpx;
+height: 1344rpx;
+overflow: hidden;}
+
 .xzt{width: 750rpx;
 height: 1344rpx;
-position: relative;
-overflow: hidden;}
+position: relative;}
 
 .back{
   width:750rpx;
@@ -211,6 +214,15 @@ overflow: hidden;}
   border-radius: 30rpx;
   /* display: none; */
 }
+
+.correct_answer{
+  position: relative;
+  color: red;
+  left: 100rpx;
+  top: 30rpx;
+  font-weight: 600;
+  /* display: none; */
+   } 
 
 .notes{
   font-size: 35rpx;
