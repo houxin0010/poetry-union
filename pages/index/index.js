@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgServer:app.globalData.imgServer
+    imgServer: app.globalData.imgServer
   },
 
   go: function() {
@@ -35,7 +35,6 @@ Page({
         console.log("--------fail--------");
       }
     });
-
   },
 
   /**

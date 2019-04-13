@@ -1,7 +1,7 @@
 <!--pages/index1/dati1.wxml-->
 <view class='xzt'>
   <image class='back' src='{{imgServer}}/img/top/beij.png'></image>
-  <view class='leave' >首页</view>
+  <view class='leave' bindtap='back'>首页</view>
   <view class='chengji'>我的成绩</view>
   <view class='fenshu'>{{currentScore}}</view>
   <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>

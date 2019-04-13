@@ -10,6 +10,20 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log(res);
+        if(res.code){
+          wx.request({
+            url: this.globalData.host +'/questionPaper/getcode',
+            data: {
+              code: res.code
+            },
+            success: function (res) {
+              console.log(res);
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
       }
     })
     // 获取用户信息
