@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function() {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -11,14 +11,19 @@ App({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         console.log(res);
-        if(res.code){
+        let openid = null;
+        let that =this;
+        if (res.code) {
           wx.request({
-            url: this.globalData.host +'/questionPaper/getcode',
+            url: that.globalData.host + '/questionPaper/getcode',
             data: {
               code: res.code
             },
-            success: function (res) {
+            success: function(res) {
               console.log(res);
+              // openid = res.data.content;
+              openid = 'houxin';
+              that.globalData.openid = openid;
             }
           })
         } else {
@@ -48,8 +53,10 @@ App({
     })
   },
   globalData: {
+    openid: null,
     userInfo: null,
-    host:'http://127.0.0.1:10086',
+    host: 'http://wxdemo.010service.com/poetry',
+    // host: 'http://127.0.0.1:10086',
     // host: 'http://39.108.154.215:10086',
     imgServer: 'http://wxdemo.010service.com/images'
   }

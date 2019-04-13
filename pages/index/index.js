@@ -12,6 +12,9 @@ Page({
     wx.request({
       url: app.globalData.host + '/questionPaper/init',
       method: 'GET',
+      data: {
+        openId: app.globalData.openid
+      },
       success: function(res) {
         console.log(res.data);
         if (res.data.code == '00') {

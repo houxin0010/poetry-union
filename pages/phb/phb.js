@@ -27,7 +27,8 @@ Page({
     wx.request({
       url: app.globalData.host + '/questionPaper/getAnswerResult',
       data: {
-        questionPaperId: that.data.questionPaperId
+        questionPaperId: that.data.questionPaperId,
+        openId: app.globalData.openid
       },
       method: 'GET',
       success: function (res) {
