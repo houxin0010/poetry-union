@@ -134,6 +134,13 @@
   left: 110rpx;
 }
 
+.srk6 {
+  position: relative;
+  top: -500rpx;
+  left: 60rpx;
+  /* display: none; */
+}
+
 .srk7 {
   position: relative;
   top: -500rpx;
@@ -147,6 +154,14 @@
   margin: 0px auto;
   margin-left: 20rpx;
 }
+
+.a2 {
+  width: 85rpx;
+  height: 85rpx;
+  margin: 0px auto;
+  margin-left: 20rpx;
+}
+
 
 .a1 {
   width: 85rpx;
@@ -173,6 +188,13 @@
   left: 145rpx;
 }
 
+.answerfont6 {
+  position: relative;
+  top: -790rpx;
+  left: 95rpx;
+}
+/*display:none;*/
+
 .answerfont7 {
   position: relative;
   top: -790rpx;
@@ -184,6 +206,13 @@
   margin-right: 50rpx;
   font-size: 55rpx;
   float: left;
+}
+
+.k{
+  margin-right: 50rpx;
+  font-size: 55rpx;
+  float: left;
+  top: 100rpx;
 }
 
 .g {
@@ -226,7 +255,7 @@
   position: relative;
   top: 85rpx;
   margin-right: 20rpx;
-  left: 100rpx;
+  left: 90rpx;
 }
 
 .tiback2 {
@@ -236,6 +265,9 @@
   background: red;
   position: relative;
   top: 100rpx;
+  margin-right: 20rpx;
+  left: 115rpx;
+  
 }
 
 .title2 {
@@ -252,8 +284,8 @@
   float: left;
   display: block;
   position: relative;
-  left: 65rpx;
-  top: 110rpx;
+  left: 19rpx;
+  top: 15rpx;
   z-index: 1;
 }
 
@@ -262,7 +294,7 @@
   height: 80rpx;
   float: left;
   position: relative;
-  top: 100rpx;
+  top:-60rpx;
 }
 
 .black {
@@ -281,7 +313,7 @@
   height: 390rpx;
   background: white;
   position: relative;
-  top: -3700rpx;
+  top: -3760rpx;
   left: 50rpx;
   border-radius: 50rpx;
   border: 5rpx solid darkgoldenrod;

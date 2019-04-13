@@ -43,6 +43,17 @@
     </view>
   </block>
 
+      <block wx:if="{{answerLength === 6}}">
+    <view class='srk6'>
+      <image class='a2' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a2' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a2' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a2' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a2' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+      <image class='a2' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    </view>
+  </block>
+
   <block wx:if="{{answerLength === 7}}">
     <view class='srk7'>
       <image class='a1' src='{{imgServer}}/img/jggimg/tianc.png'></image>
@@ -73,10 +84,10 @@
       <view wx:if="{{index >= options.length / 2}}">
         <view class='tiback2'>
           <view wx:if="{{item != ''}}">
-            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
-            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-          </view>
-        </view>
+        <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
+        <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+      </view>
+       </view>
       </view>
     </view>
   </view>
@@ -88,6 +99,13 @@
     </view>
   </block>
 
+     <block wx:if="{{answerLength === 6}}">
+    <view class='answerfont6'>
+      <view class='k' wx:for="{{userAnswerArray}}">{{item}}</view>
+    </view>
+  </block>
+
+ 
   <block wx:if="{{answerLength === 7}}">
     <view class='answerfont7'>
       <view class='g' wx:for="{{userAnswerArray}}">{{item}}</view>

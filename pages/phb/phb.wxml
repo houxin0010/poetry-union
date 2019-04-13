@@ -1,33 +1,35 @@
+<view class='bigbox'>
 <view>
-  <image class='back' src='{{imgServer}}/img/phbimg/beij.png'></image>
-  <image class='yxt' src='{{imgServer}}/img/phbimg/yxt.png'></image>
+<image class='back' src='{{imgServer}}/img/phbimg/beij.png'></image>
+<image class='yxt'  src='{{imgServer}}/img/phbimg/yxt.png'></image>
 </view>
 
-<view>
-  <text class='gr'>你的成绩：</text>
+<view >
+  <text class='gr'>个人最高成记录：</text>
   <text class='fs'>100</text>
 </view>
 
 <view class='dk'>
-  <view class='top1'>
-    <text class='mc'>Top.1</text>
-    <view class='touxiang'></view>
-    <image class='defen' src='{{imgServer}}/img/phbimg/phb.png'></image>
-  </view>
-
+ <view class='top1'>
+ <view class='mc'>Top.1</view>
+ <view class='touxiang'></view>
+ <image class='defen' src='{{imgServer}}/img/phbimg/phb.png'></image>
+ </view>
+  
   <view class='top2'>
-    <text class='mc'>Top.2</text>
-    <view class='touxiang'></view>
-    <image class='defen' src='{{imgServer}}/img/phbimg/phb.png'></image>
-  </view>
+ <view class='mc'>Top.2</view>
+ <view class='touxiang'></view>
+ <image class='defen' src='{{imgServer}}/img/phbimg/phb.png'></image>
+ </view>
 
-  <view class='top3'>
-    <text class='mc'>Top.3</text>
-    <view class='touxiang'></view>
-    <image class='defen' src='{{imgServer}}/img/phbimg/phb.png'></image>
-  </view>
+ <view class='top3'>
+ <view class='mc'>Top.3</view>
+ <view class='touxiang'></view>
+ <image class='defen' src='{{imgServer}}/img/phbimg/phb.png'></image>
+ </view>
 </view>
 <view class='com'></view>
 <view class='again'>
-  <image class='aaa' src='{{imgServer}}/img/phbimg/zailaiyibian.png'></image>
+ <image class='aaa' src='{{imgServer}}/img/phbimg/zailaiyibian.png'></image>
+</view>
 </view>

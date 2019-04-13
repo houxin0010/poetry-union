@@ -158,7 +158,7 @@ position: relative;}
   height: 1334rpx;
   background: black;
   position: relative;
-  top: -2940rpx;
+  top: -2920rpx;
   opacity: 0.5;
   z-index: 1;
   /* display: none; */

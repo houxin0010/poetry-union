@@ -1,7 +1,15 @@
-.back{width: 750rpx;
+
+.bigbox{
+  width: 750rpx;
+  height: 1344rpx;
+  overflow: hidden;
+}
+
+.back{
+  width: 750rpx;
   height: 1344rpx;
   position: relative; 
-  overflow: hidden;}
+}
 .yxt{
   width: 558rpx;
   height: 389rpx;
