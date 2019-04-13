@@ -71,8 +71,12 @@
   <view class='title2'>
     <view wx:for="{{options}}">
       <view wx:if="{{index >= options.length / 2}}">
-        <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
-        <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+        <view class='tiback2'>
+          <view wx:if="{{item != ''}}">
+            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
+            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+          </view>
+        </view>
       </view>
     </view>
   </view>
