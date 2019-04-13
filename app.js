@@ -21,8 +21,8 @@ App({
             },
             success: function(res) {
               console.log(res);
-              // openid = res.data.content;
-              openid = 'houxin';
+              openid = res.data.content;
+              // openid = 'houxin';
               that.globalData.openid = openid;
             }
           })
