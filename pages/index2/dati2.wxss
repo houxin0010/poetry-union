@@ -62,7 +62,7 @@ position: relative;}
   z-index: 1;
 }
 .tixu{
-  width: 161rpx;
+  width: 220rpx;
   height: 57rpx;
   position: relative;
   top:-1364rpx;
@@ -120,7 +120,7 @@ position: relative;}
   top: -2100rpx;
   left: 50rpx;  
   border-radius: 10rpx;
-  animation: zhedang 1s 1s linear forwards;
+  opacity:0;
 }
 .font{
   position: relative;
@@ -228,7 +228,7 @@ position: relative;}
   top: 30rpx;
   font-weight: 600;
   /* display: none; */
-   } 
+} 
 
 .notes{
   font-size: 35rpx;
@@ -256,7 +256,3 @@ position: relative;}
   100%{left: 0rpx; opacity: 1;}
 }
 
-@keyframes zhedang{
-  from{opacity: 1;}
-  to{opacity: 0;}
-}

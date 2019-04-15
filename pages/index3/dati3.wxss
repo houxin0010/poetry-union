@@ -67,7 +67,7 @@
 }
 
 .tixu {
-  width: 161rpx;
+  width: 220rpx;
   height: 57rpx;
   position: relative;
   top: -1364rpx;
@@ -106,6 +106,15 @@
   left: 25rpx;
 }
 
+.correct_answer{
+  position: relative;
+  color: red;
+  left: 100rpx;
+  top:30rpx;
+  font-weight: 600;
+  /* display: none;  */
+}
+
 .question {
   width: 550rpx;
   height: 360rpx;
@@ -125,7 +134,7 @@
   top: -2100rpx;
   left: 50rpx;
   border-radius: 10rpx;
-  animation: zhedang 1s 1s linear forwards;
+  opacity: 0;
 }
 
 .srk5 {
@@ -404,12 +413,3 @@
   }
 }
 
-@keyframes zhedang {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}

@@ -10,14 +10,23 @@
   </view>
 
   <view class='dk'>
-    <block wx:for="{{hisScore}}">
+    
       <view class='top1'>
-        <view class='mc'>Top.1</view>
-        <view class='touxiang'>{{item.hisScore}}</view>
-        <image class='defen' src='{{imgServer}}/img/phbimg/phb.png'></image>
-        <view>{{item.date}}</view>
+        <view class='mc'>答题数:{{questionTotal}}</view>
+        <view class='touxiang'></view>
+       
       </view>
-    </block>
+       <view class='top1'>
+        <view class='mc'>正确:{{okTotal}}</view>
+        <view class='touxiang'></view>
+     
+      </view>
+       <view class='top1'>
+        <view class='mc'>错误:{{errTotal}}</view>
+        <view class='touxiang'></view>
+     
+      </view>
+    
   </view>
   <view class='com'></view>
   <view class='again' bindtap='go'>

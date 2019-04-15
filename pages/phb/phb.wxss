@@ -35,13 +35,7 @@
   font-size:70rpx;
  }
 
-.chenghao{
-  position: relative;
-  width: 750rpx;
-  height: 75rpx;
-  top: -1334rpx;
 
-}
 .first{
    width: 180rpx;
    height: 75rpx;
@@ -51,7 +45,7 @@
    margin-left: 25rpx; 
    border-radius: 20rpx;
    line-height: 75rpx;
-   text-align: center;
+   ttext-align: center;
    font-size: 35rpx;
    /* display: none; */
    }
@@ -133,24 +127,37 @@
 }
 
 .touxiang{
-  width: 50rpx;
-  height: 50rpx;
-  background:green;
+  width: 60rpx;
+  height: 60rpx;
+  border:1px solid black;
+  background: white;
   float: left;
   margin-top: 30rpx;
   margin-left: 30rpx;
   margin-right: 40rpx;
   border-radius: 50%;
+  text-align: center;
+  line-height: 60rpx;
+
 }
 
+.riqi{
+  color: white;
+  position: relative;
+  top: -80rpx;
+  left:330rpx;
+
+}
 .mc{float: left;
     margin-top:30rpx;
     margin-left: 10rpx;
 }
 
-.defen{width:426rpx;
-height: 109rpx;
-  float: left;
+.defen{
+  width:426rpx;
+  height: 109rpx;
+  position: relative;
+
 }
 .again{
   width: 350rpx;

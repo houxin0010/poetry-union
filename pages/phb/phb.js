@@ -12,6 +12,9 @@ Page({
       hisScore:0,
       date:'',
     }],
+    questionTotal: app.globalData.questionTotal,
+    okTotal: app.globalData.okTotal,
+    errTotal: app.globalData.errTotal,
     imgServer: app.globalData.imgServer
   },
 
@@ -22,7 +25,7 @@ Page({
     console.log(options);
     var that = this;
     that.setData({
-      questionPaperId: 41
+      questionPaperId: options.questionPaperId
     });
     wx.request({
       url: app.globalData.host + '/questionPaper/getAnswerResult',
@@ -51,20 +54,24 @@ Page({
     wx.request({
       url: app.globalData.host + '/questionPaper/init',
       method: 'GET',
+      data: {
+        openId: app.globalData.openid
+      },
       success: function (res) {
-        console.log(res.data);
+        console.log("在玩一局的openID:" + app.globalData.openid);
+        console.log("在玩一局返回数据:"+JSON.stringify(res.data));
         if (res.data.code == '00') {
           let content = res.data.content;
           if (content.firstQuestionType == 'SINGLE_SEL') {
-            wx.navigateTo({
+            wx.redirectTo({
               url: '../index1/dati1?questionPaperId=' + content.questionPaperId
             });
           } else if (content.firstQuestionType == 'COMPLETION') {
-            wx.navigateTo({
+            wx.redirectTo({
               url: '../index2/dati2?questionPaperId=' + content.questionPaperId
             });
           } else if (content.firstQuestionType == 'BANKED_CLOZE') {
-            wx.navigateTo({
+            wx.redirectTo({
               url: '../index3/dati3?questionPaperId=' + content.questionPaperId
             });
           }

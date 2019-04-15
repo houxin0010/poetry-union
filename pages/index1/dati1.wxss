@@ -61,7 +61,7 @@
 }
 
 .tixu {
-  width: 161rpx;
+  width: 220rpx;
   height: 57rpx;
   position: relative;
   top: -1364rpx;
@@ -120,7 +120,6 @@
   left: 50rpx;
   border-radius: 10rpx;
   opacity: 0;
-  animation: zhedang 1s 1s linear forwards;
 }
 
 .A {
@@ -312,15 +311,5 @@
   100% {
     left: 0rpx;
     opacity: 1;
-  }
-}
-
-@keyframes zhedang {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
   }
 }
