@@ -13,9 +13,9 @@ Page({
       hisScore: 0,
       date: '',
     }],
-    questionTotal: app.globalData.questionTotal,
-    okTotal: app.globalData.okTotal,
-    errTotal: app.globalData.errTotal,
+    questionTotal: 0,
+    okTotal: 0,
+    errTotal: 0,
     imgServer: app.globalData.imgServer
   },
 
@@ -24,8 +24,11 @@ Page({
    */
   onLoad: function(options) {
     console.log(options);
-
-
+    this.setData({
+      questionTotal: app.globalData.questionTotal,
+      okTotal: app.globalData.okTotal,
+      errTotal: app.globalData.errTotal
+    });
   },
 
   go: function() {

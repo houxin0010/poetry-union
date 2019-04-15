@@ -63,6 +63,7 @@ function init()
         app.globalData.questionNo = 1;
         app.globalData.qusetions = content.questions;
         app.globalData.questionTotal = content.questions.length;
+        console.log(app.globalData.questionTotal);
         // console.log("考题初始化测试全局数据:" + app.globalData.questionNo);
         //console.log("考题初始化测试全局数据:" +JSON.stringify(app.globalData.qusetions));
         //console.log("考题初始化测试单个数据:" +JSON.stringify(app.globalData.qusetions[app.globalData.questionNo]));
