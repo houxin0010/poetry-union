@@ -6,23 +6,23 @@
 
   <view>
     <text class='gr'>您的成绩：</text>
-    <text class='fs'>{{currentScore}}</text>
+    <text class='fs'></text>
   </view>
 
   <view class='dk'>
     
       <view class='top1'>
-        <view class='mc'>答题数:{{questionTotal}}</view>
+        <view class='mc'>答题数:   {{questionTotal}}</view>
         <view class='touxiang'></view>
        
       </view>
        <view class='top1'>
-        <view class='mc'>正确:{{okTotal}}</view>
+        <view class='mc'>正确数:  {{okTotal}}</view>
         <view class='touxiang'></view>
      
       </view>
        <view class='top1'>
-        <view class='mc'>错误:{{errTotal}}</view>
+        <view class='mc'>错误数:  {{errTotal}}</view>
         <view class='touxiang'></view>
      
       </view>
