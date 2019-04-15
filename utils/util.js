@@ -45,13 +45,53 @@ const formatNumber = n => {
     });
   } else {
     wx.redirectTo({
-      url: '../phb/phb?questionPaperId=' + this.data.questionPaperId
+      url: '../phb/phb'
     });
   }
-}
+};
 
+function init()
+{
+  wx.request({
+    url: app.globalData.host + '/questionPaper/init',
+    method: 'GET',
+
+    success: function (res) {
+      console.log("考题初始化返回结果:" + JSON.stringify(res));
+      if (res.data.code == '00') {
+        let content = res.data.content;
+        app.globalData.questionNo = 1;
+        app.globalData.qusetions = content.questions;
+        app.globalData.questionTotal = content.questions.length;
+        // console.log("考题初始化测试全局数据:" + app.globalData.questionNo);
+        //console.log("考题初始化测试全局数据:" +JSON.stringify(app.globalData.qusetions));
+        //console.log("考题初始化测试单个数据:" +JSON.stringify(app.globalData.qusetions[app.globalData.questionNo]));
+
+
+        var curQuestion = app.globalData.qusetions[app.globalData.questionNo - 1];
+        if (curQuestion.questionType == 'SINGLE_SEL') {
+          wx.navigateTo({
+            url: '../index1/dati1?qid=' + curQuestion.questionId + '&qtype=' + curQuestion.questionType
+          });
+        } else if (content.firstQuestionType == 'COMPLETION') {
+          wx.navigateTo({
+            url: '../index2/dati2?qid=' + curQuestion.questionId + '&qtype=' + curQuestion.questionType
+          });
+        } else if (content.firstQuestionType == 'BANKED_CLOZE') {
+          wx.navigateTo({
+            url: '../index3/dati3?qid=' + curQuestion.questionId + '&qtype=' + curQuestion.questionType
+          });
+        }
+      }
+    },
+    fail: function (res) {
+      console.log("初始化是");
+    }
+  });
+}
 
 module.exports = {
   formatTime: formatTime,
-  go:go
+  go:go,
+  init: init
 }
