@@ -28,27 +28,7 @@ Page({
     that.setData({
       questionPaperId: options.questionPaperId
     });
-    wx.request({
-      url: app.globalData.host + '/questionPaper/getAnswerResult',
-      data: {
-        questionPaperId: that.data.questionPaperId,
-        openId: app.globalData.openid
-      },
-      method: 'GET',
-      success: function (res) {
-        console.log(res.data);
-        if (res.data.code == '00') {
-          let content = res.data.content;
-          that.setData({
-            currentScore: content.currentScore,
-            hisScore: content.hisScore,
-          });
-        }
-      },
-      fail: function (res) {
-        console.log("--------fail--------");
-      }
-    });
+
   },
 
   go: function () {
