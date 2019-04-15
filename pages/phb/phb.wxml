@@ -12,19 +12,13 @@
   <view class='dk'>
     
       <view class='top1'>
-        <view class='mc'>答题数: {{questionTotal}}</view>
-        <view class='touxiang'></view>
-       
+        <view class='mc'>答题数: {{questionTotal}}</view>  
       </view>
        <view class='top1'>
         <view class='mc'>正确数:  {{okTotal}}</view>
-        <view class='touxiang'></view>
-     
       </view>
        <view class='top1'>
         <view class='mc'>错误数:  {{errTotal}}</view>
-        <view class='touxiang'></view>
-     
       </view>
     
   </view>
