@@ -12,7 +12,7 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         console.log(res);
         let openid = null;
-        let that =this;
+        let that = this;
         if (res.code) {
           wx.request({
             url: that.globalData.host + '/questionPaper/getcode',
@@ -57,42 +57,15 @@ App({
   globalData: {
     openid: null,
     userInfo: null,
-    questionNo:0,
-    questionTotal:0,
-    okTotal:0,
-    errTotal:0,
-    qusetions:new Array(),
-     host: 'https://wxdemo.010service.com:8443/poetry',
+    questionNo: 0,
+    questionTotal: 0,
+    okTotal: 0,
+    errTotal: 0,
+    qusetions: new Array(),
+    host: 'https://wxdemo.010service.com:8443/poetry',
     //host: 'http://127.0.0.1:8080/poetry',
     //host: 'http://39.108.154.215:10086',
     imgServer: 'http://wxdemo.010service.com/images'
-  },
-
-  go: function () {
-    console.log("单选题执行了go方法");
-    app.globalData.questionNo = app.globalData.questionNo + 1;
-    console.info("下一题序号是：" + app.globalData.questionNo);
-    var curQuestion = app.globalData.qusetions[app.globalData.questionNo];
-    console.info("下一题是:" + JSON.stringify(curQuestion));
-    if (curQuestion.questionType == 'SINGLE_SEL') {
-      wx.redirectTo({
-        url: '../index1/dati1?qid=' + curQuestion.questionId + '&qtype=' + curQuestion.questionType
-      });
-    } else if (curQuestion.questionType == 'COMPLETION') {
-
-      wx.redirectTo({
-        url: '../index2/dati2?qid=' + curQuestion.questionId + '&qtype=' + curQuestion.questionType
-      });
-    } else if (curQuestion.questionType == 'BANKED_CLOZE') {
-
-      wx.redirectTo({
-        url: '../index3/dati3?qid=' + curQuestion.questionId + '&qtype=' + curQuestion.questionType
-      });
-    } else {
-      wx.redirectTo({
-        url: '../phb/phb?questionPaperId=' + this.data.questionPaperId
-      });
-    }
   },
 
 })

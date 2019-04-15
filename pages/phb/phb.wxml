@@ -12,7 +12,7 @@
   <view class='dk'>
     
       <view class='top1'>
-        <view class='mc'>答题数:   {{questionTotal}}</view>
+        <view class='mc'>答题数: {{questionTotal}}</view>
         <view class='touxiang'></view>
        
       </view>
