@@ -1,10 +1,10 @@
 <!--pages/index2/dati2.wxml-->
 <view class='aaa'>
 <view class='xzt'>
-  <image class='back' src='{{imgServer}}/img/top/beij.png'></image>
+  <image mode='aspectFill' class='back' src='{{imgServer}}/img/top/beij.png'></image>
     <view class='leave' bindtap='back'>首页</view>
-  <view class='chengji'>我的成绩</view>
-  <view class='fenshu'>{{currentScore}}</view>
+  <view class='chengji'>剩余题量</view>
+  <view class='fenshu'>{{remainingQty}}</view>
   <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
   <image class='tixu' src='{{questionNoSrc}}'></image>
   <view class='time'></view>
@@ -13,7 +13,6 @@
   <view class='question'>{{question}}</view>
   <image class='zhedang' src='{{imgServer}}/img/top/zb.png'></image>
   <block wx:if="{{correctPrompt}}">
-      <view class='black'></view>
       <view class='alert'>
         <image class='yes' src='{{imgServer}}/img/alert/yes.png'></image>
         <image class='yespic' src='{{imgServer}}/img/alert/xiao.png'></image>
@@ -22,7 +21,6 @@
     </block>
 
     <block wx:if="{{errorHint}}">
-      <view class='black'></view>
       <view class='alert'>
         <image class='no' src='{{imgServer}}/img/alert/no.png'></image>
         <image class='nopic' src='{{imgServer}}/img/alert/ku.png'></image>

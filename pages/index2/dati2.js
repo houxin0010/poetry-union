@@ -20,6 +20,7 @@ Page({
     questionNoSrc: '',
     correctPrompt: false,
     errorHint: false,
+    remainingQty: 0,
     imgServer: app.globalData.imgServer
   },
 
@@ -31,7 +32,7 @@ Page({
     var that = this;
     that.setData({
       questionId: options.qid,
-      questionType: options.qtype
+      questionType: options.qtype,
     });
     wx.request({
       url: app.globalData.host + '/questionPaper/getQuestion',
@@ -48,7 +49,8 @@ Page({
             question: content.question,
             answer: content.answer,
             questionNo: content.questionNo,
-            currentScore: content.currentScore
+            currentScore: content.currentScore,
+            remainingQty: app.globalData.questionTotal - app.globalData.questionNo,
           });
           that.setData({
             questionNoSrc: that.data.imgServer + '/img/tixu/' + app.globalData.questionNo + '.png'

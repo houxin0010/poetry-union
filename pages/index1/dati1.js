@@ -22,6 +22,7 @@ Page({
     questionNoSrc: '',
     correctPrompt: false,
     errorHint: false,
+    remainingQty: 0,
     imgServer: app.globalData.imgServer
   },
 
@@ -51,6 +52,7 @@ Page({
             answer: content.answer,
             questionNo: content.questionNo,
             currentScore: content.currentScore,
+            remainingQty: app.globalData.questionTotal - app.globalData.questionNo,
             choiceA: content.options[0],
             choiceB: content.options[1],
             choiceC: content.options[2]

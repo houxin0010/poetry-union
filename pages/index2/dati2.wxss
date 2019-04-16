@@ -1,15 +1,18 @@
 /* pages/index2/dati2.wxss */
-.aaa{width: 750rpx;
-height: 1344rpx;
-overflow: hidden;}
+.aaa{  width: 750rpx;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  }
 
-.xzt{width: 750rpx;
-height: 1344rpx;
-position: relative;}
+.xzt{  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
-.back{
-  width:750rpx;
-  height: 1334rpx;
+.back {
+  width: 100%;
+  height: 100%;
 }
 
 .leave {
@@ -153,28 +156,19 @@ position: relative;}
   left: 60rpx;
 }
 
-.black{
-  width: 750rpx;
-  height: 1334rpx;
-  background: black;
-  position: relative;
-  top: -2920rpx;
-  opacity: 0.5;
-  z-index: 1;
-  /* display: none; */
-}
+
 
 .alert{
   width: 650rpx;
   height: 390rpx;
   background: white;
   position: relative;
-  top: -3760rpx;
+  top: -2560rpx;
   left: 50rpx;
   border-radius: 50rpx;
   border: 5rpx solid darkgoldenrod;
   /* display: none; */
-  z-index: 2;
+  z-index: 5;
 }
 
 .yes{
