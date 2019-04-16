@@ -212,7 +212,7 @@ position: relative;}
   height: 100rpx;
   background: brown;
   margin-left: 180rpx;
-  margin-top: 80rpx;
+  margin-top: 60rpx;
   color: white;
   font-weight: 600rpx;
   text-align: center;
@@ -224,9 +224,10 @@ position: relative;}
 .correct_answer{
   position: relative;
   color: red;
-  left: 100rpx;
-  top: 30rpx;
-  font-weight: 600;
+  left: 50rpx;
+  top: 10rpx;
+   white-space: pre-line;
+  font-size: 40rpx;
   /* display: none; */
 } 
 

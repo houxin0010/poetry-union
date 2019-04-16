@@ -109,9 +109,10 @@
 .correct_answer{
   position: relative;
   color: red;
-  left: 100rpx;
-  top:30rpx;
-  font-weight: 600;
+  left: 50rpx;
+  top: 10rpx;
+   white-space: pre-line;
+  font-size: 40rpx;
   /* display: none;  */
 }
 
@@ -239,12 +240,14 @@
 }
 
 .e {
+  width:80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
   font-size: 45rpx;
   float: left;
   display: block;
   position: relative;
-  left: 19rpx;
-  top: 10rpx;
   z-index: 1;
 }
 
@@ -253,14 +256,15 @@
   height: 80rpx;
   float: left;
   position: relative;
-  top: -55rpx;
+  top: -80rpx;
 }
 
 .tiback1 {
   width: 80rpx;
   height: 80rpx;
   float: left;
-  background: red;
+  background-image: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png');
+  background-size: cover;
   position: relative;
   top: 85rpx;
   margin-right: 20rpx;
@@ -271,7 +275,8 @@
   width: 80rpx;
   height: 80rpx;
   float: left;
-  background: red;
+  background-image: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png');
+  background-size: cover;
   position: relative;
   top: 100rpx;
   margin-right: 20rpx;
@@ -289,12 +294,14 @@
 }
 
 .x {
+    width:80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
   font-size: 45rpx;
   float: left;
   display: block;
   position: relative;
-  left: 19rpx;
-  top: 15rpx;
   z-index: 1;
 }
 
@@ -303,7 +310,7 @@
   height: 80rpx;
   float: left;
   position: relative;
-  top:-60rpx;
+  top:-80rpx;
 }
 
 .black {
@@ -367,7 +374,7 @@
   height: 100rpx;
   background: brown;
   margin-left: 180rpx;
-  margin-top: 80rpx;
+  margin-top: 60rpx;
   color: white;
   font-weight: 600rpx;
   text-align: center;

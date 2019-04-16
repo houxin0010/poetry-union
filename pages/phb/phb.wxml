@@ -16,6 +16,6 @@
     <view class='wfontnum'>{{errTotal}}</view>
   </view>
   <view class='again'>
-    <text>再来一遍</text>
+    <text bindtap='go'>再来一遍</text>
   </view>
 </view>

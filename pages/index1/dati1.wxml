@@ -40,7 +40,7 @@
       <view class='alert'>
         <image class='no' src='{{imgServer}}/img/alert/no.png'></image>
         <image class='nopic' src='{{imgServer}}/img/alert/ku.png'></image>
-        <view class='correct_answer'>正确答案是：{{answer}}</view>
+        <view class='correct_answer'>正确答案：{{answer}}</view>
         <view class='continueBtn' bindtap='go'>继续挑战</view>
       </view>
     </block>

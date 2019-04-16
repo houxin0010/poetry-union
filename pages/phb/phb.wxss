@@ -94,7 +94,7 @@
 .cfontnum{
   position: relative;
   top: -415rpx;
-  left: 450rpx;
+  left: 400rpx; 
   font-size: 80rpx;
   color: green;
 }
@@ -109,7 +109,7 @@
 .wfontnum{
   position: relative;
   top: -315rpx;
-  left: 450rpx;
+  left: 400rpx;
   font-size: 80rpx;
   color: red;
 }
@@ -126,7 +126,7 @@
 
 .again text{
   position: relative;
-  top: -110rpx;
+  top: -115rpx;
   left: 100rpx;
   color: white;
 }

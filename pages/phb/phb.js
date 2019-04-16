@@ -32,9 +32,7 @@ Page({
   },
 
   go: function() {
-
     util.init();
-
   },
 
   /**
