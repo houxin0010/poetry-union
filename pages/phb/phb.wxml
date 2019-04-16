@@ -3,27 +3,19 @@
     <image class='back' src='{{imgServer}}/img/phbimg/beij.png'></image>
     <image class='yxt' src='{{imgServer}}/img/phbimg/yxt.png'></image>
   </view>
-
-  <view>
-    <text class='gr'>您的成绩：</text>
-    <text class='fs'></text>
+  <view class='dtzs'>总答题数</view>
+  <view class='tinum'>{{questionTotal}}</view>
+  <view class='correct'>
+    <view class='green'></view>
+    <text class='cfont'>正确答题数量：</text>
+    <view class='cfontnum'>{{okTotal}}</view>
   </view>
-
-  <view class='dk'>
-    
-      <view class='top1'>
-        <view class='mc'>答题数: {{questionTotal}}</view>  
-      </view>
-       <view class='top1'>
-        <view class='mc'>正确数:  {{okTotal}}</view>
-      </view>
-       <view class='top1'>
-        <view class='mc'>错误数:  {{errTotal}}</view>
-      </view>
-    
+  <view class='wrong'>
+    <view class='red'></view>
+    <text class='wfont'>错误答题数量：</text>
+    <view class='wfontnum'>{{errTotal}}</view>
   </view>
-  <view class='com'></view>
-  <view class='again' bindtap='go'>
-    <image class='aaa' src='{{imgServer}}/img/phbimg/zailaiyibian.png'></image>
+  <view class='again'>
+    <text>再来一遍</text>
   </view>
 </view>

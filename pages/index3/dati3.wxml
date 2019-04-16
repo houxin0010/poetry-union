@@ -11,7 +11,7 @@
     <view class='time2'></view>
     <image class='tiban' src='{{imgServer}}/img/top/tiban.png'></image>
     <view class='question'>{{question}}</view>
-    <image class='zhedang' src='{{imgServer}}/img/top/zb.png'></image>
+    <image class='zhedang' src='{{imgServer}}/img/top/ythgzb.png'></image>
     <block wx:if="{{correctPrompt}}">
       <view class='black'></view>
       <view class='alert'>
