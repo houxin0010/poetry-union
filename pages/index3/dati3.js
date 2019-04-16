@@ -1,5 +1,6 @@
 // pages/index3/dati3.js
 var app = getApp();
+var timer; // 计时器
 var util = require('../../utils/util.js');
 Page({
   /**
@@ -58,6 +59,7 @@ Page({
           that.setData({
             questionNoSrc: that.data.imgServer + '/img/tixu/' + app.globalData.questionNo + '.png'
           });
+          util.countdown(); // 计时器
           console.log(that.data);
         }
       },
@@ -68,6 +70,7 @@ Page({
   },
 
   select: function(event) {
+    util.pause();
     let that = this;
     let index = event.currentTarget.dataset.selectd;
     let options = that.data.options;

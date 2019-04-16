@@ -1,5 +1,5 @@
 var app = getApp();
-
+var timer; // 计时器
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
@@ -7,7 +7,6 @@ const formatTime = date => {
   const hour = date.getHours()
   const minute = date.getMinutes()
   const second = date.getSeconds()
-
   return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
 
@@ -16,18 +15,28 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
- function go() {
- 
+function countdown() {
+  timer = setTimeout(function() {
+    console.log("----countdown----");
+    go();
+  }, 31 * 1000);
+};
+
+function pause(){
+  clearTimeout(timer);
+}
+
+function go() {
+  clearTimeout(timer);
   app.globalData.questionNo = app.globalData.questionNo + 1;
-   if (app.globalData.questionNo > app.globalData.questionTotal)
-   {
-     wx.redirectTo({
-       url: '../phb/phb'
-     });
-     return ;
-   }
+  if (app.globalData.questionNo > app.globalData.questionTotal) {
+    wx.redirectTo({
+      url: '../phb/phb'
+    });
+    return;
+  }
   console.info("下一题序号是：" + app.globalData.questionNo);
-  var curQuestion = app.globalData.qusetions[app.globalData.questionNo-1];
+  var curQuestion = app.globalData.qusetions[app.globalData.questionNo - 1];
   console.info("下一题是:" + JSON.stringify(curQuestion));
   if (curQuestion.questionType == 'SINGLE_SEL') {
     wx.redirectTo({
@@ -50,13 +59,12 @@ const formatNumber = n => {
   }
 };
 
-function init()
-{
+function init() {
   wx.request({
     url: app.globalData.host + '/questionPaper/init',
     method: 'GET',
 
-    success: function (res) {
+    success: function(res) {
       console.log("考题初始化返回结果:" + JSON.stringify(res));
       if (res.data.code == '00') {
         let content = res.data.content;
@@ -85,7 +93,7 @@ function init()
         }
       }
     },
-    fail: function (res) {
+    fail: function(res) {
       console.log("初始化是");
     }
   });
@@ -93,6 +101,8 @@ function init()
 
 module.exports = {
   formatTime: formatTime,
-  go:go,
-  init: init
+  go: go,
+  init: init,
+  countdown: countdown,
+  pause: pause
 }

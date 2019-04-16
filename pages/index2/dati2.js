@@ -1,5 +1,6 @@
 // pages/index2/dati2.js
 var app = getApp();
+var timer; // 计时器
 var util = require('../../utils/util.js');
 Page({
   /**
@@ -52,6 +53,7 @@ Page({
           that.setData({
             questionNoSrc: that.data.imgServer + '/img/tixu/' + app.globalData.questionNo + '.png'
           });
+          util.countdown(); // 计时器
           console.log(that.data);
         }
       },
@@ -68,6 +70,7 @@ Page({
   },
 
   commitAnswer: function() {
+    util.pause();
     let that = this;
     that.setData({
       displayBlock: '',
@@ -80,19 +83,14 @@ Page({
         correctPrompt: true
       });
       isCorrect = true;
+      app.globalData.okTotal++;
     } else {
       that.setData({
         errorHint: true
       });
       isCorrect = false;
-    }
-    if (isCorrect) {
-      app.globalData.okTotal++;
-    }
-    else {
       app.globalData.errTotal++;
     }
-
   },
 
   go: function() {

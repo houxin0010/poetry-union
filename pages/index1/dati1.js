@@ -1,13 +1,14 @@
 // pages/index1/dati1.js
 var app = getApp();
+var timer; // 计时器
 var util = require('../../utils/util.js');
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    questionId:0,
-    questionType:'',
+    questionId: 0,
+    questionType: '',
     questionPaperId: 0,
     questionNumber: 0,
     questionNo: 0,
@@ -28,11 +29,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    console.log("单选题页面加载:参数是"+JSON.stringify(options));
+    console.log("单选题页面加载:参数是" + JSON.stringify(options));
     var that = this;
     that.setData({
       questionId: options.qid,
-      questionType:options.qtype
+      questionType: options.qtype
     });
     wx.request({
       url: app.globalData.host + '/questionPaper/getQuestion',
@@ -42,7 +43,7 @@ Page({
       },
       method: 'GET',
       success: function(res) {
-        console.log("获取单选题数据:"+JSON.stringify(res.data));
+        console.log("获取单选题数据:" + JSON.stringify(res.data));
         if (res.data.code == '00') {
           let content = res.data.content;
           that.setData({
@@ -54,21 +55,22 @@ Page({
             choiceB: content.options[1],
             choiceC: content.options[2]
           });
-          
-            that.setData({
-              questionNoSrc: that.data.imgServer + '/img/tixu/' + app.globalData.questionNo+'.png'
-            });
-        
+
+          that.setData({
+            questionNoSrc: that.data.imgServer + '/img/tixu/' + app.globalData.questionNo + '.png'
+          });
+          util.countdown(); // 计时器
           console.log(that.data);
         }
       },
       fail: function(res) {
-        console.log("获取单选题异常:"+res.errMsg);
+        console.log("获取单选题异常:" + res.errMsg);
       }
     });
   },
 
   select: function(event) {
+    util.pause();
     let that = this;
     that.setData({
       displayBlock: '',
@@ -83,28 +85,22 @@ Page({
         correctPrompt: true
       });
       isCorrect = true;
+      app.globalData.okTotal++;
     } else {
       that.setData({
         errorHint: true
       });
       isCorrect = false;
-    }
-    if(isCorrect)
-    {
-      app.globalData.okTotal++;
-    }
-    else{
       app.globalData.errTotal++;
     }
-   
+
   },
 
   go: function() {
-    
     util.go();
   },
 
-  back: function () {
+  back: function() {
     wx.navigateTo({
       url: '../index/index'
     });
