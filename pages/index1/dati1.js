@@ -1,10 +1,14 @@
 // pages/index1/dati1.js
 var app = getApp();
+var timer; // 计时器
+var util = require('../../utils/util.js');
 Page({
   /**
    * 页面的初始数据
    */
   data: {
+    questionId: 0,
+    questionType: '',
     questionPaperId: 0,
     questionNumber: 0,
     questionNo: 0,
@@ -25,19 +29,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    console.log(options);
+    console.log("单选题页面加载:参数是" + JSON.stringify(options));
     var that = this;
     that.setData({
-      questionPaperId: options.questionPaperId
+      questionId: options.qid,
+      questionType: options.qtype
     });
     wx.request({
       url: app.globalData.host + '/questionPaper/getQuestion',
       data: {
-        questionPaperId: that.data.questionPaperId
+        questionId: that.data.questionId,
+        questionType: that.data.questionType
       },
       method: 'GET',
       success: function(res) {
-        console.log(res.data);
+        console.log("获取单选题数据:" + JSON.stringify(res.data));
         if (res.data.code == '00') {
           let content = res.data.content;
           that.setData({
@@ -49,57 +55,22 @@ Page({
             choiceB: content.options[1],
             choiceC: content.options[2]
           });
-          if (content.questionNo == 1) {
-            that.setData({
-              questionNoSrc: that.data.imgServer + '/img/titlenum/one.png'
-            });
-          } else if (content.questionNo == 2) {
-            that.setData({
-              questionNoSrc: that.data.imgServer + '/img/titlenum/two.png'
-            });
-          } else if (content.questionNo == 3) {
-            that.setData({
-              questionNoSrc: that.data.imgServer + '/img/titlenum/three.png'
-            });
-          } else if (content.questionNo == 4) {
-            that.setData({
-              questionNoSrc: that.data.imgServer + '/img/titlenum/four.png'
-            });
-          } else if (content.questionNo == 5) {
-            that.setData({
-              questionNoSrc: that.data.imgServer + '/img/titlenum/five.png'
-            });
-          } else if (content.questionNo == 6) {
-            that.setData({
-              questionNoSrc: that.data.imgServer + '/img/titlenum/six.png'
-            });
-          } else if (content.questionNo == 7) {
-            that.setData({
-              questionNoSrc: that.data.imgServer + '/img/titlenum/seven.png'
-            });
-          } else if (content.questionNo == 8) {
-            that.setData({
-              questionNoSrc: that.data.imgServer + '/img/titlenum/eight.png'
-            });
-          } else if (content.questionNo == 9) {
-            that.setData({
-              questionNoSrc: that.data.imgServer + '/img/titlenum/nine.png'
-            });
-          } else if (content.questionNo == 10) {
-            that.setData({
-              questionNoSrc: that.data.imgServer + '/img/titlenum/ten.png'
-            });
-          }
+
+          that.setData({
+            questionNoSrc: that.data.imgServer + '/img/tixu/' + app.globalData.questionNo + '.png'
+          });
+          util.countdown(); // 计时器
           console.log(that.data);
         }
       },
       fail: function(res) {
-        console.log("--------fail--------");
+        console.log("获取单选题异常:" + res.errMsg);
       }
     });
   },
 
   select: function(event) {
+    util.pause();
     let that = this;
     that.setData({
       displayBlock: '',
@@ -114,52 +85,22 @@ Page({
         correctPrompt: true
       });
       isCorrect = true;
+      app.globalData.okTotal++;
     } else {
       that.setData({
         errorHint: true
       });
       isCorrect = false;
+      app.globalData.errTotal++;
     }
-    wx.request({
-      url: app.globalData.host + '/questionPaper/completeQuestion',
-      data: {
-        questionPaperId: that.data.questionPaperId,
-        isCorrect: isCorrect
-      },
-      method: 'GET',
-      success: function(res) {
-        console.log(res.data);
-        that.setData({
-          nextQuestionType: res.data.content
-        });
-      },
-      fail: function(res) {
-        console.log("--------fail--------");
-      }
-    });
+
   },
 
   go: function() {
-    if (this.data.nextQuestionType == 'SINGLE_SEL') {
-      wx.navigateTo({
-        url: '../index1/dati1?questionPaperId=' + this.data.questionPaperId
-      });
-    } else if (this.data.nextQuestionType == 'COMPLETION') {
-      wx.navigateTo({
-        url: '../index2/dati2?questionPaperId=' + this.data.questionPaperId
-      });
-    } else if (this.data.nextQuestionType == 'BANKED_CLOZE') {
-      wx.navigateTo({
-        url: '../index3/dati3?questionPaperId=' + this.data.questionPaperId
-      });
-    } else {
-      wx.navigateTo({
-        url: '../phb/phb?questionPaperId=' + this.data.questionPaperId
-      });
-    }
+    util.go();
   },
 
-  back: function () {
+  back: function() {
     wx.navigateTo({
       url: '../index/index'
     });

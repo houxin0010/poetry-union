@@ -1,22 +1,21 @@
 /* pages/index3/dati3.wxss */
 
-.aaa {
-  width: 750rpx;
-  height: 1344rpx;
-  overflow: hidden;
-}
-
-.xzt {
-  width: 750rpx;
-  height: 1344rpx;
+.aaa{  width: 750rpx;
+  height: 100vh;
   position: relative;
+  overflow: hidden;
+  }
+
+.xzt{  width: 100%;
+  height: 100%;
+  position: relative;
+  
 }
 
 .back {
-  width: 750rpx;
-  height: 1334rpx;
+  width: 100%;
+  height: 100%;
 }
-
 .leave {
   width: 200rpx;
   height: 79rpx;
@@ -67,7 +66,7 @@
 }
 
 .tixu {
-  width: 161rpx;
+  width: 220rpx;
   height: 57rpx;
   position: relative;
   top: -1364rpx;
@@ -97,6 +96,17 @@
   left: 75rpx;
   animation: myone 30s 2.5s linear forwards;
 }
+.question{
+  width: 500rpx;
+  height: 360rpx;
+  font-size: 35rpx;
+  position: relative;
+  top: -1600rpx;
+  left: 150rpx;
+  text-indent: 2rem;
+  white-space: pre-line;
+  animation: tmd 1.5s linear forwards;
+}
 
 .tiban {
   width: 700rpx;
@@ -106,17 +116,17 @@
   left: 25rpx;
 }
 
-.question {
-  width: 550rpx;
-  height: 360rpx;
-  font-size: 35rpx;
+.correct_answer{
   position: relative;
-  top: -1700rpx;
-  left: 102rpx;
-  text-indent: 2rem;
-  white-space: pre-line;
-  animation: tmd 1.5s linear forwards;
+  color: red;
+  left: 50rpx;
+  top: 10rpx;
+   white-space: pre-line;
+  font-size: 40rpx;
+  /* display: none;  */
 }
+
+
 
 .zhedang {
   width: 650rpx;
@@ -125,7 +135,7 @@
   top: -2100rpx;
   left: 50rpx;
   border-radius: 10rpx;
-  animation: zhedang 1s 1s linear forwards;
+  opacity: 0;
 }
 
 .srk5 {
@@ -219,6 +229,7 @@
   margin-right: 50rpx;
   font-size: 55rpx;
   float: left;
+
 }
 
 .title1 {
@@ -230,12 +241,14 @@
 }
 
 .e {
+  width:80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
   font-size: 45rpx;
   float: left;
   display: block;
   position: relative;
-  left: 19rpx;
-  top: 10rpx;
   z-index: 1;
 }
 
@@ -244,14 +257,15 @@
   height: 80rpx;
   float: left;
   position: relative;
-  top: -55rpx;
+  top: -80rpx;
 }
 
 .tiback1 {
   width: 80rpx;
   height: 80rpx;
   float: left;
-  background: red;
+  background-image: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png');
+  background-size: cover;
   position: relative;
   top: 85rpx;
   margin-right: 20rpx;
@@ -262,7 +276,8 @@
   width: 80rpx;
   height: 80rpx;
   float: left;
-  background: red;
+  background-image: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png');
+  background-size: cover;
   position: relative;
   top: 100rpx;
   margin-right: 20rpx;
@@ -280,12 +295,14 @@
 }
 
 .x {
+    width:80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
   font-size: 45rpx;
   float: left;
   display: block;
   position: relative;
-  left: 19rpx;
-  top: 15rpx;
   z-index: 1;
 }
 
@@ -294,31 +311,36 @@
   height: 80rpx;
   float: left;
   position: relative;
-  top:-60rpx;
+  top:-80rpx;
 }
 
+
 .black {
-  width: 750rpx;
-  height: 1334rpx;
+  width:150vh;
+  height:150vh;
   background: black;
   position: relative;
-  top: -2880rpx;
-  opacity: 0.5;
+  top: -3280rpx;
+    opacity: 0.5;
   /* display: none; */
-  z-index: 1;
+  z-index: 4;
 }
+
+
+
 
 .alert {
   width: 650rpx;
   height: 390rpx;
   background: white;
-  position: relative;
-  top: -3760rpx;
-  left: 50rpx;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   border-radius: 50rpx;
   border: 5rpx solid darkgoldenrod;
   /* display: none; */
-  z-index: 2;
+  z-index: 5;
 }
 
 .yes {
@@ -358,7 +380,7 @@
   height: 100rpx;
   background: brown;
   margin-left: 180rpx;
-  margin-top: 80rpx;
+  margin-top: 60rpx;
   color: white;
   font-weight: 600rpx;
   text-align: center;
@@ -404,12 +426,3 @@
   }
 }
 
-@keyframes zhedang {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}

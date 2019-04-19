@@ -1,4 +1,5 @@
-// pages/index2/dati2.js
+// pages/index2/dati2.
+var util = require('../../utils/util.js');
 var app = getApp();
 Page({
   /**
@@ -9,35 +10,7 @@ Page({
   },
 
   go: function() {
-    wx.request({
-      url: app.globalData.host + '/questionPaper/init',
-      method: 'GET',
-      data: {
-        openId: app.globalData.openid
-      },
-      success: function(res) {
-        console.log(res.data);
-        if (res.data.code == '00') {
-          let content = res.data.content;
-          if (content.firstQuestionType == 'SINGLE_SEL') {
-            wx.navigateTo({
-              url: '../index1/dati1?questionPaperId=' + content.questionPaperId
-            });
-          } else if (content.firstQuestionType == 'COMPLETION') {
-            wx.navigateTo({
-              url: '../index2/dati2?questionPaperId=' + content.questionPaperId
-            });
-          } else if (content.firstQuestionType == 'BANKED_CLOZE') {
-            wx.navigateTo({
-              url: '../index3/dati3?questionPaperId=' + content.questionPaperId
-            });
-          }
-        }
-      },
-      fail: function(res) {
-        console.log("--------fail--------");
-      }
-    });
+    util.init();
   },
 
   /**

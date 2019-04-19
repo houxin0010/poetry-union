@@ -2,15 +2,16 @@
 
 .xzt {
   width: 750rpx;
-  height: 1344rpx;
+  height: 100vh;  
   position: relative;
   overflow: hidden;
 }
 
 .back {
-  width: 750rpx;
-  height: 1334rpx;
+  width: 100%;
+  height: 100%;
 }
+
 
 .leave {
   width: 200rpx;
@@ -61,7 +62,7 @@
 }
 
 .tixu {
-  width: 161rpx;
+  width: 220rpx;
   height: 57rpx;
   position: relative;
   top: -1364rpx;
@@ -90,6 +91,16 @@
   top: -1364rpx;
   left: 75rpx;
   animation: myone 30s 2.5s linear forwards;
+}
+.black {
+  width:150vh;
+  height:150vh;
+  background: black;
+  position: relative;
+  top: -4280rpx;
+  opacity: 0.5;
+  /* display: none; */
+  z-index: 4;
 }
 
 .tiban {
@@ -120,7 +131,6 @@
   left: 50rpx;
   border-radius: 10rpx;
   opacity: 0;
-  animation: zhedang 1s 1s linear forwards;
 }
 
 .A {
@@ -202,25 +212,19 @@
   animation: tmd 1s 2s linear forwards;
 }
 
-.black {
-  width: 750rpx;
-  height: 1334rpx;
-  background: black;
-  position: relative;
-  top: -3970rpx;
-  opacity: 0.5;
-  /* display: none; */
-}
+
 
 .alert {
   width: 650rpx;
   height: 390rpx;
   background: white;
-  position: relative;
-  top: -4800rpx;
-  left: 50rpx;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   border-radius: 50rpx;
   border: 5rpx solid darkgoldenrod;
+   z-index: 5;
   /* display: none; */
 }
 
@@ -259,9 +263,11 @@
 .correct_answer{
   position: relative;
   color: red;
-  left: 100rpx;
-  top: 30rpx;
-  font-weight: 600;
+   left: 50rpx;
+  top: 10rpx;
+  font-size: 40rpx;
+   white-space: pre-line;
+  
   /* display: none; */
 }
 .continueBtn {
@@ -269,7 +275,7 @@
   height: 100rpx;
   background: brown;
   margin-left: 180rpx;
-  margin-top: 80rpx;
+  margin-top: 60rpx;
   color: white;
   font-weight: 600rpx;
   text-align: center;
@@ -312,15 +318,5 @@
   100% {
     left: 0rpx;
     opacity: 1;
-  }
-}
-
-@keyframes zhedang {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
   }
 }

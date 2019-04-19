@@ -1,15 +1,17 @@
 /* pages/index2/dati2.wxss */
-.aaa{width: 750rpx;
-height: 1344rpx;
-overflow: hidden;}
+.aaa{  width: 750rpx;
+  height: 100vh;
+  position: relative;
+  }
 
-.xzt{width: 750rpx;
-height: 1344rpx;
-position: relative;}
+.xzt{  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
-.back{
-  width:750rpx;
-  height: 1334rpx;
+.back {
+  width: 100%;
+  height: 100%;
 }
 
 .leave {
@@ -62,7 +64,7 @@ position: relative;}
   z-index: 1;
 }
 .tixu{
-  width: 161rpx;
+  width: 220rpx;
   height: 57rpx;
   position: relative;
   top:-1364rpx;
@@ -103,12 +105,12 @@ position: relative;}
 
 
 .question{
-  width: 550rpx;
+  width: 500rpx;
   height: 360rpx;
   font-size: 35rpx;
   position: relative;
-  top: -1700rpx;
-  left: 102rpx;
+  top: -1600rpx;
+  left: 160rpx;
   text-indent: 2rem;
   white-space: pre-line;
   animation: tmd 1.5s linear forwards;
@@ -120,7 +122,7 @@ position: relative;}
   top: -2100rpx;
   left: 50rpx;  
   border-radius: 10rpx;
-  animation: zhedang 1s 1s linear forwards;
+  opacity:0;
 }
 .font{
   position: relative;
@@ -130,51 +132,205 @@ position: relative;}
   font-size: 40rpx;
   float: left;
 }
+.rightanswer {
+  width: 85rpx;
+  height: 85rpx;
+  margin: 0px auto;
+  margin-left: 20rpx;
 
-.shuru input{
-  width: 450rpx;
-  height: 150rpx;
-  background:white;
-  border:2rpx solid brown;
+}
+
+.answer1 {
   position: relative;
-  top: -350rpx;
-  left: 50rpx;
-  border-radius: 40rpx;
-  color: black;
+  top: -455rpx;
+  left: 300rpx;
+  display: none;
+}
+
+.answer2 {
+  position: relative;
+  top: -455rpx;
+  left: 220rpx;
+  display: none;
+}
+
+.answer5 {
+  position: relative;
+  top: -455rpx;
+  left: 113rpx;
+  display: none;
+}
+
+.answer7 {
+  position: relative;
+  top: -455rpx;
+  /* display: none; */
+}
+
+
+
+.example{
+  position: relative;
+  top: -500rpx;
+  left: 75rpx;
+  width: 600rpx;
+  height: 100rpx;
+}
+
+.example1{
+  position: relative;
+  top: -575rpx;
+  left: 75rpx;
+  width: 600rpx;
+  height: 100rpx;
+}
+
+.exampleanswer{
+  width: 85rpx;
+  height: 85rpx;
+  margin-left: 30rpx;
+}
+
+.exampleanswer1{
+  width: 85rpx;
+  height: 85rpx;
+  margin-left: 30rpx;
+}
+
+.answerfont1{
+   position: relative;
+  top: -545rpx;
+  left:335rpx;
+  width: 600rpx;
+  height: 100rpx;
+  display: none;
+}
+.answerfont2{
+   position: relative;
+  top: -545rpx;
+  left: 255rpx;
+  width: 600rpx;
+  height: 100rpx;
+  display: none;
+}
+
+.answerfont5{
+   position: relative;
+  top: -545rpx;
+  left: 145rpx;
+  width: 600rpx;
+  height: 100rpx;
+  display: none;
+}
+
+.answerfont7{
+   position: relative;
+  top: -545rpx;
+  left: 35rpx;
+  width: 750rpx;
+  height: 100rpx;
+  /* display: none; */
+}
+
+
+
+
+
+.examplefont{
+  position: relative;
+  top: -600rpx;
+  left: 105rpx;
+  width: 600rpx;
+  height: 100rpx;
+}
+
+.examplefont1{
+  position: relative;
+  top: -675rpx;
+  left: 105rpx;
+  width: 600rpx;
+  height: 100rpx;
+}
+.afont{
+  margin-right: 35rpx;
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 55rpx;
+  float: left;
+  /* background: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png'); */
   text-align: center;
+  line-height: 80rpx;
+}
+
+.bfont{
+  margin-right: 35rpx;
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 55rpx;
+  float: left;
+  /* background: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png'); */
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.afont1{
+  margin-right: 48rpx;
+  font-size: 55rpx;
+  float: left;
+  
+}
+
+.afont2{
+   margin-right: 50rpx;
+  font-size: 55rpx;
   float: left;
 }
 
-.xst{
-  width: 205rpx;
-  height: 335rpx;
-  position: relative;
-  top: -450rpx;
-  left: 60rpx;
+
+.afont5{
+  margin-right: 50rpx;
+  font-size: 55rpx;
+  float: left;
 }
 
-.black{
-  width: 750rpx;
-  height: 1334rpx;
+
+.afont7{
+  margin-right: 50rpx;
+  font-size: 55rpx;
+  float: left;
+}
+
+
+
+
+
+
+
+.black {
+  width:150vh;
+  height:150vh;
   background: black;
   position: relative;
-  top: -2920rpx;
+  top: -3280rpx;
   opacity: 0.5;
-  z-index: 1;
   /* display: none; */
+  z-index: 1;
 }
+
+
 
 .alert{
   width: 650rpx;
   height: 390rpx;
   background: white;
-  position: relative;
-  top: -3760rpx;
-  left: 50rpx;
+   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   border-radius: 50rpx;
   border: 5rpx solid darkgoldenrod;
   /* display: none; */
-  z-index: 2;
+  z-index: 5;
 }
 
 .yes{
@@ -212,7 +368,7 @@ position: relative;}
   height: 100rpx;
   background: brown;
   margin-left: 180rpx;
-  margin-top: 80rpx;
+  margin-top: 60rpx;
   color: white;
   font-weight: 600rpx;
   text-align: center;
@@ -224,21 +380,13 @@ position: relative;}
 .correct_answer{
   position: relative;
   color: red;
-  left: 100rpx;
-  top: 30rpx;
-  font-weight: 600;
+  left: 50rpx;
+  top: 10rpx;
+   white-space: pre-line;
+  font-size: 40rpx;
   /* display: none; */
-   } 
+} 
 
-.notes{
-  font-size: 35rpx;
-  color: darkred;
-  position: relative;
-  top: -400rpx;
-  left: -220rpx;
-  font-family:microsoft yahei;
-
-}
 
 @keyframes myone{
   form{width:600rpx;}
@@ -256,7 +404,3 @@ position: relative;}
   100%{left: 0rpx; opacity: 1;}
 }
 
-@keyframes zhedang{
-  from{opacity: 1;}
-  to{opacity: 0;}
-}

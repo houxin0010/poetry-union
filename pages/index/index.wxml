@@ -1,14 +1,7 @@
 <view class='content'>
-  <image class='ty' src='{{imgServer}}/img/syimg/taiy.png'></image>
-  <image class='niao' src='{{imgServer}}/img/syimg/yanzi.png'></image>
-  <image class='m1' src='{{imgServer}}/img/syimg/mountain1.png'></image>
-  <image class='m2' src='{{imgServer}}/img/syimg/mountain2.png'></image>
-  <image class='m3' src='{{imgServer}}/img/syimg/mountain3.png'></image>
-  <image class='shany' src='{{imgServer}}/img/syimg/xuanya.png'></image>
-  <image class='shiren' src='{{imgServer}}/img/syimg/shiren.png'></image>
-  <image class='start' src='{{imgServer}}/img/syimg/kaishiyoux.png'></image>
-
-    <view bindtap='go' class='start_button'>开始游戏</view>
-
-  <image class='m4' src='{{imgServer}}/img/syimg/mountain4.png'></image>
+  <image  mode='aspectFill' class='back' src='http://wxdemo.010service.com/images/img/top/indexbg.jpg'></image>
+ <view class='start'>
+  <view bindtap='start_button' class='three'>三年级</view>
+  <view bindtap='start_button' class='four'>四年级</view>
+ </view>
 </view>

@@ -1,8 +1,8 @@
 <!--pages/index1/dati1.wxml-->
 <view class='xzt'>
-  <image class='back' src='{{imgServer}}/img/top/beij.png'></image>
+  <image mode='aspectFill' class='back' src='{{imgServer}}/img/top/beij.png'></image>
   <view class='leave' bindtap='back'>首页</view>
-  <view class='chengji'>我的成绩</view>
+  <view class='chengji'>剩余题量</view>
   <view class='fenshu'>{{currentScore}}</view>
   <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
   <image class='tixu' src='{{questionNoSrc}}'></image>
@@ -22,12 +22,12 @@
     <image src='{{imgServer}}/img/xztimg/B.png' class='answerB'></image>
     <image src='{{imgServer}}/img/xztimg/C.png' class='answerC'></image>
     <view class='answerfonta' bindtap='select' data-selectd='A'>{{choiceA}}</view>
-    <view class='answerfontb' bindtap='select' data-selectd='B'>{{choiceB}}</view>
+    <view class='answerfontb' bindtap='select' data-selec1td='B'>{{choiceB}}</view>
     <view class='answerfontc' bindtap='select' data-selectd='C'>{{choiceC}}</view>
   </view>
 
   <block wx:if="{{correctPrompt}}">
-      <view class='black'></view>
+   <view class='black'></view>
       <view class='alert'>
         <image class='yes' src='{{imgServer}}/img/alert/yes.png'></image>
         <image class='yespic' src='{{imgServer}}/img/alert/xiao.png'></image>
@@ -36,11 +36,11 @@
     </block>
 
     <block wx:if="{{errorHint}}">
-      <view class='black'></view>
+     <view class='black'></view>
       <view class='alert'>
         <image class='no' src='{{imgServer}}/img/alert/no.png'></image>
         <image class='nopic' src='{{imgServer}}/img/alert/ku.png'></image>
-        <view class='correct_answer'>正确答案是：{{answer}}</view>
+        <view class='correct_answer'>正确答案：{{answer}}</view>
         <view class='continueBtn' bindtap='go'>继续挑战</view>
       </view>
     </block>
