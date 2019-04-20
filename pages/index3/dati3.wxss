@@ -1,20 +1,23 @@
 /* pages/index3/dati3.wxss */
 
-.aaa{  width: 750rpx;
+.aaa {
+  width: 750rpx;
   height: 100vh;
   position: relative;
-  }
+  overflow: hidden;
+}
 
-.xzt{  width: 100%;
+.xzt {
+  width: 100%;
   height: 100%;
   position: relative;
-  
 }
 
 .back {
   width: 100%;
   height: 100%;
 }
+
 .leave {
   width: 200rpx;
   height: 79rpx;
@@ -95,7 +98,8 @@
   left: 75rpx;
   animation: myone 30s 2.5s linear forwards;
 }
-.question{
+
+.question {
   width: 500rpx;
   height: 360rpx;
   font-size: 35rpx;
@@ -115,17 +119,15 @@
   left: 25rpx;
 }
 
-.correct_answer{
+.correct_answer {
   position: relative;
   color: red;
   left: 50rpx;
   top: 10rpx;
-   white-space: pre-line;
+  white-space: pre-line;
   font-size: 40rpx;
   /* display: none;  */
 }
-
-
 
 .zhedang {
   width: 650rpx;
@@ -171,7 +173,6 @@
   margin-left: 20rpx;
 }
 
-
 .a1 {
   width: 85rpx;
   height: 85rpx;
@@ -186,54 +187,50 @@
   left: 25rpx;
 }
 
-.c {
-  margin-right: 35px;
-  font-size: 60rpx;
-}
-
 .answerfont5 {
+  width: 750rpx;
+  height: 100rpx;
   position: relative;
-  top: -790rpx;
+  top: -590rpx;
   left: 145rpx;
 }
 
 .answerfont6 {
+  width: 750rpx;
+  height: 100rpx;
   position: relative;
-  top: -790rpx;
-  left: 95rpx;
-}
-/*display:none;*/
-
-.answerfont7 {
-  position: relative;
-  top: -790rpx;
-  left: 45rpx;
+  top: -590rpx;
+  left: 72rpx;
   /* display: none; */
 }
 
-.d {
+.answerfont7 {
+  width: 750rpx;
+  height: 100rpx;
+  position: relative;
+  top: -590rpx;
+  left: 45rpx;
+  /* display:none; */
+}
+
+.answerfont_5 {
   margin-right: 50rpx;
   font-size: 55rpx;
   float: left;
 }
 
-.k{
+.answerfont_6 {
+  margin-right: 50rpx;
+  font-size: 55rpx;
+  left: 80rpx;
+  float: left;
+}
+
+.answerfont_7 {
   margin-right: 50rpx;
   font-size: 55rpx;
   float: left;
-  top: 100rpx;
 }
-
-.g {
-  margin-right: 50rpx;
-  font-size: 55rpx;
-  float: left;
-
-}
-
-
-
-
 
 .tiback {
   width: 80rpx;
@@ -244,7 +241,6 @@
   position: relative;
   margin-bottom: 20rpx;
   margin-right: 50rpx;
-  
 }
 
 .title {
@@ -252,12 +248,12 @@
   height: 300rpx;
   position: relative;
   float: left;
-  top: -420rpx;
-  left:200rpx;
+  top: -550rpx;
+  left: 200rpx;
 }
 
 .x {
-    width:80rpx;
+  width: 80rpx;
   height: 80rpx;
   text-align: center;
   line-height: 80rpx;
@@ -273,23 +269,19 @@
   height: 80rpx;
   float: left;
   position: relative;
-  top:-80rpx;
+  top: -80rpx;
 }
 
-
 .black {
-  width:150vh;
-  height:150vh;
+  width: 150vh;
+  height: 150vh;
   background: black;
   position: relative;
   top: -3280rpx;
-    opacity: 0.5;
+  opacity: 0.5;
   /* display: none; */
   z-index: 4;
 }
-
-
-
 
 .alert {
   width: 650rpx;
@@ -298,7 +290,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-radius: 50rpx;
   border: 5rpx solid darkgoldenrod;
   /* display: none; */
@@ -387,4 +379,3 @@
     opacity: 1;
   }
 }
-

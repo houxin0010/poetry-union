@@ -4,6 +4,7 @@
   width: 750rpx;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .xzt {
@@ -190,42 +191,43 @@
 }
 
 .example5 {
+  width: 85rpx;
+  height: 85rpx;
+  float: left;
+  margin-left: 20rpx;
+  background: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png');
+  background-size:cover;
+}
+
+.five {
+  width: 600rpx;
+  height: 100rpx;
   position: relative;
   top: -500rpx;
   left: 110rpx;
-  width: 600rpx;
-  height: 100rpx;
 }
 
-.example7 {
+.seven {
   position: relative;
   top: -500rpx;
   left: 5rpx;
   width: 750rpx;
   height: 100rpx;
-
 }
-.examplepic {
+
+.example7 {
   width: 85rpx;
   height: 85rpx;
+  float: left;
   margin-left: 20rpx;
+  background: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png');
+  background-size:cover;
 }
 
-.examplefont5 {
+.examplepic {
   position: relative;
-  top: -600rpx;
-  left: 135rpx;
-  width: 600rpx;
-  height: 100rpx;
-}
-
-.examplefont7 {
-  position: relative;
-  top: -600rpx;
-  left: 25rpx;
-  width: 750rpx;
-  height: 100rpx;
-
+  width: 85rpx;
+  height: 85rpx;
 }
 
 .bfont5 {
@@ -234,10 +236,11 @@
   height: 80rpx;
   font-size: 55rpx;
   float: left;
-  /* background: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png'); */
   background-size: cover;
   text-align: center;
   line-height: 80rpx;
+  position: relative;
+  top: -100rpx;
 }
 
 .bfont7 {
@@ -246,10 +249,11 @@
   height: 80rpx;
   font-size: 55rpx;
   float: left;
-  /* background: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png'); */
   background-size: cover;
   text-align: center;
   line-height: 80rpx;
+  position: relative;
+  top: -100rpx;
 }
 
 .black {
@@ -261,7 +265,6 @@
   opacity: 0.5;
   z-index: 1;
   /* display: none; */
-
 }
 
 .alert {

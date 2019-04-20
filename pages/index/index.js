@@ -12,6 +12,7 @@ Page({
   go: function (e) {
     console.log(e);
     let grade = e.currentTarget.dataset.grade;
+    app.globalData.grade=grade;
     util.init(grade);
   },
 

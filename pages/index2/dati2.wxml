@@ -64,21 +64,21 @@
   <view class='five' wx:if="{{answerLength === 5}}">
     <view wx:for="{{options}}" wx:key="key">
       <view class='example5'>
-        <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+        <view wx:if="{{item != ''}}">
+          <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+          <view class='bfont5' bindtap='select' data-selectd='{{index}}'>{{item}}</view>
+        </view>
       </view>
-      <view class='examplefont5'>
-        <view class='bfont5'>{{item}}</view>
-      </view>
-    </view> 
+    </view>
   </view>
 
   <view class='seven' wx:if="{{answerLength === 7}}">
     <view wx:for="{{options}}" wx:key="key">
       <view class='example7'>
-        <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-      </view>
-      <view class='examplefont7'>
-        <view class='bfont7'>{{item}}</view>
+        <view wx:if="{{item != ''}}">
+          <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+          <view class='bfont7' bindtap='select' data-selectd='{{index}}'>{{item}}</view>
+        </view>
       </view>
     </view>
   </view>

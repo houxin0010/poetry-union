@@ -32,7 +32,7 @@ Page({
   },
 
   go: function() {
-    util.init();
+    util.init(app.globalData.grade);
   },
 
   /**

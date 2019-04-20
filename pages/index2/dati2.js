@@ -79,27 +79,36 @@ Page({
     });
   },
 
-  commitAnswer: function() {
+  select: function(event) {
     util.pause();
     let that = this;
+    let index = event.currentTarget.dataset.selectd;
+    let options = that.data.options;
+    let userAnswer = that.data.userAnswer + options[index];
+    let userAnswerArray = that.data.userAnswerArray;
+    userAnswerArray.push(options[index]);
+    options[index] = '';
     that.setData({
-      displayBlock: '',
-      displayAlert: '',
-      displayContinueBtn: ''
+      options: options,
+      userAnswer: userAnswer,
+      userAnswerArray: userAnswerArray
     });
-    let isCorrect;
-    if (this.data.answer == this.data.userAnswer) {
-      that.setData({
-        correctPrompt: true
-      });
-      isCorrect = true;
-      app.globalData.okTotal++;
-    } else {
-      that.setData({
-        errorHint: true
-      });
-      isCorrect = false;
-      app.globalData.errTotal++;
+    console.log("----------", this.data);
+    if (userAnswer.length >= that.data.answer.length) {
+      let isCorrect;
+      if (this.data.answer == this.data.userAnswer) {
+        that.setData({
+          correctPrompt: true
+        });
+        isCorrect = true;
+        app.globalData.okTotal++;
+      } else {
+        that.setData({
+          errorHint: true
+        });
+        isCorrect = false;
+        app.globalData.errTotal++;
+      }
     }
   },
 
@@ -107,9 +116,9 @@ Page({
     util.go();
   },
 
-  back: function () {
-    wx.navigateTo({
-      url: '../index/index'
+  back: function() {
+    wx.redirectTo({
+      url: '../index/index',
     });
   },
 

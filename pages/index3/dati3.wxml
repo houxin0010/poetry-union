@@ -66,7 +66,25 @@
     </view>
   </block>
 
+     <block wx:if="{{answerLength === 5}}">
+    <view class='answerfont5'>
+      <view class='answerfont_5' wx:for="{{userAnswerArray}}"  wx:key="key">{{item}}</view>
+    </view>
+  </block>
 
+     <block wx:if="{{answerLength === 6}}">
+    <view class='answerfont6'>
+      <view class='answerfont_6' wx:for="{{userAnswerArray}}"  wx:key="key">{{item}}</view>
+    </view>
+  </block>
+
+ 
+  <block wx:if="{{answerLength === 7}}">
+    <view class='answerfont7'>
+      <view class='answerfont_7' wx:for="{{userAnswerArray}}"  wx:key="key">{{item}}</view>
+    </view>
+  </block>  
+ 
 
   <view class='title'>
     <view wx:for="{{options}}" wx:key="key">
@@ -81,22 +99,5 @@
 
 
 
-  <block wx:if="{{answerLength === 5}}">
-    <view class='answerfont5'>
-      <view class='d' wx:for="{{userAnswerArray}}" wx:key="key">{{item}}</view>
-    </view>
-  </block>
 
-  <block wx:if="{{answerLength === 6}}">
-    <view class='answerfont6'>
-      <view class='k' wx:for="{{userAnswerArray}}" wx:key="key">{{item}}</view>
-    </view>
-  </block>
-
-
-  <block wx:if="{{answerLength === 7}}">
-    <view class='answerfont7'>
-      <view class='g' wx:for="{{userAnswerArray}}" wx:key="key">{{item}}</view>
-    </view>
-  </block>
 </view>

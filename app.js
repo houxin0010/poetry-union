@@ -62,6 +62,7 @@ App({
     okTotal: 0,
     errTotal: 0,
     qusetions: [],
+    grade: 0,
     //host: 'https://wxdemo.010service.com:8443/poetry',
     // host: 'http://127.0.0.1:8080/poetry',
     host: 'http://127.0.0.1:10086',
