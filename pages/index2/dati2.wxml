@@ -69,7 +69,7 @@
       <view class='examplefont5'>
         <view class='bfont5'>{{item}}</view>
       </view>
-    </view>
+    </view> 
   </view>
 
   <view class='seven' wx:if="{{answerLength === 7}}">
