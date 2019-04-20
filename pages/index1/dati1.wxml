@@ -12,6 +12,7 @@
   <image class='tiban' src='{{imgServer}}/img/top/tiban.png'></image>
 
   <view class='question'>{{question}}</view>
+
   <image class='zhedang' src='{{imgServer}}/img/top/zb.png'></image>
   <image class='A' src='{{imgServer}}/img/xztimg/xzt.png'></image>
   <image class='A' src='{{imgServer}}/img/xztimg/xzt.png'></image>
@@ -21,7 +22,7 @@
     <image src='{{imgServer}}/img/xztimg/B.png' class='answerB'></image>
     <image src='{{imgServer}}/img/xztimg/C.png' class='answerC'></image>
     <view class='answerfonta' bindtap='select' data-selectd='A'>{{choiceA}}</view>
-    <view class='answerfontb' bindtap='select' data-selectd='B'>{{choiceB}}</view>
+    <view class='answerfontb' bindtap='select' data-selec1td='B'>{{choiceB}}</view>
     <view class='answerfontc' bindtap='select' data-selectd='C'>{{choiceC}}</view>
   </view>
 

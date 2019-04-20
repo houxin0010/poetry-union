@@ -1,10 +1,13 @@
 /* pages/index2/dati2.wxss */
-.aaa{  width: 750rpx;
+
+.aaa {
+  width: 750rpx;
   height: 100vh;
   position: relative;
-  }
+}
 
-.xzt{  width: 100%;
+.xzt {
+  width: 100%;
   height: 100%;
   position: relative;
 }
@@ -28,11 +31,10 @@
   left: 30rpx;
 }
 
-
-.chengji{
+.chengji {
   width: 200rpx;
   height: 75rpx;
-  background:black;
+  background: black;
   line-height: 75rpx;
   text-align: center;
   color: white;
@@ -40,9 +42,9 @@
   top: -1234rpx;
   left: 500rpx;
   font-size: 30rpx;
-
 }
-.fenshu{
+
+.fenshu {
   width: 196rpx;
   height: 71rpx;
   border: 1rpx solid gray;
@@ -54,26 +56,27 @@
   left: 500rpx;
 }
 
-.mb{
+.mb {
   width: 136rpx;
   height: 136rpx;
   position: relative;
-  top: -1340rpx; 
+  top: -1340rpx;
   opacity: 0.5;
-  animation:aaa 2s  linear forwards;
+  animation: aaa 2s linear forwards;
   z-index: 1;
 }
-.tixu{
+
+.tixu {
   width: 220rpx;
   height: 57rpx;
   position: relative;
-  top:-1364rpx;
+  top: -1364rpx;
   opacity: 0;
   animation: tmd 2s 1s linear forwards;
-  z-index: 2;  
+  z-index: 2;
 }
 
-.time{
+.time {
   width: 600rpx;
   height: 20rpx;
   background: black;
@@ -84,18 +87,18 @@
   opacity: 0.1;
 }
 
-.time2{
+.time2 {
   width: 600rpx;
   height: 20rpx;
-  background:green;
+  background: green;
   border-radius: 20rpx;
   position: relative;
   top: -1364rpx;
   left: 75rpx;
-  animation:myone 30s 2.5s linear forwards;
+  animation: myone 30s 2.5s linear forwards;
 }
 
-.tiban{
+.tiban {
   width: 700rpx;
   height: 400rpx;
   position: relative;
@@ -103,119 +106,61 @@
   left: 25rpx;
 }
 
-
-.question{
-  width: 500rpx;
-  height: 360rpx;
-  font-size: 35rpx;
+.question1 {
+  width: 750rpx;
+  height: 100rpx;
+  font-size: 40rpx;
   position: relative;
-  top: -1600rpx;
-  left: 160rpx;
-  text-indent: 2rem;
+  top: -1650rpx;
   white-space: pre-line;
+  text-align: center;
   animation: tmd 1.5s linear forwards;
 }
-.zhedang{
- width: 650rpx;
+
+.question2 {
+  width: 750rpx;
+  height: 100rpx;
+  font-size: 40rpx;
+  position: relative;
+  top: -1675rpx;
+  left: 15rpx;
+  white-space: pre-line;
+  text-align: center;
+  animation: tmd 1.5s linear forwards;
+}
+
+.zhedang {
+  width: 650rpx;
   height: 390rpx;
   position: relative;
   top: -2100rpx;
-  left: 50rpx;  
+  left: 50rpx;
   border-radius: 10rpx;
-  opacity:0;
+  opacity: 0;
 }
-.font{
-  position: relative;
-  top: -484rpx;
-  left: 100rpx;
-  font-family: '微软雅黑';
-  font-size: 40rpx;
-  float: left;
-}
+
 .rightanswer {
   width: 85rpx;
   height: 85rpx;
   margin: 0px auto;
   margin-left: 20rpx;
-
 }
 
-.answer1 {
-  position: relative;
-  top: -455rpx;
-  left: 300rpx;
-  display: none;
-}
-
-.answer2 {
-  position: relative;
-  top: -455rpx;
-  left: 220rpx;
-  display: none;
-}
-
-.answer5 {
+.lattic_5 {
   position: relative;
   top: -455rpx;
   left: 113rpx;
   display: none;
 }
 
-.answer7 {
+.lattic_7 {
   position: relative;
   top: -455rpx;
   /* display: none; */
 }
 
-
-
-.example{
+.fill5 {
   position: relative;
-  top: -500rpx;
-  left: 75rpx;
-  width: 600rpx;
-  height: 100rpx;
-}
-
-.example1{
-  position: relative;
-  top: -575rpx;
-  left: 75rpx;
-  width: 600rpx;
-  height: 100rpx;
-}
-
-.exampleanswer{
-  width: 85rpx;
-  height: 85rpx;
-  margin-left: 30rpx;
-}
-
-.exampleanswer1{
-  width: 85rpx;
-  height: 85rpx;
-  margin-left: 30rpx;
-}
-
-.answerfont1{
-   position: relative;
-  top: -545rpx;
-  left:335rpx;
-  width: 600rpx;
-  height: 100rpx;
-  display: none;
-}
-.answerfont2{
-   position: relative;
-  top: -545rpx;
-  left: 255rpx;
-  width: 600rpx;
-  height: 100rpx;
-  display: none;
-}
-
-.answerfont5{
-   position: relative;
   top: -545rpx;
   left: 145rpx;
   width: 600rpx;
@@ -223,8 +168,14 @@
   display: none;
 }
 
-.answerfont7{
-   position: relative;
+.afont5 {
+  margin-right: 50rpx;
+  font-size: 55rpx;
+  float: left;
+}
+
+.fill7 {
+  position: relative;
   top: -545rpx;
   left: 35rpx;
   width: 750rpx;
@@ -232,108 +183,102 @@
   /* display: none; */
 }
 
+.afont7 {
+  margin-right: 50rpx;
+  font-size: 55rpx;
+  float: left;
+}
 
+.example5 {
+  position: relative;
+  top: -500rpx;
+  left: 110rpx;
+  width: 600rpx;
+  height: 100rpx;
+}
 
+.example7 {
+  position: relative;
+  top: -500rpx;
+  left: 5rpx;
+  width: 750rpx;
+  height: 100rpx;
 
+}
+.examplepic {
+  width: 85rpx;
+  height: 85rpx;
+  margin-left: 20rpx;
+}
 
-.examplefont{
+.examplefont5 {
   position: relative;
   top: -600rpx;
-  left: 105rpx;
+  left: 135rpx;
   width: 600rpx;
   height: 100rpx;
 }
 
-.examplefont1{
+.examplefont7 {
   position: relative;
-  top: -675rpx;
-  left: 105rpx;
-  width: 600rpx;
+  top: -600rpx;
+  left: 25rpx;
+  width: 750rpx;
   height: 100rpx;
+
 }
-.afont{
-  margin-right: 35rpx;
+
+.bfont5 {
+  margin-right: 25rpx;
   width: 80rpx;
   height: 80rpx;
   font-size: 55rpx;
   float: left;
   /* background: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png'); */
+  background-size: cover;
   text-align: center;
   line-height: 80rpx;
 }
 
-.bfont{
-  margin-right: 35rpx;
+.bfont7 {
+  margin-right: 25rpx;
   width: 80rpx;
   height: 80rpx;
   font-size: 55rpx;
   float: left;
   /* background: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png'); */
+  background-size: cover;
   text-align: center;
   line-height: 80rpx;
 }
-
-.afont1{
-  margin-right: 48rpx;
-  font-size: 55rpx;
-  float: left;
-  
-}
-
-.afont2{
-   margin-right: 50rpx;
-  font-size: 55rpx;
-  float: left;
-}
-
-
-.afont5{
-  margin-right: 50rpx;
-  font-size: 55rpx;
-  float: left;
-}
-
-
-.afont7{
-  margin-right: 50rpx;
-  font-size: 55rpx;
-  float: left;
-}
-
-
-
-
-
-
 
 .black {
-  width:150vh;
-  height:150vh;
+  width: 150vh;
+  height: 150vh;
   background: black;
   position: relative;
   top: -3280rpx;
   opacity: 0.5;
-  /* display: none; */
   z-index: 1;
+  /* display: none; */
+
 }
 
-
-
-.alert{
+.alert {
   width: 650rpx;
   height: 390rpx;
   background: white;
-   position: fixed;
+  position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-radius: 50rpx;
   border: 5rpx solid darkgoldenrod;
   /* display: none; */
   z-index: 5;
 }
 
-.yes{
+.yes {
   width: 225rpx;
   height: 53rpx;
   margin-top: 50rpx;
@@ -341,29 +286,31 @@
   /* display: none; */
 }
 
-.no{
+.no {
   width: 225rpx;
   height: 53rpx;
   margin-top: 50rpx;
   margin-left: 100rpx;
   /* display: none; */
 }
-.yespic{
-  width: 128rpx;
-  height: 107rpx;
-  margin-top: 50rpx;
-  margin-left: 100rpx;
-  /* display: none; */
 
-}
-.nopic{
+.yespic {
   width: 128rpx;
   height: 107rpx;
   margin-top: 50rpx;
   margin-left: 100rpx;
   /* display: none; */
 }
-.continue{
+
+.nopic {
+  width: 128rpx;
+  height: 107rpx;
+  margin-top: 50rpx;
+  margin-left: 100rpx;
+  /* display: none; */
+}
+
+.continue {
   width: 300rpx;
   height: 100rpx;
   background: brown;
@@ -377,30 +324,49 @@
   /* display: none; */
 }
 
-.correct_answer{
+.correct_answer {
   position: relative;
   color: red;
   left: 50rpx;
   top: 10rpx;
-   white-space: pre-line;
+  white-space: pre-line;
   font-size: 40rpx;
   /* display: none; */
-} 
-
-
-@keyframes myone{
-  form{width:600rpx;}
-  to{width: 0rpx;}
 }
 
-@keyframes tmd{
-  form{opacity: 0;}
-  to{opacity: 1;}
+@keyframes myone {
+  form {
+    width: 600rpx;
+  }
+
+  to {
+    width: 0rpx;
+  }
 }
 
-@keyframes aaa{
-  0%{left: 0rpx; opacity: 1;}
-  50%{left: 200rpx; opacity:0.1;}
-  100%{left: 0rpx; opacity: 1;}
+@keyframes tmd {
+  form {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
+@keyframes aaa {
+  0% {
+    left: 0rpx;
+    opacity: 1;
+  }
+
+  50% {
+    left: 200rpx;
+    opacity: 0.1;
+  }
+
+  100% {
+    left: 0rpx;
+    opacity: 1;
+  }
+}

@@ -16,13 +16,13 @@ const formatNumber = n => {
 }
 
 function countdown() {
-  timer = setTimeout(function() {
+  timer = setTimeout(function () {
     console.log("----countdown----");
     go();
   }, 31 * 1000);
 };
 
-function pause(){
+function pause() {
   clearTimeout(timer);
 }
 
@@ -60,12 +60,12 @@ function go() {
 };
 
 function init(grade) {
-  console.log("init："+grade);
+  console.log("init：" + grade);
   wx.request({
     url: app.globalData.host + '/questionPaper/init',
     method: 'GET',
-    data:{grade:grade},
-    success: function(res) {
+    data: { grade: grade },
+    success: function (res) {
       console.log("考题初始化返回结果:" + JSON.stringify(res));
       if (res.data.code == '00') {
         let content = res.data.content;
@@ -76,7 +76,6 @@ function init(grade) {
         // console.log("考题初始化测试全局数据:" + app.globalData.questionNo);
         //console.log("考题初始化测试全局数据:" +JSON.stringify(app.globalData.qusetions));
         //console.log("考题初始化测试单个数据:" +JSON.stringify(app.globalData.qusetions[app.globalData.questionNo]));
-
 
         var curQuestion = app.globalData.qusetions[app.globalData.questionNo - 1];
         if (curQuestion.questionType == 'SINGLE_SEL') {
@@ -94,7 +93,7 @@ function init(grade) {
         }
       }
     },
-    fail: function(res) {
+    fail: function (res) {
       console.log("初始化是");
     }
   });

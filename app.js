@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function() {
+  onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -19,7 +19,7 @@ App({
             data: {
               code: res.code
             },
-            success: function(res) {
+            success: function (res) {
               console.log(res);
               openid = res.data.content;
               console.log("我是openid：" + openid);
@@ -61,9 +61,10 @@ App({
     questionTotal: 0,
     okTotal: 0,
     errTotal: 0,
-    qusetions: new Array(),
+    qusetions: [],
     //host: 'https://wxdemo.010service.com:8443/poetry',
-    host: 'http://127.0.0.1:8080/poetry',
+    // host: 'http://127.0.0.1:8080/poetry',
+    host: 'http://127.0.0.1:10087',
     //host: 'http://39.108.154.215:10086',
     imgServer: 'http://wxdemo.010service.com/images'
   },

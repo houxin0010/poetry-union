@@ -10,7 +10,8 @@
     <view class='time'></view>
     <view class='time2'></view>
     <image class='tiban' src='{{imgServer}}/img/top/tiban.png'></image>
-    <view class='question'>{{question}}</view>
+    <view class='question1'>日落西山出日落西山出,</view>
+    <view class='question2'>日落西山出日落西山出。</view>
     <image class='zhedang' src='{{imgServer}}/img/top/zb.png'></image>
     <block wx:if="{{correctPrompt}}">
       <view class='black'></view>
@@ -32,48 +33,15 @@
     </block>
   </view>
 
-  <view class='answer1'>
-    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  </view>
-
-
-  <view class='answer2'>
-    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  </view>
-
-
-
-  <view class='answer5'>
+  <view class='lattic_5'>
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
   </view>
-
-
-
-  <view class='answer7'>
-    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
-  </view>
-
-  <view class='answerfont1'>
-    <view class='afont1'>热</view>
-  </view>
-
-  <view class='answerfont2'>
-    <view class='afont2'>起</view>
-    <view class='afont2'>起</view>
-  </view>
-
-  <view class='answerfont5'>
+  
+  <view class='fill5'>
     <view class='afont5'>发</view>
     <view class='afont5'>发</view>
     <view class='afont5'>发</view>
@@ -81,7 +49,18 @@
     <view class='afont5'>发</view>
   </view>
 
-  <view class='answerfont7'>
+
+  <view class='lattic_7'>
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  </view>
+
+  <view class='fill7'>
     <view class='afont7'>要</view>
     <view class='afont7'>要</view>
     <view class='afont7'>要</view>
@@ -91,35 +70,43 @@
     <view class='afont7'>要</view>
   </view>
 
-  <view class='example'>
-    <image class='exampleanswer' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='exampleanswer' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='exampleanswer' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='exampleanswer' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='exampleanswer' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+
+<view class='five' style='display:none;'>
+  <view class='example5'>
+    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+  </view>
+  <view class='examplefont5'>
+    <view class='bfont5'>安</view>
+    <view class='bfont5'>a</view>
+    <view class='bfont5'>安</view>
+    <view class='bfont5'>a</view>
+    <view class='bfont5'>安</view>
+  </view>
+</view>
+
+<view class='seven'  style='display:block;'>
+   <view class='example7'>
+    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
   </view>
 
-  <view class='examplefont'>
-    <view class='afont'>安</view>
-    <view class='afont'>a</view>
-    <view class='afont'>安</view>
-    <view class='afont'>a</view>
-    <view class='afont'>安</view>
+  <view class='examplefont7'>
+    <view class='bfont7'>安</view>
+    <view class='bfont7'>a</view>
+    <view class='bfont7'>安</view>
+    <view class='bfont7'>a</view>
+    <view class='bfont7'>安</view>
+    <view class='bfont7'>安</view>
+    <view class='bfont7'>安</view>
   </view>
-
-    <view class='example1'>
-    <image class='exampleanswer1' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='exampleanswer1' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='exampleanswer1' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='exampleanswer1' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='exampleanswer1' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  </view>
-
-  <view class='examplefont1'>
-    <view class='bfont'>a</view>
-    <view class='bfont'>安</view>
-    <view class='bfont'>安</view>
-    <view class='bfont'>安</view>
-    <view class='bfont'>安</view>
-  </view>
+</view>
 </view>
