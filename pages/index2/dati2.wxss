@@ -150,7 +150,7 @@
   position: relative;
   top: -455rpx;
   left: 113rpx;
-  display: none;
+  /* display: none; */
 }
 
 .lattic_7 {
@@ -165,7 +165,7 @@
   left: 145rpx;
   width: 600rpx;
   height: 100rpx;
-  display: none;
+  /* display: none; */
 }
 
 .afont5 {

@@ -12,9 +12,13 @@ Page({
     questionPaperId: 0,
     questionNumber: 0,
     questionNo: 0,
-    question: '',
+    question1: '',
+    question2: '',
     answer: '',
+    options: [],
     userAnswer: '',
+    userAnswerArray: [],
+    answerLength: 0,
     currentScore: 0,
     nextQuestionType: '',
     questionNoSrc: '',
@@ -44,16 +48,22 @@ Page({
         console.log(res.data);
         if (res.data.code == '00') {
           let content = res.data.content;
+          console.log(content.question);
+          let quesitonArray = content.question.split("，");
+          console.log(quesitonArray);
           that.setData({
-            question: content.question,
+            question1: quesitonArray[0],
+            question2: quesitonArray[1],
             answer: content.answer,
+            options: content.options,
             questionNo: content.questionNo,
+            answerLength: content.answer.length,
             currentScore: content.currentScore
           });
           that.setData({
             questionNoSrc: that.data.imgServer + '/img/tixu/' + app.globalData.questionNo + '.png'
           });
-          util.countdown(); // 计时器
+          // util.countdown(); // 计时器
           console.log(that.data);
         }
       },

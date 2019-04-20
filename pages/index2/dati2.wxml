@@ -10,8 +10,8 @@
     <view class='time'></view>
     <view class='time2'></view>
     <image class='tiban' src='{{imgServer}}/img/top/tiban.png'></image>
-    <view class='question1'>日落西山出日落西山出,</view>
-    <view class='question2'>日落西山出日落西山出。</view>
+    <view class='question1'>{{question1}},</view>
+    <view class='question2'>{{question2}}</view>
     <image class='zhedang' src='{{imgServer}}/img/top/zb.png'></image>
     <block wx:if="{{correctPrompt}}">
       <view class='black'></view>
@@ -33,24 +33,20 @@
     </block>
   </view>
 
-  <view class='lattic_5'>
+  <view class='lattic_5' wx:if="{{answerLength === 5}}">
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
   </view>
-  
-  <view class='fill5'>
-    <view class='afont5'>发</view>
-    <view class='afont5'>发</view>
-    <view class='afont5'>发</view>
-    <view class='afont5'>发</view>
-    <view class='afont5'>发</view>
+
+  <view class='fill5' wx:if="{{answerLength === 5}}">
+    <view class='afont5' wx:for="{{userAnswerArray}}" wx:key="key">{{item}}</view>
   </view>
 
 
-  <view class='lattic_7'>
+  <view class='lattic_7' wx:if="{{answerLength === 7}}">
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
@@ -60,53 +56,30 @@
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
   </view>
 
-  <view class='fill7'>
-    <view class='afont7'>要</view>
-    <view class='afont7'>要</view>
-    <view class='afont7'>要</view>
-    <view class='afont7'>要</view>
-    <view class='afont7'>要</view>
-    <view class='afont7'>要</view>
-    <view class='afont7'>要</view>
+  <view class='fill7' wx:if="{{answerLength === 7}}">
+    <view class='afont7' wx:for="{{userAnswerArray}}" wx:key="key">{{item}}</view>
   </view>
 
 
-<view class='five' style='display:none;'>
-  <view class='example5'>
-    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-  </view>
-  <view class='examplefont5'>
-    <view class='bfont5'>安</view>
-    <view class='bfont5'>a</view>
-    <view class='bfont5'>安</view>
-    <view class='bfont5'>a</view>
-    <view class='bfont5'>安</view>
-  </view>
-</view>
-
-<view class='seven'  style='display:block;'>
-   <view class='example7'>
-    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-    <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+  <view class='five' wx:if="{{answerLength === 5}}">
+    <view wx:for="{{options}}" wx:key="key">
+      <view class='example5'>
+        <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+      </view>
+      <view class='examplefont5'>
+        <view class='bfont5'>{{item}}</view>
+      </view>
+    </view>
   </view>
 
-  <view class='examplefont7'>
-    <view class='bfont7'>安</view>
-    <view class='bfont7'>a</view>
-    <view class='bfont7'>安</view>
-    <view class='bfont7'>a</view>
-    <view class='bfont7'>安</view>
-    <view class='bfont7'>安</view>
-    <view class='bfont7'>安</view>
+  <view class='seven' wx:if="{{answerLength === 7}}">
+    <view wx:for="{{options}}" wx:key="key">
+      <view class='example7'>
+        <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+      </view>
+      <view class='examplefont7'>
+        <view class='bfont7'>{{item}}</view>
+      </view>
+    </view>
   </view>
-</view>
 </view>

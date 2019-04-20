@@ -10,7 +10,7 @@
     <view class='time'></view>
     <view class='time2'></view>
     <image class='tiban' src='{{imgServer}}/img/top/tiban.png'></image>
-    <view class='question'>{{question}}</view>
+    <!-- <view class='question'>{{question}}</view> -->
     <image class='zhedang' src='{{imgServer}}/img/top/ythgzb.png'></image>
     <block wx:if="{{correctPrompt}}">
       <view class='black'></view>
@@ -66,31 +66,55 @@
     </view>
   </block>
 
-  <view class='title1'>
-    <view wx:for="{{options}}" wx:key="key">
-      <view wx:if="{{index < options.length / 2}}">
-        <view class='tiback1'>
-          <view wx:if="{{item != ''}}">
-            <text class='e' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
-            <image class='b' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-          </view>
-        </view>
-      </view>
-    </view>
-  </view>
 
-  <view class='title2'>
-    <view wx:for="{{options}}" wx:key="key">
-      <view wx:if="{{index >= options.length / 2}}">
-        <view class='tiback2'>
-          <view wx:if="{{item != ''}}">
+
+  <view class='title'>
+        <view class='tiback'>
             <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
             <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-          </view>
-        </view>
-      </view>
-    </view>
+         </view>
+
+         <view class='tiback'>
+            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
+            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+         </view>
+
+         <view class='tiback'>
+            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
+            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+         </view>
+
+         <view class='tiback'>
+            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
+            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+         </view>
+
+         <view class='tiback'>
+            <text class='x' bindtap='select' data-selectd='{{index}}'>是</text>
+            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+         </view>
+
+         <view class='tiback'>
+            <text class='x' bindtap='select' data-selectd='{{index}}'>是</text>
+            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+         </view>
+
+         <view class='tiback'>
+            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
+            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+         </view>
+
+         <view class='tiback'>
+            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
+            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+         </view>
+
+         <view class='tiback'>
+            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
+            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+         </view>
   </view>
+
 
 
   <block wx:if="{{answerLength === 5}}">

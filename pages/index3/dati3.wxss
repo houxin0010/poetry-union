@@ -3,7 +3,6 @@
 .aaa{  width: 750rpx;
   height: 100vh;
   position: relative;
-  overflow: hidden;
   }
 
 .xzt{  width: 100%;
@@ -232,66 +231,29 @@
 
 }
 
-.title1 {
-  width: 750rpx;
-  height: 100rpx;
-  position: relative;
-  float: left;
-  top: -500rpx;
-}
 
-.e {
-  width:80rpx;
-  height: 80rpx;
-  text-align: center;
-  line-height: 80rpx;
-  font-size: 45rpx;
-  float: left;
-  display: block;
-  position: relative;
-  z-index: 1;
-}
 
-.b {
-  width: 80rpx;
-  height: 80rpx;
-  float: left;
-  position: relative;
-  top: -80rpx;
-}
 
-.tiback1 {
+
+.tiback {
   width: 80rpx;
   height: 80rpx;
   float: left;
   background-image: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png');
   background-size: cover;
   position: relative;
-  top: 85rpx;
-  margin-right: 20rpx;
-  left: 90rpx;
-}
-
-.tiback2 {
-  width: 80rpx;
-  height: 80rpx;
-  float: left;
-  background-image: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png');
-  background-size: cover;
-  position: relative;
-  top: 100rpx;
-  margin-right: 20rpx;
-  left: 115rpx;
+  margin-bottom: 20rpx;
+  margin-right: 50rpx;
   
 }
 
-.title2 {
-  width: 750rpx;
-  height: 100rpx;
+.title {
+  width: 400rpx;
+  height: 300rpx;
   position: relative;
   float: left;
-  top: -480rpx;
-  left: -20rpx;
+  top: -420rpx;
+  left:200rpx;
 }
 
 .x {
