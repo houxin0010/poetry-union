@@ -69,50 +69,14 @@
 
 
   <view class='title'>
-        <view class='tiback'>
-            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
-            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-         </view>
-
-         <view class='tiback'>
-            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
-            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-         </view>
-
-         <view class='tiback'>
-            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
-            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-         </view>
-
-         <view class='tiback'>
-            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
-            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-         </view>
-
-         <view class='tiback'>
-            <text class='x' bindtap='select' data-selectd='{{index}}'>是</text>
-            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-         </view>
-
-         <view class='tiback'>
-            <text class='x' bindtap='select' data-selectd='{{index}}'>是</text>
-            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-         </view>
-
-         <view class='tiback'>
-            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
-            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-         </view>
-
-         <view class='tiback'>
-            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
-            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-         </view>
-
-         <view class='tiback'>
-            <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
-            <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
-         </view>
+    <view wx:for="{{options}}" wx:key="key">
+      <view class='tiback'>
+        <view wx:if="{{item != ''}}">
+          <text class='x' bindtap='select' data-selectd='{{index}}'>{{item}}</text>
+          <image class='z' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+        </view>
+      </view>
+    </view>
   </view>
 
 
