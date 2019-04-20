@@ -1,7 +1,7 @@
 <view class='content'>
   <image  mode='aspectFill' class='back' src='http://wxdemo.010service.com/images/img/top/indexbg.jpg'></image>
  <view class='start'>
-  <view bindtap='start_button' class='three'>三年级</view>
-  <view bindtap='start_button' class='four'>四年级</view>
+  <view bindtap='go' data-grade='3' class='three'>三年级</view>
+  <view bindtap='go' date-grade='4'  class='four'>四年级</view>
  </view>
 </view>

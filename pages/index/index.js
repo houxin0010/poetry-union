@@ -9,8 +9,10 @@ Page({
     imgServer: app.globalData.imgServer
   },
 
-  go: function() {
-    util.init();
+  go: function(e) {
+    let grade= e.currentTarget.dataset.grade;
+     console.log(grade);
+    util.init(grade);
   },
 
   /**

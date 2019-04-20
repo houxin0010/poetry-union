@@ -59,11 +59,12 @@ function go() {
   }
 };
 
-function init() {
+function init(grade) {
+  console.log("init："+grade);
   wx.request({
     url: app.globalData.host + '/questionPaper/init',
     method: 'GET',
-
+    data:{grade:grade},
     success: function(res) {
       console.log("考题初始化返回结果:" + JSON.stringify(res));
       if (res.data.code == '00') {

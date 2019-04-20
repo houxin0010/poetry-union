@@ -62,8 +62,8 @@ App({
     okTotal: 0,
     errTotal: 0,
     qusetions: new Array(),
-    host: 'https://wxdemo.010service.com:8443/poetry',
-    //host: 'http://127.0.0.1:8080/poetry',
+    //host: 'https://wxdemo.010service.com:8443/poetry',
+    host: 'http://127.0.0.1:8080/poetry',
     //host: 'http://39.108.154.215:10086',
     imgServer: 'http://wxdemo.010service.com/images'
   },
