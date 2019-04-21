@@ -200,7 +200,7 @@
   height: 100rpx;
   position: relative;
   top: -590rpx;
-  left: 72rpx;
+  left: 95rpx;
   /* display: none; */
 }
 
@@ -222,7 +222,6 @@
 .answerfont_6 {
   margin-right: 50rpx;
   font-size: 55rpx;
-  left: 80rpx;
   float: left;
 }
 
