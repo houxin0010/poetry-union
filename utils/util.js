@@ -69,6 +69,8 @@ function init(grade) {
       console.log("考题初始化返回结果:" + JSON.stringify(res));
       if (res.data.code == '00') {
         let content = res.data.content;
+        app.globalData.okTotal=0;
+        app.globalData.errTotal=0;
         app.globalData.questionNo = 1;
         app.globalData.qusetions = content.questions;
         app.globalData.questionTotal = content.questions.length;
@@ -79,15 +81,15 @@ function init(grade) {
 
         var curQuestion = app.globalData.qusetions[app.globalData.questionNo - 1];
         if (curQuestion.questionType == 'SINGLE_SEL') {
-          wx.navigateTo({
+          wx.redirectTo({
             url: '../index1/dati1?qid=' + curQuestion.questionId + '&qtype=' + curQuestion.questionType
           });
         } else if (content.firstQuestionType == 'COMPLETION') {
-          wx.navigateTo({
+          wx.redirectTo({
             url: '../index2/dati2?qid=' + curQuestion.questionId + '&qtype=' + curQuestion.questionType
           });
         } else if (content.firstQuestionType == 'BANKED_CLOZE') {
-          wx.navigateTo({
+          wx.redirectTo({
             url: '../index3/dati3?qid=' + curQuestion.questionId + '&qtype=' + curQuestion.questionType
           });
         }
