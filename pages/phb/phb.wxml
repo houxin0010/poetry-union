@@ -14,6 +14,11 @@
     <text class='wfont'>错误答题数量：</text>
     <view class='wfontnum'>{{errTotal}}</view>
   </view>
+  <view class='tiaoguo'>
+    <view class='dian'></view>
+    <text class='jump'>跳过答题数量：</text>
+    <view class='jumpnum'>{{errTotal}}</view>
+  </view>
   <view class='again'>
     <text bindtap='go'>再来一遍</text>
   </view>

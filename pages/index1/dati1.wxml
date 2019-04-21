@@ -1,7 +1,10 @@
 <!--pages/index1/dati1.wxml-->
 <view class='xzt'>
   <image mode='aspectFill' class='back' src='{{imgServer}}/img/top/beij.png'></image>
-  <view class='leave' bindtap='back'>首页</view>
+  <view class='topbox'>
+   <view class='leave'  bindtap='back'>首页</view>
+   <view class='jump'>跳过</view>
+  </view>
   <view class='chengji'>剩余题量</view>
   <view class='fenshu'>{{residueNo}}</view>
   <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>

@@ -2,7 +2,10 @@
 <view class='aaa'>
   <view class='xzt'>
     <image mode='aspectFill' class='back' src='{{imgServer}}/img/top/beij.png'></image>
-    <view class='leave' bindtap='back'>首页</view>
+    <view class='topbox'>
+      <view class='leave' bindtap='back'>首页</view>
+      <view class='jump'>跳过</view>
+    </view>
     <view class='chengji'>剩余题量</view>
     <view class='fenshu'>{{residueNo}}</view>
     <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
@@ -85,7 +88,7 @@
     </view>
   </view>
 
-    <view class='six' wx:if="{{answerLength === 6}}">
+  <view class='six' wx:if="{{answerLength === 6}}">
     <view wx:for="{{options}}" wx:key="key">
       <view class='example6'>
         <view wx:if="{{item != ''}}">

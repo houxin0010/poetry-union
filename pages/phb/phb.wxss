@@ -65,13 +65,12 @@
   position: relative;
   top: -984rpx;
   left: 125rpx;
- 
 }
 .green{
   position: relative;
   width: 50rpx;
   height: 50rpx;
-  background: green;
+  background: yellow;
   border-radius: 50%;
    line-height: 100rpx;
 }
@@ -80,7 +79,7 @@
   position: relative;
   width: 50rpx;
   height: 50rpx;
-  background: red;
+  background: yellowgreen;
   border-radius: 50%;
    line-height: 100rpx;
 }
@@ -97,7 +96,7 @@
   top: -415rpx;
   left: 400rpx; 
   font-size: 80rpx;
-  color: green;
+  color: orangered;
 }
 
 .wfont{
@@ -112,7 +111,7 @@
   top: -315rpx;
   left: 400rpx;
   font-size: 80rpx;
-  color: red;
+  color: orangered;
 }
 
 .again{
@@ -121,13 +120,13 @@
   background: gray;
   position: relative;
   top: -884rpx;
-  left: 175rpx;
+  left: 200rpx;
   border-radius: 50rpx;
 }
 
 .again text{
   position: relative;
-  top: -115rpx;
+  top: -10rpx;
   left: 100rpx;
   color: white;
 }
@@ -138,4 +137,34 @@
   position: relative;
   top:20rpx;
   left: 50rpx;
+}
+.tiaoguo{
+  width: 500rpx;
+  height: 100rpx;
+  position: relative;
+  top: -934rpx;
+  left: 125rpx;
+}
+.dian{
+  position: relative;
+  width: 50rpx;
+  height: 50rpx;
+  background:green ;
+  border-radius: 50%;
+   line-height: 100rpx;
+}
+
+.jump{
+  position: relative;
+  top: -135rpx;
+  font-size: 40rpx;
+  left:100rpx;
+}
+
+.jumpnum{
+  position: relative;
+  top: -220rpx;
+  left: 400rpx;
+  font-size: 80rpx;
+  color: orangered;
 }
