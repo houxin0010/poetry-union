@@ -4,7 +4,7 @@
     <image mode='aspectFill' class='back' src='{{imgServer}}/img/top/beij.png'></image>
     <view class='leave' bindtap='back'>首页</view>
     <view class='chengji'>剩余题量</view>
-    <view class='fenshu'>{{currentScore}}</view>
+    <view class='fenshu'>{{residueNo}}</view>
     <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
     <image class='tixu' src='{{questionNoSrc}}'></image>
     <view class='time'></view>
@@ -45,6 +45,19 @@
     <view class='afont5' wx:for="{{userAnswerArray}}" wx:key="key">{{item}}</view>
   </view>
 
+  <view class='lattic_6' wx:if="{{answerLength === 6}}">
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+    <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
+  </view>
+
+  <view class='fill6' wx:if="{{answerLength === 6}}">
+    <view class='afont6' wx:for="{{userAnswerArray}}" wx:key="key">{{item}}</view>
+  </view>
+
 
   <view class='lattic_7' wx:if="{{answerLength === 7}}">
     <image class='rightanswer' src='{{imgServer}}/img/jggimg/tianc.png'></image>
@@ -67,6 +80,17 @@
         <view wx:if="{{item != ''}}">
           <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
           <view class='bfont5' bindtap='select' data-selectd='{{index}}'>{{item}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+    <view class='six' wx:if="{{answerLength === 6}}">
+    <view wx:for="{{options}}" wx:key="key">
+      <view class='example6'>
+        <view wx:if="{{item != ''}}">
+          <image class='examplepic' src='{{imgServer}}/img/jggimg/tiandaa.png'></image>
+          <view class='bfont6' bindtap='select' data-selectd='{{index}}'>{{item}}</view>
         </view>
       </view>
     </view>

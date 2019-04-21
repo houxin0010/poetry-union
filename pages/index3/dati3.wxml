@@ -4,7 +4,7 @@
     <image mode='aspectFill' class='back' src='{{imgServer}}/img/top/beij.png'></image>
     <view class='leave' bindtap='back'>首页</view>
     <view class='chengji'>剩余题量</view>
-    <view class='fenshu'>{{currentScore}}</view>
+    <view class='fenshu'>{{residueNo}}</view>
     <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
     <image class='tixu' src='{{questionNoSrc}}'></image>
     <view class='time'></view>

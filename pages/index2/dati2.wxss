@@ -154,6 +154,13 @@
   /* display: none; */
 }
 
+.lattic_6 {
+  position: relative;
+  top: -455rpx;
+  left: 55rpx;
+  /* display: none; */
+}
+
 .lattic_7 {
   position: relative;
   top: -455rpx;
@@ -174,6 +181,22 @@
   font-size: 55rpx;
   float: left;
 }
+
+.fill6 {
+  position: relative;
+  top: -545rpx;
+  left: 90rpx;
+  width: 600rpx;
+  height: 100rpx;
+  /* display: none; */
+}
+
+.afont6 {
+  margin-right: 50rpx;
+  font-size: 55rpx;
+  float: left;
+}
+
 
 .fill7 {
   position: relative;
@@ -199,6 +222,15 @@
   background-size:cover;
 }
 
+.example6 {
+  width: 85rpx;
+  height: 85rpx;
+  float: left;
+  margin-left: 20rpx;
+  background: url('http://wxdemo.010service.com/images/img/jggimg/tiback_background.png');
+  background-size:cover;
+}
+
 .five {
   width: 600rpx;
   height: 100rpx;
@@ -206,6 +238,15 @@
   top: -500rpx;
   left: 110rpx;
 }
+
+.six {
+  width: 600rpx;
+  height: 100rpx;
+  position: relative;
+  top: -500rpx;
+  left: 52.5rpx;
+}
+
 
 .seven {
   position: relative;
@@ -231,6 +272,19 @@
 }
 
 .bfont5 {
+  margin-right: 25rpx;
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 55rpx;
+  float: left;
+  background-size: cover;
+  text-align: center;
+  line-height: 80rpx;
+  position: relative;
+  top: -100rpx;
+}
+
+.bfont6 {
   margin-right: 25rpx;
   width: 80rpx;
   height: 80rpx;

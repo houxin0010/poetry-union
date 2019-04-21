@@ -13,6 +13,7 @@ Page({
     questionNumber: 0,
     questionNo: 0,
     question: '',
+    residueNo: 0,
     answer: '',
     currentScore: 0,
     choiceA: '',
@@ -33,7 +34,8 @@ Page({
     var that = this;
     that.setData({
       questionId: options.qid,
-      questionType: options.qtype
+      questionType: options.qtype,
+      residueNo: app.globalData.questionTotal - app.globalData.questionNo
     });
     wx.request({
       url: app.globalData.host + '/questionPaper/getQuestion',

@@ -14,6 +14,7 @@ Page({
     questionNo: 0,
     question1: '',
     question2: '',
+    residueNo: 0,
     answer: '',
     options: [],
     userAnswer: '',
@@ -35,7 +36,8 @@ Page({
     var that = this;
     that.setData({
       questionId: options.qid,
-      questionType: options.qtype
+      questionType: options.qtype,
+      residueNo: app.globalData.questionTotal - app.globalData.questionNo
     });
     wx.request({
       url: app.globalData.host + '/questionPaper/getQuestion',
@@ -63,7 +65,7 @@ Page({
           that.setData({
             questionNoSrc: that.data.imgServer + '/img/tixu/' + app.globalData.questionNo + '.png'
           });
-          // util.countdown(); // 计时器
+          util.countdown(); // 计时器
           console.log(that.data);
         }
       },
