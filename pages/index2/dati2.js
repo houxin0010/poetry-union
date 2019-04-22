@@ -120,6 +120,7 @@ Page({
 
   skip: function () {
     app.globalData.skipTotal++;
+    util.pause(); 
     util.go();
   },
 

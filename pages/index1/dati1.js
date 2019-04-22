@@ -103,6 +103,7 @@ Page({
   },
 
   skip: function () {
+    util.pause(); 
     app.globalData.skipTotal++;
     util.go();
   },
