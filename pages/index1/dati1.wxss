@@ -2,7 +2,7 @@
 
 .xzt {
   width: 750rpx;
-  height: 100vh;  
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -11,19 +11,18 @@
   width: 100%;
   height: 100%;
 }
-.topbox{
+
+.topbox {
   width: 750rpx;
   height: 79rpx;
- position: relative;
+  position: relative;
   top: -1274rpx;
   left: 30rpx;
 }
 
-
-
 .leave {
   width: 200rpx;
-  height: 79rpx; 
+  height: 79rpx;
   float: left;
   text-align: center;
   line-height: 79rpx;
@@ -31,10 +30,11 @@
   background: white;
   border-radius: 35rpx;
 }
+
 .jump {
   width: 200rpx;
   height: 79rpx;
-   text-align: center;
+  text-align: center;
   line-height: 79rpx;
   color: white;
   background: orangered;
@@ -108,12 +108,13 @@
   left: 75rpx;
   animation: myone 30s 2.5s linear forwards;
 }
+
 .black {
-  width:150vh;
-  height:150vh;
+  width: 150vh;
+  height: 150vh;
   background: black;
   position: relative;
-  top: -4280rpx;
+  top: -4080rpx;
   opacity: 0.5;
   /* display: none; */
   z-index: 4;
@@ -153,18 +154,18 @@
   width: 700rpx;
   height: 200rpx;
   position: relative;
-  top: -2150rpx;
+  top: -1750rpx;
   left: 43rpx;
   opacity: 0;
   animation: tmd 1s linear forwards;
-  margin-bottom:-30rpx;
+  margin-bottom: -30rpx;
 }
 
 .answerA {
   width: 33rpx;
   height: 48rpx;
   position: relative;
-  top: -2600rpx;
+  top: -2200rpx;
   left: 105rpx;
   opacity: 0;
   animation: tmd 1s 1s linear forwards;
@@ -174,7 +175,7 @@
   width: 33rpx;
   height: 48rpx;
   position: relative;
-  top: -2425rpx;
+  top: -2025rpx;
   left: 75rpx;
   opacity: 0;
   animation: tmd 1s 1.5s linear forwards;
@@ -184,7 +185,7 @@
   width: 33rpx;
   height: 48rpx;
   position: relative;
-  top: -2245rpx;
+  top: -1845rpx;
   left: 45rpx;
   opacity: 0;
   animation: tmd 1s 2s linear forwards;
@@ -196,7 +197,7 @@
   color: white;
   position: relative;
   font-size: 30rpx;
-  top: -2680rpx;
+  top: -2280rpx;
   left: 150rpx;
   opacity: 0;
   white-space: pre-line;
@@ -204,31 +205,29 @@
 }
 
 .answerfontb {
-   width: 450rpx;
+  width: 450rpx;
   height: 150rpx;
   color: white;
   position: relative;
   font-size: 30rpx;
-  top: -2650rpx;
+  top: -2250rpx;
   left: 150rpx;
   opacity: 0;
-    white-space: pre-line;
+  white-space: pre-line;
   animation: tmd 1s 1.5s linear forwards;
 }
 
 .answerfontc {
-   width: 450rpx;
+  width: 450rpx;
   height: 150rpx;
   color: white;
   position: relative;
   font-size: 30rpx;
-  top: -2630rpx;
+  top: -2230rpx;
   left: 150rpx;
   opacity: 0;
   animation: tmd 1s 2s linear forwards;
 }
-
-
 
 .alert {
   width: 650rpx;
@@ -237,10 +236,10 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-radius: 50rpx;
   border: 5rpx solid darkgoldenrod;
-   z-index: 5;
+  z-index: 5;
   /* display: none; */
 }
 
@@ -276,16 +275,16 @@
   /* display: none; */
 }
 
-.correct_answer{
+.correct_answer {
   position: relative;
   color: red;
-   left: 50rpx;
+  left: 50rpx;
   top: 10rpx;
   font-size: 40rpx;
-   white-space: pre-line;
-  
+  white-space: pre-line;
   /* display: none; */
 }
+
 .continueBtn {
   width: 300rpx;
   height: 100rpx;
@@ -299,7 +298,6 @@
   border-radius: 30rpx;
   /* display: none; */
 }
-
 
 @keyframes myone {
   form {

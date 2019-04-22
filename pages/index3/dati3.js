@@ -19,18 +19,18 @@ Page({
     userAnswer: '',
     userAnswerArray: [],
     correctPrompt: false,
-    errorHint:false,
+    errorHint: false,
     answerLength: 0,
     currentScore: 0,
     questionNoSrc: '',
-    nextQuestionType:'',
+    nextQuestionType: '',
     imgServer: app.globalData.imgServer
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
     console.log("九宫格页面加载:参数是" + JSON.stringify(options));
     var that = this;
     that.setData({
@@ -45,7 +45,7 @@ Page({
         questionType: that.data.questionType
       },
       method: 'GET',
-      success: function(res) {
+      success: function (res) {
         console.log(res.data);
         if (res.data.code == '00') {
           let content = res.data.content;
@@ -65,13 +65,13 @@ Page({
           console.log(that.data);
         }
       },
-      fail: function(res) {
+      fail: function (res) {
         console.log("--------fail--------");
       }
     });
   },
 
-  select: function(event) {
+  select: function (event) {
     util.pause();
     let that = this;
     let index = event.currentTarget.dataset.selectd;
@@ -86,14 +86,14 @@ Page({
       userAnswerArray: userAnswerArray
     });
     if (userAnswer.length >= that.data.answer.length) {
-      console.log("----------",this.data);
+      console.log("----------", this.data);
       let isCorrect;
-      if (userAnswer == that.data.answer){
+      if (userAnswer == that.data.answer) {
         that.setData({
           correctPrompt: true
         });
         isCorrect = true;
-      }else{
+      } else {
         that.setData({
           errorHint: true
         });
@@ -106,11 +106,16 @@ Page({
         app.globalData.errTotal++;
       }
 
-       
+
     }
   },
 
   go: function () {
+    util.go();
+  },
+
+  skip: function () {
+    app.globalData.skipTotal++;
     util.go();
   },
 
@@ -123,49 +128,49 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
+  onShow: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   }
 })

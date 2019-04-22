@@ -24,6 +24,11 @@
  position: relative;
   top: -1274rpx;
   left: 30rpx;
+  float: left;
+}
+.txt{
+  position: relative;
+  top: -80rpx;
 }
 
 .leave {
@@ -56,7 +61,7 @@
   text-align: center;
   color: white;
   position: relative;
-  top: -1234rpx;
+  top: -1184rpx;
   left: 500rpx;
   font-size: 30rpx;
 }
@@ -69,7 +74,7 @@
   text-align: center;
   color: black;
   position: relative;
-  top: -1234rpx;
+  top: -1184rpx;
   left: 500rpx;
 }
 
@@ -77,7 +82,7 @@
   width: 136rpx;
   height: 136rpx;
   position: relative;
-  top: -1340rpx;
+  top: -1290rpx;
   opacity: 0.5;
   animation: aaa 2s linear forwards;
   z-index: 1;
@@ -87,7 +92,7 @@
   width: 220rpx;
   height: 57rpx;
   position: relative;
-  top: -1364rpx;
+  top: -1314rpx;
   opacity: 0;
   animation: tmd 2s 1s linear forwards;
   z-index: 2;
@@ -99,7 +104,7 @@
   background: black;
   border-radius: 20rpx;
   position: relative;
-  top: -1344rpx;
+  top: -1294rpx;
   left: 75rpx;
   opacity: 0.1;
 }
@@ -110,16 +115,17 @@
   background: green;
   border-radius: 20rpx;
   position: relative;
-  top: -1364rpx;
+  top: -1314rpx;
   left: 75rpx;
   animation: myone 30s 2.5s linear forwards;
 }
+
 
 .tiban {
   width: 700rpx;
   height: 400rpx;
   position: relative;
-  top: -1334rpx;
+  top: -1284rpx;
   left: 25rpx;
 }
 
@@ -159,7 +165,6 @@
 .rightanswer {
   width: 85rpx;
   height: 85rpx;
-  margin: 0px auto;
   margin-left: 20rpx;
 }
 
@@ -297,7 +302,7 @@
   text-align: center;
   line-height: 80rpx;
   position: relative;
-  top: -100rpx;
+  top: -98rpx;
 }
 
 .bfont6 {
@@ -310,7 +315,7 @@
   text-align: center;
   line-height: 80rpx;
   position: relative;
-  top: -100rpx;
+  top: -98rpx;
 }
 
 .bfont7 {
@@ -323,7 +328,7 @@
   text-align: center;
   line-height: 80rpx;
   position: relative;
-  top: -100rpx;
+  top: -98rpx;
 }
 
 .black {
@@ -331,7 +336,7 @@
   height: 150vh;
   background: black;
   position: relative;
-  top: -3280rpx;
+  top: -2580rpx;
   opacity: 0.5;
   z-index: 1;
   /* display: none; */

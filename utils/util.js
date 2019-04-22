@@ -18,6 +18,7 @@ const formatNumber = n => {
 function countdown() {
   timer = setTimeout(function () {
     console.log("----countdown----");
+    app.globalData.skipTotal++;
     go();
   }, 31 * 1000);
 };
@@ -64,13 +65,16 @@ function init(grade) {
   wx.request({
     url: app.globalData.host + '/questionPaper/init',
     method: 'GET',
-    data: { grade: grade },
+    data: {
+      grade: grade
+    },
     success: function (res) {
       console.log("考题初始化返回结果:" + JSON.stringify(res));
       if (res.data.code == '00') {
         let content = res.data.content;
-        app.globalData.okTotal=0;
-        app.globalData.errTotal=0;
+        app.globalData.okTotal = 0;
+        app.globalData.errTotal = 0;
+        app.globalData.skipTotal = 0;
         app.globalData.questionNo = 1;
         app.globalData.qusetions = content.questions;
         app.globalData.questionTotal = content.questions.length;

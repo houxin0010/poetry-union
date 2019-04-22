@@ -61,6 +61,7 @@ App({
     questionTotal: 0,
     okTotal: 0,
     errTotal: 0,
+    skipTotal: 0,
     qusetions: [],
     grade: 0,
     //host: 'https://wxdemo.010service.com:8443/poetry',

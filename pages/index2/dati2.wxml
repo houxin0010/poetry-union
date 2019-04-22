@@ -4,9 +4,10 @@
     <image mode='aspectFill' class='back' src='{{imgServer}}/img/top/beij.png'></image>
     <view class='topbox'>
       <view class='leave' bindtap='back'>首页</view>
-      <view class='jump'>跳过</view>
+      <view class='jump' bindtap='skip'>跳过</view>
     </view>
-    <view class='chengji'>剩余题量</view>
+        <view class='chengji'>
+     <text class='txt'>剩余题量</text></view>
     <view class='fenshu'>{{residueNo}}</view>
     <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
     <image class='tixu' src='{{questionNoSrc}}'></image>
@@ -15,7 +16,7 @@
     <image class='tiban' src='{{imgServer}}/img/top/tiban.png'></image>
     <view class='question1'>{{question1}},</view>
     <view class='question2'>{{question2}}</view>
-    <image class='zhedang' src='{{imgServer}}/img/top/zb.png'></image>
+
     <block wx:if="{{correctPrompt}}">
       <view class='black'></view>
       <view class='alert'>

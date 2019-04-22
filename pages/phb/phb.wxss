@@ -70,7 +70,7 @@
   position: relative;
   width: 50rpx;
   height: 50rpx;
-  background: yellow;
+  background: green;
   border-radius: 50%;
    line-height: 100rpx;
 }
@@ -79,7 +79,7 @@
   position: relative;
   width: 50rpx;
   height: 50rpx;
-  background: yellowgreen;
+  background: red;
   border-radius: 50%;
    line-height: 100rpx;
 }
@@ -96,7 +96,7 @@
   top: -415rpx;
   left: 400rpx; 
   font-size: 80rpx;
-  color: orangered;
+  color: green;
 }
 
 .wfont{
@@ -111,7 +111,7 @@
   top: -315rpx;
   left: 400rpx;
   font-size: 80rpx;
-  color: orangered;
+  color: red;
 }
 
 .again{
@@ -149,7 +149,7 @@
   position: relative;
   width: 50rpx;
   height: 50rpx;
-  background:green ;
+  background:rgb(0, 174, 255) ;
   border-radius: 50%;
    line-height: 100rpx;
 }
@@ -166,5 +166,5 @@
   top: -220rpx;
   left: 400rpx;
   font-size: 80rpx;
-  color: orangered;
+  color: rgb(0, 174, 255);
 }

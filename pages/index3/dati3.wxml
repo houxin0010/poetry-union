@@ -2,11 +2,12 @@
 <view class='aaa'>
   <view class='xzt'>
     <image mode='aspectFill' class='back' src='{{imgServer}}/img/top/beij.png'></image>
-   <view class='topbox'>
+    <view class='topbox'>
       <view class='leave' bindtap='back'>首页</view>
-      <view class='jump'>跳过</view>
+      <view class='jump' bindtap='skip'>跳过</view>
     </view>
-    <view class='chengji'>剩余题量</view>
+    <view class='chengji'>
+     <text class='txt'>剩余题量</text></view>
     <view class='fenshu'>{{residueNo}}</view>
     <image class='mb' src='{{imgServer}}/img/top/maobi.png'></image>
     <image class='tixu' src='{{questionNoSrc}}'></image>
@@ -14,7 +15,7 @@
     <view class='time2'></view>
     <image class='tiban' src='{{imgServer}}/img/top/tiban.png'></image>
     <!-- <view class='question'>{{question}}</view> -->
-    <image class='zhedang' src='{{imgServer}}/img/top/ythgzb.png'></image>
+
     <block wx:if="{{correctPrompt}}">
       <view class='black'></view>
       <view class='alert'>
@@ -69,25 +70,25 @@
     </view>
   </block>
 
-     <block wx:if="{{answerLength === 5}}">
+  <block wx:if="{{answerLength === 5}}">
     <view class='answerfont5'>
-      <view class='answerfont_5' wx:for="{{userAnswerArray}}"  wx:key="key">{{item}}</view>
+      <view class='answerfont_5' wx:for="{{userAnswerArray}}" wx:key="key">{{item}}</view>
     </view>
   </block>
 
-     <block wx:if="{{answerLength === 6}}">
+  <block wx:if="{{answerLength === 6}}">
     <view class='answerfont6'>
-      <view class='answerfont_6' wx:for="{{userAnswerArray}}"  wx:key="key">{{item}}</view>
+      <view class='answerfont_6' wx:for="{{userAnswerArray}}" wx:key="key">{{item}}</view>
     </view>
   </block>
 
- 
+
   <block wx:if="{{answerLength === 7}}">
     <view class='answerfont7'>
-      <view class='answerfont_7' wx:for="{{userAnswerArray}}"  wx:key="key">{{item}}</view>
+      <view class='answerfont_7' wx:for="{{userAnswerArray}}" wx:key="key">{{item}}</view>
     </view>
-  </block>  
- 
+  </block>
+
 
   <view class='title'>
     <view wx:for="{{options}}" wx:key="key">

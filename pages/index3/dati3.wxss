@@ -24,9 +24,8 @@
  position: relative;
   top: -1274rpx;
   left: 30rpx;
+  float: left;
 }
-
-
 
 .leave {
   width: 200rpx;
@@ -49,6 +48,10 @@
   margin-left: 60rpx;
   border-radius: 35rpx;
 }
+.txt{
+  position: relative;
+  top: -80rpx;
+}
 
 .chengji {
   width: 200rpx;
@@ -58,7 +61,7 @@
   text-align: center;
   color: white;
   position: relative;
-  top: -1234rpx;
+  top: -1184rpx;
   left: 500rpx;
   font-size: 30rpx;
 }
@@ -71,7 +74,7 @@
   text-align: center;
   color: black;
   position: relative;
-  top: -1234rpx;
+  top: -1184rpx;
   left: 500rpx;
 }
 
@@ -79,7 +82,7 @@
   width: 136rpx;
   height: 136rpx;
   position: relative;
-  top: -1340rpx;
+  top: -1290rpx;
   opacity: 0.5;
   animation: aaa 2s linear forwards;
   z-index: 1;
@@ -89,7 +92,7 @@
   width: 220rpx;
   height: 57rpx;
   position: relative;
-  top: -1364rpx;
+  top: -1314rpx;
   opacity: 0;
   animation: tmd 2s 1s linear forwards;
   z-index: 2;
@@ -101,7 +104,7 @@
   background: black;
   border-radius: 20rpx;
   position: relative;
-  top: -1344rpx;
+  top: -1294rpx;
   left: 75rpx;
   opacity: 0.1;
 }
@@ -112,9 +115,18 @@
   background: green;
   border-radius: 20rpx;
   position: relative;
-  top: -1364rpx;
+  top: -1314rpx;
   left: 75rpx;
   animation: myone 30s 2.5s linear forwards;
+}
+
+
+.tiban {
+  width: 700rpx;
+  height: 400rpx;
+  position: relative;
+  top: -1284rpx;
+  left: 25rpx;
 }
 
 .question {
@@ -133,7 +145,7 @@
   width: 700rpx;
   height: 400rpx;
   position: relative;
-  top: -1334rpx;
+  top: -1284rpx;
   left: 25rpx;
 }
 
@@ -159,20 +171,20 @@
 
 .srk5 {
   position: relative;
-  top: -500rpx;
+  top: -550rpx;
   left: 110rpx;
 }
 
 .srk6 {
   position: relative;
-  top: -500rpx;
+  top: -550rpx;
   left: 60rpx;
   /* display: none; */
 }
 
 .srk7 {
   position: relative;
-  top: -500rpx;
+  top: -550rpx;
   left: 10rpx;
   /* display: none; */
 }
@@ -209,7 +221,7 @@
   width: 750rpx;
   height: 100rpx;
   position: relative;
-  top: -590rpx;
+  top: -640rpx;
   left: 145rpx;
 }
 
@@ -217,7 +229,7 @@
   width: 750rpx;
   height: 100rpx;
   position: relative;
-  top: -590rpx;
+  top: -640rpx;
   left: 95rpx;
   /* display: none; */
 }
@@ -226,7 +238,7 @@
   width: 750rpx;
   height: 100rpx;
   position: relative;
-  top: -590rpx;
+  top: -640rpx;
   left: 45rpx;
   /* display:none; */
 }
@@ -265,7 +277,7 @@
   height: 300rpx;
   position: relative;
   float: left;
-  top: -550rpx;
+  top: -590rpx;
   left: 200rpx;
 }
 
@@ -294,7 +306,7 @@
   height: 150vh;
   background: black;
   position: relative;
-  top: -3280rpx;
+  top: -2580rpx;
   opacity: 0.5;
   /* display: none; */
   z-index: 4;

@@ -17,7 +17,7 @@
   <view class='tiaoguo'>
     <view class='dian'></view>
     <text class='jump'>跳过答题数量：</text>
-    <view class='jumpnum'>{{errTotal}}</view>
+    <view class='jumpnum'>{{skipTotal}}</view>
   </view>
   <view class='again'>
     <text bindtap='go'>再来一遍</text>
